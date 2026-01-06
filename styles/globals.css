@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@import "./accessibility.css";
+
+
+/* 아래는 우리가 추가한 배경색 설정 */
+@theme {
+  --color-gray-900: #111;
+  --dark-mode: selector;
+}
+
+
+body {
+  font-family: sans-serif;
+}
+
+
+/* Hide scrollbar globally while maintaining scroll functionality */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 천천히 도는 애니메이션 */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+  /* 3초에 한 바퀴 */
+}
+
+/* Google Login Button Size Override */
+.google-login-container>div,
+.google-login-container iframe,
+.google-login-container svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ChatWidget 필터 제거 - 무드 필터의 영향을 받지 않도록 */
+.chat-widget-container,
+.chat-widget-container * {
+  filter: none !important;
+  backdrop-filter: none !important;
+}
+
+.chat-widget-container .chat-widget-backdrop {
+  backdrop-filter: blur(12px) !important;
+}
+
+.chat-widget-container .chat-widget-text {
+  color: #22d3ee !important;
+}
+
+.chat-widget-container .chat-widget-user-bg {
+  background-color: #0e7490 !important;
+}
+
+.chat-widget-container .chat-widget-ai-bg {
+  background-color: #1f2937 !important;
+}
+
+.chat-widget-container .chat-widget-header-bg {
+  background-color: rgba(6, 78, 59, 0.8) !important;
+}
+
+.chat-widget-container .chat-widget-input-bg {
+  background-color: #1f2937 !important;
+}
+
+.chat-widget-container .chat-widget-footer-bg {
+  background-color: rgba(17, 24, 39, 0.9) !important;
+}
+
+.chat-widget-container .chat-widget-button {
+  background: linear-gradient(to right, #0891b2, #2563eb) !important;
+}
+
+/* Hide scrollbar while maintaining scroll functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

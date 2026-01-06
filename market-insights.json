@@ -1,0 +1,311 @@
+{
+  "developer": {
+    "topSkills": [
+      {
+        "skill": "Java",
+        "count": 4,
+        "rate": "8.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "TypeScript",
+        "count": 3,
+        "rate": "6.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "React",
+        "count": 3,
+        "rate": "6.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Python",
+        "count": 3,
+        "rate": "6.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "CI/CD",
+        "count": 3,
+        "rate": "6.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Go",
+        "count": 2,
+        "rate": "4.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": ".NET",
+        "count": 2,
+        "rate": "4.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Kubernetes",
+        "count": 2,
+        "rate": "4.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "SQL",
+        "count": 2,
+        "rate": "4.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Git",
+        "count": 2,
+        "rate": "4.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "JavaScript",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Kotlin",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Docker",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "FastAPI",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "REST API",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Vue",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Spring",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "PostgreSQL",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "MySQL",
+        "count": 1,
+        "rate": "2.0%",
+        "importance": "medium"
+      }
+    ],
+    "topKeywords": [
+      {
+        "keyword": "커뮤니케이션",
+        "count": 5,
+        "frequency": "10.0%"
+      },
+      {
+        "keyword": "데이터 기반",
+        "count": 2,
+        "frequency": "4.0%"
+      },
+      {
+        "keyword": "최적화",
+        "count": 1,
+        "frequency": "2.0%"
+      }
+    ],
+    "sampleSize": 50,
+    "lastUpdated": "2025-12-19T04:44:31.058Z"
+  },
+  "designer": {
+    "topSkills": [],
+    "topKeywords": [
+      {
+        "keyword": "커뮤니케이션",
+        "count": 5,
+        "frequency": "10.0%"
+      },
+      {
+        "keyword": "데이터 기반",
+        "count": 2,
+        "frequency": "4.0%"
+      },
+      {
+        "keyword": "최적화",
+        "count": 1,
+        "frequency": "2.0%"
+      }
+    ],
+    "sampleSize": 50,
+    "lastUpdated": "2025-12-19T04:44:48.384Z"
+  },
+  "marketer": {
+    "topSkills": [
+      {
+        "skill": "Google Analytics (GA4)",
+        "count": 45,
+        "rate": "90.0%",
+        "importance": "critical"
+      },
+      {
+        "skill": "Excel",
+        "count": 40,
+        "rate": "80.0%",
+        "importance": "high"
+      },
+      {
+        "skill": "Meta Ads",
+        "count": 35,
+        "rate": "70.0%",
+        "importance": "high"
+      },
+      {
+        "skill": "SQL",
+        "count": 25,
+        "rate": "50.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "SEO",
+        "count": 20,
+        "rate": "40.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "CRM",
+        "count": 15,
+        "rate": "30.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Content Marketing",
+        "count": 10,
+        "rate": "20.0%",
+        "importance": "medium"
+      }
+    ],
+    "topKeywords": [
+      {
+        "keyword": "데이터 기반",
+        "count": 48,
+        "frequency": "96.0%"
+      },
+      {
+        "keyword": "커뮤니케이션",
+        "count": 45,
+        "frequency": "90.0%"
+      },
+      {
+        "keyword": "성과 분석",
+        "count": 40,
+        "frequency": "80.0%"
+      },
+      {
+        "keyword": "전략 수립",
+        "count": 30,
+        "frequency": "60.0%"
+      },
+      {
+        "keyword": "고객 경험",
+        "count": 25,
+        "frequency": "50.0%"
+      }
+    ],
+    "sampleSize": 50,
+    "lastUpdated": "2025-12-19T04:45:05.718Z"
+  },
+  "service": {
+    "topSkills": [
+      {
+        "skill": "Figma",
+        "count": 40,
+        "rate": "80.0%",
+        "importance": "high"
+      },
+      {
+        "skill": "SQL",
+        "count": 35,
+        "rate": "70.0%",
+        "importance": "high"
+      },
+      {
+        "skill": "데이터 분석",
+        "count": 30,
+        "rate": "60.0%",
+        "importance": "high"
+      },
+      {
+        "skill": "Jira",
+        "count": 25,
+        "rate": "50.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "User Research",
+        "count": 20,
+        "rate": "40.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Project Management",
+        "count": 15,
+        "rate": "30.0%",
+        "importance": "medium"
+      },
+      {
+        "skill": "Notion",
+        "count": 10,
+        "rate": "20.0%",
+        "importance": "medium"
+      }
+    ],
+    "topKeywords": [
+      {
+        "keyword": "커뮤니케이션",
+        "count": 50,
+        "frequency": "100.0%"
+      },
+      {
+        "keyword": "문제 해결",
+        "count": 45,
+        "frequency": "90.0%"
+      },
+      {
+        "keyword": "논리적 사고",
+        "count": 40,
+        "frequency": "80.0%"
+      },
+      {
+        "keyword": "사용자 중심",
+        "count": 35,
+        "frequency": "70.0%"
+      },
+      {
+        "keyword": "데이터 기반",
+        "count": 30,
+        "frequency": "60.0%"
+      }
+    ],
+    "sampleSize": 50,
+    "lastUpdated": "2025-12-19T04:45:22.019Z"
+  }
+}

@@ -1,0 +1,11 @@
+﻿node_modules
+.next
+venv
+__pycache__
+*.zip
+*.rar
+*.7z
+moodfolio_backup_*
+.env*
+!.env.example
+public/ground-front.png

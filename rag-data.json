@@ -1,0 +1,2908 @@
+{
+  "developer": {
+    "jobs": [
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330304",
+        "job_id": "wanted_330304",
+        "job_type": "developer",
+        "job_title": "Enterprise 영업 담당",
+        "company_name": "크라우드데이터",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• AI 프로젝트수주를 위한 Enterprise 영업 활동 및 고객사 관리\n• 대상 고객 및 Enterprise 시장에 대한 Sales Planning & Action\n• 신규 고객 및 사업기회 발굴/관리\n• 영업 이슈 및 리스크 관리\n• 고객사와 내부 유관부서와의 커뮤니케이션",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330303",
+        "job_id": "wanted_330303",
+        "job_type": "developer",
+        "job_title": "Sales Development Representative",
+        "company_name": "패스트파이브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "● 잠재 고객 ​발굴\n• 다양한 채널(이메일, SNS, 전화, 박람회 참여 등)을 통해서 잠재 고객을 찾고, 패스트파이브를 소개합니다.\n• 잠재고객에 커스텀한 최적의 상품을 때마다 제안하면서 관계를 형성하고, 실질 영업 기회로 전환합니다.\n• 패스트파이브의 공간을 직접 보고, 경험할 수 있는 '투어'를 성사시키고, 최종 계약까지 이뤄지도록 지원합니다.",
+        "keywords": [
+          "최적화"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330294",
+        "job_id": "wanted_330294",
+        "job_type": "developer",
+        "job_title": "프론트엔드 개발자 (5년 이상)",
+        "company_name": "씨드앤",
+        "required_skills": [
+          "TypeScript",
+          "React"
+        ],
+        "preferred_skills": [],
+        "description": "[기술 스택]\n• 코어: React, React Native, TypeScript\n• 상태 관리: Jotai, TanStack Query\n• 스타일링: Emotion\n• 협업: Git, GitHub, Jira, Slack, Notion\n\n[주요 업무]\n• React 기반 웹 애플리케이션 개발 및 유지보수\n• React Native 기반 모바일 앱(iOS/Android) 개발 및 유지보수\n• 기술적 의사결정 및 아키텍처 설계 참여\n• 개발 프로세스 및 코드 품질 개선\n• 기존 시스템의 한계를 극복하기 위한 레거시 코드와 아키텍처 개선",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330292",
+        "job_id": "wanted_330292",
+        "job_type": "developer",
+        "job_title": "전문 물류 관리 사원",
+        "company_name": "바이오컴",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 건강기능식품 및 커피 입·출고/출고 마감\n    - 출고 지시서 기준 피킹·패킹·검수, 운송장 출력 및 마감 서류 처리\n    - LOT/유통기한 및 라벨 관리, 반품·교환 처리\n• 재고관리/WMS\n    - 주·월 실사, 재고 차이 분석(INV mismatch) 및 조정보고\n    - WMS/플레이오토 연동 모니터링, 재고 리포트(일/주) 작성\n• 지게차/하역 & 창고 동선\n    - 지게차 운전/상·하차, 랙 적치(3단) 및 로케이션 관리\n    - 통로·랙 안전관리, 파렛트·자재 정리/정돈(5S)\n• 품질/위생 & 커피 핸드픽 보조\n    - 창고 청결·온습도 기준 준수(항온·제습 장비 운영 보조)\n    - 핸드픽/포장 피크 보조, 파손·오염 예방\n• 수출입 보조(우대)\n    - 생두 직수입 관련 선적/통관 서류 수합, 반입·반출 일정 조율(3PL/관세사 협업)",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330291",
+        "job_id": "wanted_330291",
+        "job_type": "developer",
+        "job_title": "회계담당자(팀원급)",
+        "company_name": "아이지넷(보닥)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• ERP 기반 월/분기/반기/연간 결산 \n• 거래처별 매출ᆞ매입 및 비용 정산\n• 외부감사 대응 보조\n• 세무대리인과 협업하여 세무신고 지원(원천세, 부가세, 법인세 등)\n• 자금 집행 및 경비 정산 업무",
+        "keywords": [
+          "데이터 기반"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330288",
+        "job_id": "wanted_330288",
+        "job_type": "developer",
+        "job_title": "BI/BX 디자이너",
+        "company_name": "지로",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "드롭샷의 BI/BX 디자이너는 디자인 파트에 소속되어 \n드롭샷매치/드롭샷스톡/드롭샷 AI를 아우르는 \"드롭샷(Dropshot)\"의 \n브랜드 아이덴티티를 강화하고, 일관성을 유지하기 위한 다양한 디자인 작업을 담당합니다. \n\n・자사 서비스 랜딩 페이지 및 디자인 에셋 제작 \n・생성형 AI 서비스 드롭샷 AI 내부 콘텐츠 디자인 \n・이외 다양한 온오프라인 브랜드 캠페인 에셋 디자인\n\n[지로팀에 합류하면 이런 것들을 경험하실 수 있어요]\n\n・글로벌 서비스를 만들고 있어 해외 AI/SaaS 브랜드 레퍼런스를 중요하게 학습해요. \n・AI-native Startup을 지향하고 있어 성장을 위한 교육 및 AI 서비스 비용을 모두 지원해드려요.  \n・이미지/영상 AI 서비스를 담당하며 글로벌 업계 최전선의 트렌드를 배울 수 있어요. \n・마케팅부터 기업 커뮤니케이션까지 다양한 브랜딩 전략을 팀과 함께 고민하며 성장할 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330287",
+        "job_id": "wanted_330287",
+        "job_type": "developer",
+        "job_title": "온라인 마케팅(팀장급)",
+        "company_name": "슈퍼너츠",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 브랜드 커뮤니케이션 및 정체성 정립\n• 슈퍼너츠의 철학인 'Clean Label' 가치를 마케팅 언어로 정의 및 실행\n• 원료, 공정, 가격 등 브랜드의 모든 여정을 투명하게 설명하는 콘텐츠 기획\n• \"완벽하지 않지만 솔직한 브랜드\"를 지향하는 진정성 있는 소통 전략 수립\n\n2) 고객 중심 마케팅 전략 수립 (CX 연계)\n• 고객의 불편, 불신, 의문을 숨기지 않고 정면으로 다루는 커뮤니케이션 설계\n• 단기 전환율보다 장기적 팬덤을 만드는 신뢰 기반의 고객 경험 구조 설계\n• 고객을 설득하기보다 브랜드의 가치를 이해시키는 논리적인 콘텐츠 기획\n\n3) 온라인 채널 운영 및 성과 관리\n• 네이버, 카카오, 쿠팡 등 주요 온라인 채널별 마케팅 믹스 최적화\n• 지속가능성, 윤리, 책임의 가치를 일상적인 언어로 풀어낸 채널 콘텐츠 총괄\n• 데이터 분석을 통한 마케팅 성과 측정 및 장기적 브랜드 지표(리텐션 등) 관리\n\n4) 지속가능성 및 브랜드 스토리텔링\n• 환경, 윤리적 책임을 선언이 아닌 실질적인 행동으로 제안하는 캠페인 기획\n• 브랜드 스토리 안에 지역사회와 고객, 구성원의 이야기를 자연스럽게 녹여내는 작업\n• 글로벌 시장(일본, 미국) 진출 시 각 국가에 맞는 투명한 브랜드 스토리 현지화\n\n5) 팀 협업 및 전사 리더십\n• 브랜드디자인팀, 제품개발팀과 협업하여 제품 탄생부터 고객 접점까지의 일관성 유지\n• VOC 분석 기반의 인사이트를 제품 개선 및 상세페이지 기획에 반영하는 협업 주도\n• 주니어 마케터들이 브랜드 철학에 기반하여 스스로 판단하고 실행할 수 있도록 멘토링",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330286",
+        "job_id": "wanted_330286",
+        "job_type": "developer",
+        "job_title": "AI 프롬프트 엔지니어",
+        "company_name": "부스트리",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 피부과 특화 AI 프롬프트 설계 : 상담 데이터, 피부 진단 데이터 등을 활용한 피부과 도메인 맞춤형 고성능 프롬프트 엔지니어링\n• 의료 상담 에이전트 개발 : 환자의 문의에 정확하고 신뢰도 높은 답변을 제공하는 AI 챗봇 및 응대 워크플로우 설계\n• 프롬프트 성능 고도화 : 의료 도메인의 특성을 고려한 답변의 정확성(Hallucination 방지) 및 보안 가이드 수립\n• RAG 기반 지식베이스 구축 : 피부과 전문 지식 데이터를 프롬프트와 결합하여 정교한 검색 증강 생성(RAG) 시스템 최적화",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330283",
+        "job_id": "wanted_330283",
+        "job_type": "developer",
+        "job_title": "PR manager",
+        "company_name": "자비스앤빌런즈(삼쩜삼)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[합류 하시면 ​하게 될 업무에요.]\n•  삼쩜삼의 언론홍보 및 커뮤니케이션 전략을 수립합니다.\n•  리스크를 관리하고 대응 메시지를 기획, 실행합니다.\n•  미디어 네트워크를 형성하고 관계를 강화합니다. \n•  기자간담회와 협약식 등 미디어로 노출되는 행사를 직접 기획하고 진행합니다. \n\n[​합류 시, ​이런 ​성장의 기회를 ​만나볼 수 ​있어요.​]\n•  미디어와의 정기 미팅을 통해 네트워크를 형성하고, 회사에 우호적인 환경을 조성하는 커뮤니케이션 능력을 기를 수 있어요. \n•  보도자료 및 기획 기사 작성을 통해 글쓰기와 리스크 관리 대응 능력을 키울 수 있어요.\n•  2천만 B2C 서비스를 만들고 있는 다양한 사내 조직과 함께 일하며 협업 능력을 기를 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330279",
+        "job_id": "wanted_330279",
+        "job_type": "developer",
+        "job_title": "인프라 데이터센터 매니저",
+        "company_name": "엘리스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 물리 인프라 운영\n전력(UPS, 수배전반), 냉각(HVAC, 항온항습), 소방, 보안, 랙(Rack) 등 데이터센터 필수 설비의 가용성을 100%에 가깝게 유지 및 관리\n\n• 인프라 전략 및 용량 계획\nAI 트래픽 증가와 전력 소모 패턴을 분석하여 선제적인 전력·공간·냉각 용량 계획 수립 및 확장 로드맵 설계\n\n• PMDC/DC 구축 프로젝트 리딩\n신규 데이터센터 구축 및 증설 시 기획부터 시공 관리, 안정화까지 프로젝트 전 과정(End-to-End) 주도\n\n• 운영 프로세스(SOP) 고도화\n데이터센터 운영, 장애 대응, 정기 점검 등에 대한 표준 운영 절차(SOP)를 정립하고, 비효율적인 프로세스를 지속적으로 개선\n\n• 벤더 및 파트너십 매니지먼트\n전기, 기계, 통신, 보안 등 전문 협력사 및 시공사와의 긴밀한 협업을 통해 비용 효율성 최적화 및 시공 품질 확보\n\n• 리스크 분석 및 예방\n잠재적인 물리적 장애 요인을 사전에 발굴하여 제거하고, 비상 상황 발생 시 신속한 복구를 위한 업무 연속성 계획 수립 및 훈련",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330277",
+        "job_id": "wanted_330277",
+        "job_type": "developer",
+        "job_title": "Software QA",
+        "company_name": "쿤텍",
+        "required_skills": [
+          "JavaScript",
+          "Python",
+          "Java"
+        ],
+        "preferred_skills": [],
+        "description": "• 웹 어플리케이션 신규 기능 및 개선 기능 QA 수행\n• 테스트 전략 수립: 기능/회귀/통합/성능 테스트 계획·설계\n• 테스트 자동화 스크립트 작성 및 테스트 환경 구성\n• 요구사항 분석 및 테스트 케이스/시나리오 작성\n• 버그 분석, 원인 파악, 개발자와의 협업 통한 품질 개선\n• CI/CD 파이프라인 기반 테스트 자동화 협업\n• 대규모 데이터 처리 환경의 품질 안정성 검증",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330276",
+        "job_id": "wanted_330276",
+        "job_type": "developer",
+        "job_title": "AI Agent 개발자",
+        "company_name": "쿤텍",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 생성형 AI 기반 AI 보안 어플리케이션 개발\n• AI 기반 에이전트 분석 및 설계 개발\n• 생성형 AI 성능 최적화 (프롬프트 엔지니어링, 캐싱, 등)\n• CI/CD 파이프라인 구축",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330274",
+        "job_id": "wanted_330274",
+        "job_type": "developer",
+        "job_title": "Android Developer",
+        "company_name": "하이컨시",
+        "required_skills": [
+          "Java",
+          "Kotlin"
+        ],
+        "preferred_skills": [],
+        "description": "• Kotlin을 이용한 안드로이드 앱 개발, 테스트 및 운영",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330272",
+        "job_id": "wanted_330272",
+        "job_type": "developer",
+        "job_title": "MLOps 엔지니어 - AI 플랫폼",
+        "company_name": "카카오페이(kakaopay)",
+        "required_skills": [
+          "Python",
+          "Java",
+          "Go",
+          ".NET",
+          "Docker",
+          "Kubernetes",
+          "CI/CD"
+        ],
+        "preferred_skills": [],
+        "description": "• MLOps/LLMOps 기반 AI 플랫폼의 아키텍처를 설계, 개발 및 운영해요.\n• AI 모델(ML/LLM)의 학습, 배포, 서빙, 모니터링을 위한 CI/CD 자동화 파이프라인을 구축해요.\n• Kubernetes(K8s) 기반의 확장 가능하고 안정적인 모델 학습 및 추론 인프라를 구축 및 관리해요.\n• 대규모 언어 모델(LLM)의 파인튜닝, 서빙, 평가 및 관리를 위한 LLMOps 플랫폼을 개발해요.\n• 데이터/모델 스토리지, 피처 스토어, 벡터 DB 등 MLOps/LLMOps 핵심 구성 요소를 구축 및 연동해요.\n• 자원 효율화, 학습 및 추론 최적화, 모니터링, 로깅, 얼럿 시스템을 구축하고 운영을 자동화해요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330270",
+        "job_id": "wanted_330270",
+        "job_type": "developer",
+        "job_title": "클라우드 풀스택 엔지니어",
+        "company_name": "엘리스",
+        "required_skills": [
+          "TypeScript",
+          "React",
+          "Python",
+          "FastAPI",
+          "SQL",
+          "REST API"
+        ],
+        "preferred_skills": [],
+        "description": "• 엘리스 클라우드 서비스들의 핵심 기능(API, 리소스 관리, 과금, 인증 등)을 설계하고 개발합니다.\n• 가상머신/컨테이너 기반 인프라와 연동되는 백엔드 서비스를 구현하고 안정적으로 운영합니다.\n• 다양한 클라우드 서비스들의 UI 구현과 UX 개선도 함께 진행합니다.\n• 서비스의 안정성·성능·확장성을 높이기 위해 팀과 함께 구조적 개선을 고민합니다.\n• 인프라·DevOps 팀과 협업하여 기술적 과제를 해결합니다.\n• 실제 사용자 데이터를 기반으로 제품을 발전시키고 더 좋은 사용 경험을 만들어갑니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330269",
+        "job_id": "wanted_330269",
+        "job_type": "developer",
+        "job_title": "Platform Frontend Engineer",
+        "company_name": "자비스앤빌런즈(삼쩜삼)",
+        "required_skills": [
+          "TypeScript",
+          "React",
+          "Git",
+          "CI/CD"
+        ],
+        "preferred_skills": [],
+        "description": "[합류 하시면 ​하게 될 업무에요.]\n•  공통 UI 컴포넌트 라이브러리(디자인 시스템)를 설계·개발하고, Storybook 기반 문서화 및 시각적 리그레션 테스트 체계를 운영합니다.\n•  사내 FE 공통 패키지를 개발·유지보수하고, 버전 관리(Changesets) 및 배포 프로세스를 안정적으로 운영합니다.\n•  프론트엔드 모노레포 구조 및 패키지 전략을 설계하고, 빌드/테스트/배포 파이프라인을 지속적으로 개선합니다.\n•  CLI 도구, 코드 생성기, 보일러플레이트 등 서비스 팀의 DX를 개선하는 도구를 설계·구현합니다.\n•  서비스 팀 개발자와 협업하여 반복되는 문제를 발굴하고, 플랫폼 레벨에서 해결하는 구조적 개선을 수행합니다.\n•  플랫폼 기능에 대한 문서화, 사용 가이드, 예제 코드를 작성하여 개발자 경험 품질을 관리합니다.\n\n[​합류 시, ​이런 ​성장의 기회를 ​만나볼 수 ​있어요.​]\n•  서비스 간의 복잡하게 얽힌 의존성을 풀어내고 구조를 재정립하여, 동료 엔지니어와 AI가 일관된 기준 위에서 효율적으로 개발할 수 있는 환경을 설계하는 경험을 쌓을 수 있어요.\n•  기술적 의사결정이 전체 생태계에 미치는 파급력을 경험하며, 개별 서비스가 아닌 플랫폼 관점에서 문제를 정의하고 해결하는 넓은 시야를 가질 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330264",
+        "job_id": "wanted_330264",
+        "job_type": "developer",
+        "job_title": "B2B Marketing Manager (5년 이상)",
+        "company_name": "에스아이에이",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 제품 USP 도출 및 마케팅 운영 전략 기획, 타겟 시장 발굴\n2) 제품 콘텐츠 제작 및 관리 (브로셔, 비디오, 웹 등)\n3) 온드미디어 (SNS, 유튜브, 블로그, 웹사이트 등) 콘텐츠 기획 및 릴리즈 운영 관리\n4) 콘텐츠 SEO\n5) 뉴스레터 기획 및 운영",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330262",
+        "job_id": "wanted_330262",
+        "job_type": "developer",
+        "job_title": "[개발] 서비스 개발실장(Tech Leader) [8년 이상]",
+        "company_name": "아이알큐더스",
+        "required_skills": [
+          "Vue",
+          "Java",
+          "Spring",
+          "SQL",
+          "PostgreSQL",
+          "MySQL"
+        ],
+        "preferred_skills": [],
+        "description": "[함께하게 될 업무에요]\n\n1. 기술 리더십\n• 큐더스웍스 & 주주우대(MTS/ASP/PAGE) 아키텍처 설계 및 기술 전략 수립\n• 코딩 컨벤션, API/Response 규격 등 표준 정립 및 코드 품질 관리\n• 데이터 모델링(ERD) 및 DB 구조 설계·검토\n• 레거시 코드 리팩토링 방향 수립 및 기술 부채 관리\n\n2. 개발 프로세스 운영\n• 스프린트 운영, 공수 산정, WBS 기반 일정 관리\n• 신규 개발과 유지보수가 병행될 수 있는 개발 조직 운영 체계 구축\n• 서비스 고도화 및 신규 서비스의 기술 타당성 검토·범위 정의\n\n3. 협업 및 피플 매니지먼트\n• 기획–UX–개발 간 협업 기준 수립 및 산출물 품질 관리\n• 인프라/보안 담당자와의 협업을 통한 안정적인 서비스 운영 환경 구축\n• 외부 기관(증권사, PG사 등) 연계 개발 시 기술 협의 및 일정 조율\n• 주니어/미드급 개발자 성장 지원(멘토링, 코드 리뷰, 기술 가이드)",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330258",
+        "job_id": "wanted_330258",
+        "job_type": "developer",
+        "job_title": "[Yellow Bus] 현장 운영 매니저 (Field Manager)",
+        "company_name": "더스윙",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 채용 및 온보딩\n• 우리 서비스와 가장 잘 맞는 셔틀 기사님, 동승 매니저님을 발굴·면접·채용\n• 신규 크루가 빠르게 적응하도록 업무 교육 및 체크리스트 제공\n• 서비스 품질을 높이는 현장 운영 매뉴얼 개선\n\n2) 인력 및 근태 관리\n• 현장 크루들의 스케줄·운행 시간표·근태를 정확히 관리\n• 크루들이 안전하고 즐겁게 일할 수 있는 환경 만들기\n• 운영팀과 협업해 결원·변경 요청을 빠르게 조정\n\n3) 현장 이슈 대응\n• 운행 중 발생하는 돌발 상황(지연, 결석, 노선 문제 등)을 즉시 파악·조치\n• 필요한 경우 셔틀 현장을 직접 방문하여 상황 점검\n• 운영/노선/앱 개발팀 등 유관부서와 함께 문제 원인을 분석하고 재발 방지 조치",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330257",
+        "job_id": "wanted_330257",
+        "job_type": "developer",
+        "job_title": "QA Engineer",
+        "company_name": "웨이브릿지",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 디지털 자산 금융 플랫폼 국내 및 글로벌 서비스 QA\n• 기능 및 리그레션 테스트 수행\n• Playwright 자동화 테스트 환경 구축 및 운영\n• 생성형 AI 기반 테스트 시나리오 도출 및 테스트 자동화 기획",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330256",
+        "job_id": "wanted_330256",
+        "job_type": "developer",
+        "job_title": "IP 상품 기획·제작 담당자",
+        "company_name": "리디(RIDI)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "IP 상품 기획·제작 담당자는 IP의 특성과 팬 경험을 기준으로한 프로젝트 목적에 맞춰 상품 콘셉트를 기획하고, 제작 전 과정을 관리하여 완성도 높은 결과물을 구현하는 역할을 수행합니다. \n팬 경험 관점에서 IP상품의 완성도를 책임지며 동시에 디자인,스펙,제작,품질 관점의 오너십을 가집니다.\n\n- 웹툰·웹소설·캐릭터 IP를 분석하고 팬덤 트렌드를 기반으로 상품 콘셉트를 기획합니다.\n- 프로젝트별 상품 카테고리, SKU 구성, 세트 및 패키지를 기획합니다. \n- 가격 설정을 고려한 개별 상품 및 세트 패키지 기획안을 수립합니다.\n- IP 및 프로젝트 특성에 맞는 상품 콘셉트, 아트워크, 패키징 디자인을 기획합니다. \n- 디자인 가이드를 수립하고, 디자인 에셋 관리 및 아트워크 품질을 검수합니다.  \n- 초기 콘셉트 스케치, 디자인 시안(Mock-up, 레이아웃 등)을 개발합니다.\n- 제품 스펙(소재, 규격, 구성)을 정의하고 샘플링 및 수정 사이클을 운영하여 상품화를 완결합니다.\n- 제조사 및 생산 파트너와 협업하여 제작 방식, 원부자재, 비용 구조를 검토합니다.\n- QC 기준을 수립하고 샘플 및 결과물의 품질을 검수합니다.\n- 프로젝트 단위로 유관 부서 및 파트너와 협업하며, 기획 의도와 결과물 간의 일관성을 관리합니다.\n- 팝업 스토어 VMD, 온라인 상세페이지 등 전시 및 표현 요소에 대해 유관 조직과 협업합니다.\n- 상품성, 팬 니즈, 제작 현실성을 종합해 개별 프로젝트 진행 여부에 대한 의견을 제시합니다.\n- 저작권 및 라이선스 가이드에 따라 디자인 작업을 수행합니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330241",
+        "job_id": "wanted_330241",
+        "job_type": "developer",
+        "job_title": "유니브클래스 CX매니저",
+        "company_name": "유니브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 고객 VOC와 데이터를 기반하여 고객 여정과 퍼널을 설계합니다.\n    - 수강생의 VOC 및 민원을 수집하고 분석하여, 학습 경험을 개선할 인사이트를 도출합니다. (인터뷰, 서베이등 기획)\n    - 채널톡 / FAQ 등을 설계하고 효율화 합니다.\n    - CX 데이터를 수집 및 전달하여 완성도 높은 제품과 서비스 개선을 제시합니다.\n• 수강생(고객)을 응대하고, VOC 기반 교육 경험을 개선합니다.\n    - 학습 여정 및 전체 스케쥴 (강의, 피드백, 러닝 프로그램 등) 데이터를 관리하고 효율화 합니다.\n    - 반복되는 문제는 교육 운영기획 매니저와 협업하여 운영 체계 차원에서 구조적으로 개선합니다.\n    - 수강생 문의 응대 및 세그먼트 기반 맞춤 커뮤니케이션을 통해 상품 및 커리큘럼을 추천합니다.\n    - 수강 전 과정 중에 발생하는 이슈나 VOC에 실시간 대응하고, 상황에 맞는 해결책을 제시합니다.\n    - 수강생 유형별 분석 및 개선을 위한 정성적 인사이트를 도출합니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330238",
+        "job_id": "wanted_330238",
+        "job_type": "developer",
+        "job_title": "야간 배차 담당자",
+        "company_name": "스마트푸드네트웍스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "ㆍ오산센터 배차\nㆍ차량관리(지입차, 임시용차)\nㆍ정산\nㆍCX 대응\nㆍ전산 - ERP, TMS, WMS",
+        "keywords": [
+          "데이터 기반"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330237",
+        "job_id": "wanted_330237",
+        "job_type": "developer",
+        "job_title": "대기업 보험사 데이터 운영 인력",
+        "company_name": "이그레브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• BI 툴 운용 : 타블로 기반 BI 개발(주업무)\n• ETL 툴 운용 : AWS Glue 사용 데이터 추출/변환\n• DW 데이터베이스 : AWS RedShift",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330236",
+        "job_id": "wanted_330236",
+        "job_type": "developer",
+        "job_title": "DevOps(K8s 기반) CI/CD 개발 엔지니어",
+        "company_name": "이그레브",
+        "required_skills": [
+          "Go",
+          ".NET",
+          "Kubernetes",
+          "Git",
+          "CI/CD"
+        ],
+        "preferred_skills": [],
+        "description": "• K8s 환경 내 DevOps 엔지니어링\n• CI/CD 파이프라인 설계 및 구축 (GitLab,  Jenkins, ArgoCD, Harber 등)\n• MSA 서비스 개발자 가이드",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52216901&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=y&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52216901",
+        "job_type": "developer",
+        "job_title": "영업팀 개발 / 품질 / 조달 / 담당 사원 채용",
+        "company_name": "글로리페이스",
+        "required_skills": [],
+        "description": "경북  구미시신입·경력초대졸↑정규직·인턴직3,300 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52230859&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52230859",
+        "job_type": "developer",
+        "job_title": "시스템개발팀/SW개발팀/생산기술팀/품질팀/시설관리·공무 채용",
+        "company_name": "삼지전자(주)",
+        "required_skills": [],
+        "description": "경기  화성시신입·경력초대졸↑정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52600341&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52600341",
+        "job_type": "developer",
+        "job_title": "연구개발/품질관리 정규직 채용",
+        "company_name": "대영기계공업(주)",
+        "required_skills": [],
+        "description": "경남  밀양시신입·경력초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52399394&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52399394",
+        "job_type": "developer",
+        "job_title": "[토스플레이스 자회사 iShopCARE] 핵심 직군 공개 채용｜영업·마케팅·디자인·HR·운영·개발 外",
+        "company_name": "(주)아이샵케어",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52568445&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52568445",
+        "job_type": "developer",
+        "job_title": "경영지원/K뷰티상품기획/구매개발/해외온라인(아마존,그외)/영상PD 및 작가/온라인MD 및 마케팅",
+        "company_name": "에빈코리아(유)",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52531214&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52531214",
+        "job_type": "developer",
+        "job_title": "[한국중앙인재개발원] 2025년 사무직 신입 & 경력직 모집 공고",
+        "company_name": "한국중앙인재개발원 원격평생교육시설",
+        "required_skills": [],
+        "description": "서울  강남구경력무관초대졸↑정규직3,000 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52583223&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52583223",
+        "job_type": "developer",
+        "job_title": "신약개발 연구원 채용",
+        "company_name": "(주)셀티움",
+        "required_skills": [],
+        "description": "경기  수원시 영통구경력무관석사↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52581052&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52581052",
+        "job_type": "developer",
+        "job_title": "롯데인재개발원(오산캠퍼스) 서무주임 채용",
+        "company_name": "(주)삼구아이앤씨",
+        "required_skills": [],
+        "description": "경기  오산시신입·경력학력무관계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52483618&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52483618",
+        "job_type": "developer",
+        "job_title": "[알라딘] 개발1팀 백엔드 엔지니어",
+        "company_name": "(주)알라딘커뮤니케이션",
+        "required_skills": [],
+        "description": "서울  중구경력7년↑초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52483707&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52483707",
+        "job_type": "developer",
+        "job_title": "[알라딘] 개발2팀 백엔드 엔지니어",
+        "company_name": "(주)알라딘커뮤니케이션",
+        "required_skills": [],
+        "description": "서울  중구경력 5~10년초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52389005&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52389005",
+        "job_type": "developer",
+        "job_title": "R&D 개발연구 설계 담당자 채용",
+        "company_name": "(주)윤성에프앤씨",
+        "required_skills": [],
+        "description": "경기  안성시신입·경력대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52600466&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52600466",
+        "job_type": "developer",
+        "job_title": "(주)동원홈푸드 단체급식 수주 영남개발영업 경력직 채용",
+        "company_name": "(주)동원홈푸드",
+        "required_skills": [],
+        "description": "경남  양산시경력무관대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52540337&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52540337",
+        "job_type": "developer",
+        "job_title": "고려대 소프트웨어보안연구소 웹 개발자(연구원) 모집",
+        "company_name": "고려대학교산학협력단",
+        "required_skills": [],
+        "description": "서울  성북구경력무관대졸↑계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52583927&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52583927",
+        "job_type": "developer",
+        "job_title": "현대모비스 생산개발담당 업무시스템 지원 계약직 채용 (의왕)",
+        "company_name": "현대모비스(주)",
+        "required_skills": [],
+        "description": "경기  의왕시경력무관고졸↑계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52590653&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52590653",
+        "job_type": "developer",
+        "job_title": "[코스닥] SW 개발(임베디드/응용소프트웨어)",
+        "company_name": "코츠테크놀로지(주)",
+        "required_skills": [],
+        "description": "경기  성남시 분당구경력무관대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52592029&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52592029",
+        "job_type": "developer",
+        "job_title": "[HS본부] 기능성 소재 개발 경력자 채용",
+        "company_name": "LG전자(주)",
+        "required_skills": [],
+        "description": "경남  창원시 성산구경력3년↑대졸↑",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52323421&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52323421",
+        "job_type": "developer",
+        "job_title": "(주) 이수페타시스 경력직 채용(기술,품질, 원자재개발)",
+        "company_name": "(주)이수페타시스",
+        "required_skills": [],
+        "description": "대구  달성군경력3년↑대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52538233&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52538233",
+        "job_type": "developer",
+        "job_title": "이마트에브리데이 점포개발 경력사원 모집",
+        "company_name": "(주)이마트",
+        "required_skills": [],
+        "description": "서울  성동구경력2년↑학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52590046&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52590046",
+        "job_type": "developer",
+        "job_title": "[현대글로비스/연4,000만] 프론트엔드 개발자 채용",
+        "company_name": "(주)휴먼코아",
+        "required_skills": [],
+        "description": "서울  성동구경력무관고졸↑파견직4,000 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52591306&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52591306",
+        "job_type": "developer",
+        "job_title": "[현대글로비스] 자체시스템 프론트엔드 개발자 채용 (연4,000만)",
+        "company_name": "(주)휴먼코아",
+        "required_skills": [],
+        "description": "서울  성동구경력무관고졸↑파견직4,000 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52581778&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52581778",
+        "job_type": "developer",
+        "job_title": "에스제이아이티㈜ HW, SW 개발자 신입/경력 채용",
+        "company_name": "에스제이아이티주식회사",
+        "required_skills": [],
+        "description": "경기  화성시경력무관초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52521721&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52521721",
+        "job_type": "developer",
+        "job_title": "식품개발연구소 팀원 채용",
+        "company_name": "(주)제이앤이",
+        "required_skills": [],
+        "description": "충남  아산시신입·경력대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52519635&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52519635",
+        "job_type": "developer",
+        "job_title": "2025 (주)미미월드 개발생산팀 신입 및 경력 모집",
+        "company_name": "(주)미미월드",
+        "required_skills": [],
+        "description": "경기  안양시 동안구신입·경력대졸↑정규직·인턴직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52571859&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52571859",
+        "job_type": "developer",
+        "job_title": "SW/HW 개발자 채용",
+        "company_name": "(주)아토웨이브",
+        "required_skills": [],
+        "description": "서울  금천구신입·경력초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52552817&location=ts&searchword=%EA%B0%9C%EB%B0%9C&searchType=search&paid_fl=n&search_uuid=4c90a04c-163e-43c2-8c5d-b948c40bbeab",
+        "job_id": "saramin_52552817",
+        "job_type": "developer",
+        "job_title": "설계기술팀(클린룸) / 연구개발팀 채용",
+        "company_name": "(주)서번",
+        "required_skills": [],
+        "description": "부산  강서구신입·경력초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      }
+    ],
+    "insights": {
+      "topSkills": [
+        {
+          "skill": "Java",
+          "count": 4,
+          "rate": "8.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "TypeScript",
+          "count": 3,
+          "rate": "6.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "React",
+          "count": 3,
+          "rate": "6.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Python",
+          "count": 3,
+          "rate": "6.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "CI/CD",
+          "count": 3,
+          "rate": "6.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Go",
+          "count": 2,
+          "rate": "4.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": ".NET",
+          "count": 2,
+          "rate": "4.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Kubernetes",
+          "count": 2,
+          "rate": "4.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "SQL",
+          "count": 2,
+          "rate": "4.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Git",
+          "count": 2,
+          "rate": "4.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "JavaScript",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Kotlin",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Docker",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "FastAPI",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "REST API",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Vue",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Spring",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "PostgreSQL",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "MySQL",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        }
+      ],
+      "topKeywords": [
+        {
+          "keyword": "커뮤니케이션",
+          "count": 5,
+          "frequency": "10.0%"
+        },
+        {
+          "keyword": "데이터 기반",
+          "count": 2,
+          "frequency": "4.0%"
+        },
+        {
+          "keyword": "최적화",
+          "count": 1,
+          "frequency": "2.0%"
+        }
+      ],
+      "sampleSize": 50,
+      "lastUpdated": "2025-12-19T04:44:31.058Z"
+    }
+  },
+  "designer": {
+    "jobs": [
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330304",
+        "job_id": "wanted_330304",
+        "job_type": "designer",
+        "job_title": "Enterprise 영업 담당",
+        "company_name": "크라우드데이터",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• AI 프로젝트수주를 위한 Enterprise 영업 활동 및 고객사 관리\n• 대상 고객 및 Enterprise 시장에 대한 Sales Planning & Action\n• 신규 고객 및 사업기회 발굴/관리\n• 영업 이슈 및 리스크 관리\n• 고객사와 내부 유관부서와의 커뮤니케이션",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330303",
+        "job_id": "wanted_330303",
+        "job_type": "designer",
+        "job_title": "Sales Development Representative",
+        "company_name": "패스트파이브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "● 잠재 고객 ​발굴\n• 다양한 채널(이메일, SNS, 전화, 박람회 참여 등)을 통해서 잠재 고객을 찾고, 패스트파이브를 소개합니다.\n• 잠재고객에 커스텀한 최적의 상품을 때마다 제안하면서 관계를 형성하고, 실질 영업 기회로 전환합니다.\n• 패스트파이브의 공간을 직접 보고, 경험할 수 있는 '투어'를 성사시키고, 최종 계약까지 이뤄지도록 지원합니다.",
+        "keywords": [
+          "최적화"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330294",
+        "job_id": "wanted_330294",
+        "job_type": "designer",
+        "job_title": "프론트엔드 개발자 (5년 이상)",
+        "company_name": "씨드앤",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[기술 스택]\n• 코어: React, React Native, TypeScript\n• 상태 관리: Jotai, TanStack Query\n• 스타일링: Emotion\n• 협업: Git, GitHub, Jira, Slack, Notion\n\n[주요 업무]\n• React 기반 웹 애플리케이션 개발 및 유지보수\n• React Native 기반 모바일 앱(iOS/Android) 개발 및 유지보수\n• 기술적 의사결정 및 아키텍처 설계 참여\n• 개발 프로세스 및 코드 품질 개선\n• 기존 시스템의 한계를 극복하기 위한 레거시 코드와 아키텍처 개선",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330292",
+        "job_id": "wanted_330292",
+        "job_type": "designer",
+        "job_title": "전문 물류 관리 사원",
+        "company_name": "바이오컴",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 건강기능식품 및 커피 입·출고/출고 마감\n    - 출고 지시서 기준 피킹·패킹·검수, 운송장 출력 및 마감 서류 처리\n    - LOT/유통기한 및 라벨 관리, 반품·교환 처리\n• 재고관리/WMS\n    - 주·월 실사, 재고 차이 분석(INV mismatch) 및 조정보고\n    - WMS/플레이오토 연동 모니터링, 재고 리포트(일/주) 작성\n• 지게차/하역 & 창고 동선\n    - 지게차 운전/상·하차, 랙 적치(3단) 및 로케이션 관리\n    - 통로·랙 안전관리, 파렛트·자재 정리/정돈(5S)\n• 품질/위생 & 커피 핸드픽 보조\n    - 창고 청결·온습도 기준 준수(항온·제습 장비 운영 보조)\n    - 핸드픽/포장 피크 보조, 파손·오염 예방\n• 수출입 보조(우대)\n    - 생두 직수입 관련 선적/통관 서류 수합, 반입·반출 일정 조율(3PL/관세사 협업)",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330291",
+        "job_id": "wanted_330291",
+        "job_type": "designer",
+        "job_title": "회계담당자(팀원급)",
+        "company_name": "아이지넷(보닥)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• ERP 기반 월/분기/반기/연간 결산 \n• 거래처별 매출ᆞ매입 및 비용 정산\n• 외부감사 대응 보조\n• 세무대리인과 협업하여 세무신고 지원(원천세, 부가세, 법인세 등)\n• 자금 집행 및 경비 정산 업무",
+        "keywords": [
+          "데이터 기반"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330288",
+        "job_id": "wanted_330288",
+        "job_type": "designer",
+        "job_title": "BI/BX 디자이너",
+        "company_name": "지로",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "드롭샷의 BI/BX 디자이너는 디자인 파트에 소속되어 \n드롭샷매치/드롭샷스톡/드롭샷 AI를 아우르는 \"드롭샷(Dropshot)\"의 \n브랜드 아이덴티티를 강화하고, 일관성을 유지하기 위한 다양한 디자인 작업을 담당합니다. \n\n・자사 서비스 랜딩 페이지 및 디자인 에셋 제작 \n・생성형 AI 서비스 드롭샷 AI 내부 콘텐츠 디자인 \n・이외 다양한 온오프라인 브랜드 캠페인 에셋 디자인\n\n[지로팀에 합류하면 이런 것들을 경험하실 수 있어요]\n\n・글로벌 서비스를 만들고 있어 해외 AI/SaaS 브랜드 레퍼런스를 중요하게 학습해요. \n・AI-native Startup을 지향하고 있어 성장을 위한 교육 및 AI 서비스 비용을 모두 지원해드려요.  \n・이미지/영상 AI 서비스를 담당하며 글로벌 업계 최전선의 트렌드를 배울 수 있어요. \n・마케팅부터 기업 커뮤니케이션까지 다양한 브랜딩 전략을 팀과 함께 고민하며 성장할 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330287",
+        "job_id": "wanted_330287",
+        "job_type": "designer",
+        "job_title": "온라인 마케팅(팀장급)",
+        "company_name": "슈퍼너츠",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 브랜드 커뮤니케이션 및 정체성 정립\n• 슈퍼너츠의 철학인 'Clean Label' 가치를 마케팅 언어로 정의 및 실행\n• 원료, 공정, 가격 등 브랜드의 모든 여정을 투명하게 설명하는 콘텐츠 기획\n• \"완벽하지 않지만 솔직한 브랜드\"를 지향하는 진정성 있는 소통 전략 수립\n\n2) 고객 중심 마케팅 전략 수립 (CX 연계)\n• 고객의 불편, 불신, 의문을 숨기지 않고 정면으로 다루는 커뮤니케이션 설계\n• 단기 전환율보다 장기적 팬덤을 만드는 신뢰 기반의 고객 경험 구조 설계\n• 고객을 설득하기보다 브랜드의 가치를 이해시키는 논리적인 콘텐츠 기획\n\n3) 온라인 채널 운영 및 성과 관리\n• 네이버, 카카오, 쿠팡 등 주요 온라인 채널별 마케팅 믹스 최적화\n• 지속가능성, 윤리, 책임의 가치를 일상적인 언어로 풀어낸 채널 콘텐츠 총괄\n• 데이터 분석을 통한 마케팅 성과 측정 및 장기적 브랜드 지표(리텐션 등) 관리\n\n4) 지속가능성 및 브랜드 스토리텔링\n• 환경, 윤리적 책임을 선언이 아닌 실질적인 행동으로 제안하는 캠페인 기획\n• 브랜드 스토리 안에 지역사회와 고객, 구성원의 이야기를 자연스럽게 녹여내는 작업\n• 글로벌 시장(일본, 미국) 진출 시 각 국가에 맞는 투명한 브랜드 스토리 현지화\n\n5) 팀 협업 및 전사 리더십\n• 브랜드디자인팀, 제품개발팀과 협업하여 제품 탄생부터 고객 접점까지의 일관성 유지\n• VOC 분석 기반의 인사이트를 제품 개선 및 상세페이지 기획에 반영하는 협업 주도\n• 주니어 마케터들이 브랜드 철학에 기반하여 스스로 판단하고 실행할 수 있도록 멘토링",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330286",
+        "job_id": "wanted_330286",
+        "job_type": "designer",
+        "job_title": "AI 프롬프트 엔지니어",
+        "company_name": "부스트리",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 피부과 특화 AI 프롬프트 설계 : 상담 데이터, 피부 진단 데이터 등을 활용한 피부과 도메인 맞춤형 고성능 프롬프트 엔지니어링\n• 의료 상담 에이전트 개발 : 환자의 문의에 정확하고 신뢰도 높은 답변을 제공하는 AI 챗봇 및 응대 워크플로우 설계\n• 프롬프트 성능 고도화 : 의료 도메인의 특성을 고려한 답변의 정확성(Hallucination 방지) 및 보안 가이드 수립\n• RAG 기반 지식베이스 구축 : 피부과 전문 지식 데이터를 프롬프트와 결합하여 정교한 검색 증강 생성(RAG) 시스템 최적화",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330283",
+        "job_id": "wanted_330283",
+        "job_type": "designer",
+        "job_title": "PR manager",
+        "company_name": "자비스앤빌런즈(삼쩜삼)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[합류 하시면 ​하게 될 업무에요.]\n•  삼쩜삼의 언론홍보 및 커뮤니케이션 전략을 수립합니다.\n•  리스크를 관리하고 대응 메시지를 기획, 실행합니다.\n•  미디어 네트워크를 형성하고 관계를 강화합니다. \n•  기자간담회와 협약식 등 미디어로 노출되는 행사를 직접 기획하고 진행합니다. \n\n[​합류 시, ​이런 ​성장의 기회를 ​만나볼 수 ​있어요.​]\n•  미디어와의 정기 미팅을 통해 네트워크를 형성하고, 회사에 우호적인 환경을 조성하는 커뮤니케이션 능력을 기를 수 있어요. \n•  보도자료 및 기획 기사 작성을 통해 글쓰기와 리스크 관리 대응 능력을 키울 수 있어요.\n•  2천만 B2C 서비스를 만들고 있는 다양한 사내 조직과 함께 일하며 협업 능력을 기를 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330279",
+        "job_id": "wanted_330279",
+        "job_type": "designer",
+        "job_title": "인프라 데이터센터 매니저",
+        "company_name": "엘리스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 물리 인프라 운영\n전력(UPS, 수배전반), 냉각(HVAC, 항온항습), 소방, 보안, 랙(Rack) 등 데이터센터 필수 설비의 가용성을 100%에 가깝게 유지 및 관리\n\n• 인프라 전략 및 용량 계획\nAI 트래픽 증가와 전력 소모 패턴을 분석하여 선제적인 전력·공간·냉각 용량 계획 수립 및 확장 로드맵 설계\n\n• PMDC/DC 구축 프로젝트 리딩\n신규 데이터센터 구축 및 증설 시 기획부터 시공 관리, 안정화까지 프로젝트 전 과정(End-to-End) 주도\n\n• 운영 프로세스(SOP) 고도화\n데이터센터 운영, 장애 대응, 정기 점검 등에 대한 표준 운영 절차(SOP)를 정립하고, 비효율적인 프로세스를 지속적으로 개선\n\n• 벤더 및 파트너십 매니지먼트\n전기, 기계, 통신, 보안 등 전문 협력사 및 시공사와의 긴밀한 협업을 통해 비용 효율성 최적화 및 시공 품질 확보\n\n• 리스크 분석 및 예방\n잠재적인 물리적 장애 요인을 사전에 발굴하여 제거하고, 비상 상황 발생 시 신속한 복구를 위한 업무 연속성 계획 수립 및 훈련",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330277",
+        "job_id": "wanted_330277",
+        "job_type": "designer",
+        "job_title": "Software QA",
+        "company_name": "쿤텍",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 웹 어플리케이션 신규 기능 및 개선 기능 QA 수행\n• 테스트 전략 수립: 기능/회귀/통합/성능 테스트 계획·설계\n• 테스트 자동화 스크립트 작성 및 테스트 환경 구성\n• 요구사항 분석 및 테스트 케이스/시나리오 작성\n• 버그 분석, 원인 파악, 개발자와의 협업 통한 품질 개선\n• CI/CD 파이프라인 기반 테스트 자동화 협업\n• 대규모 데이터 처리 환경의 품질 안정성 검증",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330276",
+        "job_id": "wanted_330276",
+        "job_type": "designer",
+        "job_title": "AI Agent 개발자",
+        "company_name": "쿤텍",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 생성형 AI 기반 AI 보안 어플리케이션 개발\n• AI 기반 에이전트 분석 및 설계 개발\n• 생성형 AI 성능 최적화 (프롬프트 엔지니어링, 캐싱, 등)\n• CI/CD 파이프라인 구축",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330274",
+        "job_id": "wanted_330274",
+        "job_type": "designer",
+        "job_title": "Android Developer",
+        "company_name": "하이컨시",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• Kotlin을 이용한 안드로이드 앱 개발, 테스트 및 운영",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330272",
+        "job_id": "wanted_330272",
+        "job_type": "designer",
+        "job_title": "MLOps 엔지니어 - AI 플랫폼",
+        "company_name": "카카오페이(kakaopay)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• MLOps/LLMOps 기반 AI 플랫폼의 아키텍처를 설계, 개발 및 운영해요.\n• AI 모델(ML/LLM)의 학습, 배포, 서빙, 모니터링을 위한 CI/CD 자동화 파이프라인을 구축해요.\n• Kubernetes(K8s) 기반의 확장 가능하고 안정적인 모델 학습 및 추론 인프라를 구축 및 관리해요.\n• 대규모 언어 모델(LLM)의 파인튜닝, 서빙, 평가 및 관리를 위한 LLMOps 플랫폼을 개발해요.\n• 데이터/모델 스토리지, 피처 스토어, 벡터 DB 등 MLOps/LLMOps 핵심 구성 요소를 구축 및 연동해요.\n• 자원 효율화, 학습 및 추론 최적화, 모니터링, 로깅, 얼럿 시스템을 구축하고 운영을 자동화해요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330270",
+        "job_id": "wanted_330270",
+        "job_type": "designer",
+        "job_title": "클라우드 풀스택 엔지니어",
+        "company_name": "엘리스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 엘리스 클라우드 서비스들의 핵심 기능(API, 리소스 관리, 과금, 인증 등)을 설계하고 개발합니다.\n• 가상머신/컨테이너 기반 인프라와 연동되는 백엔드 서비스를 구현하고 안정적으로 운영합니다.\n• 다양한 클라우드 서비스들의 UI 구현과 UX 개선도 함께 진행합니다.\n• 서비스의 안정성·성능·확장성을 높이기 위해 팀과 함께 구조적 개선을 고민합니다.\n• 인프라·DevOps 팀과 협업하여 기술적 과제를 해결합니다.\n• 실제 사용자 데이터를 기반으로 제품을 발전시키고 더 좋은 사용 경험을 만들어갑니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330269",
+        "job_id": "wanted_330269",
+        "job_type": "designer",
+        "job_title": "Platform Frontend Engineer",
+        "company_name": "자비스앤빌런즈(삼쩜삼)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[합류 하시면 ​하게 될 업무에요.]\n•  공통 UI 컴포넌트 라이브러리(디자인 시스템)를 설계·개발하고, Storybook 기반 문서화 및 시각적 리그레션 테스트 체계를 운영합니다.\n•  사내 FE 공통 패키지를 개발·유지보수하고, 버전 관리(Changesets) 및 배포 프로세스를 안정적으로 운영합니다.\n•  프론트엔드 모노레포 구조 및 패키지 전략을 설계하고, 빌드/테스트/배포 파이프라인을 지속적으로 개선합니다.\n•  CLI 도구, 코드 생성기, 보일러플레이트 등 서비스 팀의 DX를 개선하는 도구를 설계·구현합니다.\n•  서비스 팀 개발자와 협업하여 반복되는 문제를 발굴하고, 플랫폼 레벨에서 해결하는 구조적 개선을 수행합니다.\n•  플랫폼 기능에 대한 문서화, 사용 가이드, 예제 코드를 작성하여 개발자 경험 품질을 관리합니다.\n\n[​합류 시, ​이런 ​성장의 기회를 ​만나볼 수 ​있어요.​]\n•  서비스 간의 복잡하게 얽힌 의존성을 풀어내고 구조를 재정립하여, 동료 엔지니어와 AI가 일관된 기준 위에서 효율적으로 개발할 수 있는 환경을 설계하는 경험을 쌓을 수 있어요.\n•  기술적 의사결정이 전체 생태계에 미치는 파급력을 경험하며, 개별 서비스가 아닌 플랫폼 관점에서 문제를 정의하고 해결하는 넓은 시야를 가질 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330264",
+        "job_id": "wanted_330264",
+        "job_type": "designer",
+        "job_title": "B2B Marketing Manager (5년 이상)",
+        "company_name": "에스아이에이",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 제품 USP 도출 및 마케팅 운영 전략 기획, 타겟 시장 발굴\n2) 제품 콘텐츠 제작 및 관리 (브로셔, 비디오, 웹 등)\n3) 온드미디어 (SNS, 유튜브, 블로그, 웹사이트 등) 콘텐츠 기획 및 릴리즈 운영 관리\n4) 콘텐츠 SEO\n5) 뉴스레터 기획 및 운영",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330262",
+        "job_id": "wanted_330262",
+        "job_type": "designer",
+        "job_title": "[개발] 서비스 개발실장(Tech Leader) [8년 이상]",
+        "company_name": "아이알큐더스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[함께하게 될 업무에요]\n\n1. 기술 리더십\n• 큐더스웍스 & 주주우대(MTS/ASP/PAGE) 아키텍처 설계 및 기술 전략 수립\n• 코딩 컨벤션, API/Response 규격 등 표준 정립 및 코드 품질 관리\n• 데이터 모델링(ERD) 및 DB 구조 설계·검토\n• 레거시 코드 리팩토링 방향 수립 및 기술 부채 관리\n\n2. 개발 프로세스 운영\n• 스프린트 운영, 공수 산정, WBS 기반 일정 관리\n• 신규 개발과 유지보수가 병행될 수 있는 개발 조직 운영 체계 구축\n• 서비스 고도화 및 신규 서비스의 기술 타당성 검토·범위 정의\n\n3. 협업 및 피플 매니지먼트\n• 기획–UX–개발 간 협업 기준 수립 및 산출물 품질 관리\n• 인프라/보안 담당자와의 협업을 통한 안정적인 서비스 운영 환경 구축\n• 외부 기관(증권사, PG사 등) 연계 개발 시 기술 협의 및 일정 조율\n• 주니어/미드급 개발자 성장 지원(멘토링, 코드 리뷰, 기술 가이드)",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330258",
+        "job_id": "wanted_330258",
+        "job_type": "designer",
+        "job_title": "[Yellow Bus] 현장 운영 매니저 (Field Manager)",
+        "company_name": "더스윙",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 채용 및 온보딩\n• 우리 서비스와 가장 잘 맞는 셔틀 기사님, 동승 매니저님을 발굴·면접·채용\n• 신규 크루가 빠르게 적응하도록 업무 교육 및 체크리스트 제공\n• 서비스 품질을 높이는 현장 운영 매뉴얼 개선\n\n2) 인력 및 근태 관리\n• 현장 크루들의 스케줄·운행 시간표·근태를 정확히 관리\n• 크루들이 안전하고 즐겁게 일할 수 있는 환경 만들기\n• 운영팀과 협업해 결원·변경 요청을 빠르게 조정\n\n3) 현장 이슈 대응\n• 운행 중 발생하는 돌발 상황(지연, 결석, 노선 문제 등)을 즉시 파악·조치\n• 필요한 경우 셔틀 현장을 직접 방문하여 상황 점검\n• 운영/노선/앱 개발팀 등 유관부서와 함께 문제 원인을 분석하고 재발 방지 조치",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330257",
+        "job_id": "wanted_330257",
+        "job_type": "designer",
+        "job_title": "QA Engineer",
+        "company_name": "웨이브릿지",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 디지털 자산 금융 플랫폼 국내 및 글로벌 서비스 QA\n• 기능 및 리그레션 테스트 수행\n• Playwright 자동화 테스트 환경 구축 및 운영\n• 생성형 AI 기반 테스트 시나리오 도출 및 테스트 자동화 기획",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330256",
+        "job_id": "wanted_330256",
+        "job_type": "designer",
+        "job_title": "IP 상품 기획·제작 담당자",
+        "company_name": "리디(RIDI)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "IP 상품 기획·제작 담당자는 IP의 특성과 팬 경험을 기준으로한 프로젝트 목적에 맞춰 상품 콘셉트를 기획하고, 제작 전 과정을 관리하여 완성도 높은 결과물을 구현하는 역할을 수행합니다. \n팬 경험 관점에서 IP상품의 완성도를 책임지며 동시에 디자인,스펙,제작,품질 관점의 오너십을 가집니다.\n\n- 웹툰·웹소설·캐릭터 IP를 분석하고 팬덤 트렌드를 기반으로 상품 콘셉트를 기획합니다.\n- 프로젝트별 상품 카테고리, SKU 구성, 세트 및 패키지를 기획합니다. \n- 가격 설정을 고려한 개별 상품 및 세트 패키지 기획안을 수립합니다.\n- IP 및 프로젝트 특성에 맞는 상품 콘셉트, 아트워크, 패키징 디자인을 기획합니다. \n- 디자인 가이드를 수립하고, 디자인 에셋 관리 및 아트워크 품질을 검수합니다.  \n- 초기 콘셉트 스케치, 디자인 시안(Mock-up, 레이아웃 등)을 개발합니다.\n- 제품 스펙(소재, 규격, 구성)을 정의하고 샘플링 및 수정 사이클을 운영하여 상품화를 완결합니다.\n- 제조사 및 생산 파트너와 협업하여 제작 방식, 원부자재, 비용 구조를 검토합니다.\n- QC 기준을 수립하고 샘플 및 결과물의 품질을 검수합니다.\n- 프로젝트 단위로 유관 부서 및 파트너와 협업하며, 기획 의도와 결과물 간의 일관성을 관리합니다.\n- 팝업 스토어 VMD, 온라인 상세페이지 등 전시 및 표현 요소에 대해 유관 조직과 협업합니다.\n- 상품성, 팬 니즈, 제작 현실성을 종합해 개별 프로젝트 진행 여부에 대한 의견을 제시합니다.\n- 저작권 및 라이선스 가이드에 따라 디자인 작업을 수행합니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330241",
+        "job_id": "wanted_330241",
+        "job_type": "designer",
+        "job_title": "유니브클래스 CX매니저",
+        "company_name": "유니브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 고객 VOC와 데이터를 기반하여 고객 여정과 퍼널을 설계합니다.\n    - 수강생의 VOC 및 민원을 수집하고 분석하여, 학습 경험을 개선할 인사이트를 도출합니다. (인터뷰, 서베이등 기획)\n    - 채널톡 / FAQ 등을 설계하고 효율화 합니다.\n    - CX 데이터를 수집 및 전달하여 완성도 높은 제품과 서비스 개선을 제시합니다.\n• 수강생(고객)을 응대하고, VOC 기반 교육 경험을 개선합니다.\n    - 학습 여정 및 전체 스케쥴 (강의, 피드백, 러닝 프로그램 등) 데이터를 관리하고 효율화 합니다.\n    - 반복되는 문제는 교육 운영기획 매니저와 협업하여 운영 체계 차원에서 구조적으로 개선합니다.\n    - 수강생 문의 응대 및 세그먼트 기반 맞춤 커뮤니케이션을 통해 상품 및 커리큘럼을 추천합니다.\n    - 수강 전 과정 중에 발생하는 이슈나 VOC에 실시간 대응하고, 상황에 맞는 해결책을 제시합니다.\n    - 수강생 유형별 분석 및 개선을 위한 정성적 인사이트를 도출합니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330238",
+        "job_id": "wanted_330238",
+        "job_type": "designer",
+        "job_title": "야간 배차 담당자",
+        "company_name": "스마트푸드네트웍스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "ㆍ오산센터 배차\nㆍ차량관리(지입차, 임시용차)\nㆍ정산\nㆍCX 대응\nㆍ전산 - ERP, TMS, WMS",
+        "keywords": [
+          "데이터 기반"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330237",
+        "job_id": "wanted_330237",
+        "job_type": "designer",
+        "job_title": "대기업 보험사 데이터 운영 인력",
+        "company_name": "이그레브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• BI 툴 운용 : 타블로 기반 BI 개발(주업무)\n• ETL 툴 운용 : AWS Glue 사용 데이터 추출/변환\n• DW 데이터베이스 : AWS RedShift",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330236",
+        "job_id": "wanted_330236",
+        "job_type": "designer",
+        "job_title": "DevOps(K8s 기반) CI/CD 개발 엔지니어",
+        "company_name": "이그레브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• K8s 환경 내 DevOps 엔지니어링\n• CI/CD 파이프라인 설계 및 구축 (GitLab,  Jenkins, ArgoCD, Harber 등)\n• MSA 서비스 개발자 가이드",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52600033&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=y&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52600033",
+        "job_type": "designer",
+        "job_title": "[조이엘라디자인]  패션 · 주얼리 좋아하는 신입AMD / 사무보조",
+        "company_name": "(주)조이엘라디자인",
+        "required_skills": [],
+        "description": "서울  강남구경력무관고졸↑계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52399394&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52399394",
+        "job_type": "designer",
+        "job_title": "[토스플레이스 자회사 iShopCARE] 핵심 직군 공개 채용｜영업·마케팅·디자인·HR·운영·개발 外",
+        "company_name": "(주)아이샵케어",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52204618&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52204618",
+        "job_type": "designer",
+        "job_title": "[탬버린즈] 공간기획 및 아트 조형물 디자인&제작자",
+        "company_name": "(주)아이아이컴바인드",
+        "required_skills": [],
+        "description": "서울  성동구경력무관학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52569572&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52569572",
+        "job_type": "designer",
+        "job_title": "설계디자인(CAD) 채용",
+        "company_name": "(주)엠알바스",
+        "required_skills": [],
+        "description": "서울  송파구신입·경력초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52589255&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52589255",
+        "job_type": "designer",
+        "job_title": "카카오 콘텐츠 디자인_어시스턴트",
+        "company_name": "(주)카카오",
+        "required_skills": [],
+        "description": "경기  성남시 분당구경력무관학력무관인턴직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52595002&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52595002",
+        "job_type": "designer",
+        "job_title": "[성수역/패션플랫폼] 무신사 콘텐츠 디자인 어시스턴트 채용",
+        "company_name": "에이스휴먼파워(주)",
+        "required_skills": [],
+        "description": "서울  성동구경력무관고졸↑계약직·파견직230 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52587993&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52587993",
+        "job_type": "designer",
+        "job_title": "[SNOW] 프로모션/배너 디자인 체험형 인턴",
+        "company_name": "스노우(주)",
+        "required_skills": [],
+        "description": "경기  성남시 분당구신입학력무관인턴직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52528007&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52528007",
+        "job_type": "designer",
+        "job_title": "디자인팀 신입 채용공고",
+        "company_name": "(주)옵스",
+        "required_skills": [],
+        "description": "부산  남구신입학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52367258&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52367258",
+        "job_type": "designer",
+        "job_title": "[직영]각부문 STAFF모집(고객지원,교육상담,그래픽디자인,영상)",
+        "company_name": "(주)DYB최선어학원",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52600683&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52600683",
+        "job_type": "designer",
+        "job_title": "(주)동구밭 브랜드사  디자인팀 웹디자이너 경력 채용",
+        "company_name": "(주)동구밭",
+        "required_skills": [],
+        "description": "서울  성동구경력 3~8년대졸↑정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52600091&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52600091",
+        "job_type": "designer",
+        "job_title": "[2025] 디자인콘텐츠팀 신입/경력 정식채용(디자인/공간)",
+        "company_name": "(주)지아이웍스",
+        "required_skills": [],
+        "description": "서울  구로구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52540425&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52540425",
+        "job_type": "designer",
+        "job_title": "화장품 좋아하고, 센스 있게 디자인하는 분 찾아요~",
+        "company_name": "(주)시드물",
+        "required_skills": [],
+        "description": "대전  유성구경력무관학력무관정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52555294&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52555294",
+        "job_type": "designer",
+        "job_title": "즐겁게 콘텐츠 디자인 함께 하실분을 찾습니다 (신입)",
+        "company_name": "(주)아이베",
+        "required_skills": [],
+        "description": "서울  송파구신입학력무관정규직·인턴직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52593578&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52593578",
+        "job_type": "designer",
+        "job_title": "(주)고래사어묵 시각디자인, 패키지디자이너 채용 [경력]",
+        "company_name": "(주)고래사",
+        "required_skills": [],
+        "description": "부산  사하구경력2년↑초대졸↑정규직3,700 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52458045&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52458045",
+        "job_type": "designer",
+        "job_title": "(주)디지타스 마케팅 기획 및 디자인 담당 직원 모집",
+        "company_name": "(주)디지타스",
+        "required_skills": [],
+        "description": "경기  안산시 단원구경력무관학력무관정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52495135&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52495135",
+        "job_type": "designer",
+        "job_title": "[노이다] 그래픽 디자이너 (시각디자인,편집디자인) 모집",
+        "company_name": "(주)노이다",
+        "required_skills": [],
+        "description": "서울  성동구경력무관대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52581660&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52581660",
+        "job_type": "designer",
+        "job_title": "브랜드 디자인  팀장급(5년 이상) 채용",
+        "company_name": "(주)매스씨앤지",
+        "required_skills": [],
+        "description": "서울  강서구경력 5~20년대졸↑정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52569002&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52569002",
+        "job_type": "designer",
+        "job_title": "(주)인테그 건축설계&공간디자인 신입 및 경력 모집",
+        "company_name": "(주)인테그",
+        "required_skills": [],
+        "description": "서울  종로구신입·경력대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52486233&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52486233",
+        "job_type": "designer",
+        "job_title": "[아울디자인] 디자인팀(신입) 하반기 채용공고(설계/디자인)",
+        "company_name": "(주)아울디자인",
+        "required_skills": [],
+        "description": "서울  마포구신입학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52405858&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52405858",
+        "job_type": "designer",
+        "job_title": "2026년 A3디자인 상반기 정시채용공고",
+        "company_name": "디자인에이쓰리(design A3)",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52359908&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52359908",
+        "job_type": "designer",
+        "job_title": "(주)드림즈코리아 디자인팀 디자이너 채용",
+        "company_name": "(주)드림즈코리아",
+        "required_skills": [],
+        "description": "경기  고양시 덕양구경력무관초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52446756&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52446756",
+        "job_type": "designer",
+        "job_title": "시각 디자이너 채용 (패키지·상세페이지·그래픽 디자인)",
+        "company_name": "(주)디엠케이코리아",
+        "required_skills": [],
+        "description": "경기  부천시 원미구신입·경력학력무관정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52590607&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52590607",
+        "job_type": "designer",
+        "job_title": "인테리어 브랜드 설계(디자인)팀 신입/경력 채용",
+        "company_name": "(주)한성알앤씨그룹",
+        "required_skills": [],
+        "description": "서울  강남구경력무관초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52600002&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52600002",
+        "job_type": "designer",
+        "job_title": "부산디지털대학교 조교(이러닝 콘텐츠 디자인) 채용 공고",
+        "company_name": "부산디지털대학교",
+        "required_skills": [],
+        "description": "부산  사상구경력무관대졸↑기간제·계약직216 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52474016&location=ts&searchword=%EB%94%94%EC%9E%90%EC%9D%B8&searchType=search&paid_fl=n&search_uuid=a5f43ba8-5daa-4e49-9228-6bcd1e344b02",
+        "job_id": "saramin_52474016",
+        "job_type": "designer",
+        "job_title": "WE ARE HIRING (인하우스 디자인)",
+        "company_name": "(주)엠씨피이씨씨",
+        "required_skills": [],
+        "description": "서울  서초구경력무관학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      }
+    ],
+    "insights": {
+      "topSkills": [],
+      "topKeywords": [
+        {
+          "keyword": "커뮤니케이션",
+          "count": 5,
+          "frequency": "10.0%"
+        },
+        {
+          "keyword": "데이터 기반",
+          "count": 2,
+          "frequency": "4.0%"
+        },
+        {
+          "keyword": "최적화",
+          "count": 1,
+          "frequency": "2.0%"
+        }
+      ],
+      "sampleSize": 50,
+      "lastUpdated": "2025-12-19T04:44:48.384Z"
+    }
+  },
+  "marketer": {
+    "jobs": [
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330304",
+        "job_id": "wanted_330304",
+        "job_type": "marketer",
+        "job_title": "Enterprise 영업 담당",
+        "company_name": "크라우드데이터",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• AI 프로젝트수주를 위한 Enterprise 영업 활동 및 고객사 관리\n• 대상 고객 및 Enterprise 시장에 대한 Sales Planning & Action\n• 신규 고객 및 사업기회 발굴/관리\n• 영업 이슈 및 리스크 관리\n• 고객사와 내부 유관부서와의 커뮤니케이션",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330303",
+        "job_id": "wanted_330303",
+        "job_type": "marketer",
+        "job_title": "Sales Development Representative",
+        "company_name": "패스트파이브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "● 잠재 고객 ​발굴\n• 다양한 채널(이메일, SNS, 전화, 박람회 참여 등)을 통해서 잠재 고객을 찾고, 패스트파이브를 소개합니다.\n• 잠재고객에 커스텀한 최적의 상품을 때마다 제안하면서 관계를 형성하고, 실질 영업 기회로 전환합니다.\n• 패스트파이브의 공간을 직접 보고, 경험할 수 있는 '투어'를 성사시키고, 최종 계약까지 이뤄지도록 지원합니다.",
+        "keywords": [
+          "최적화"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330294",
+        "job_id": "wanted_330294",
+        "job_type": "marketer",
+        "job_title": "프론트엔드 개발자 (5년 이상)",
+        "company_name": "씨드앤",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[기술 스택]\n• 코어: React, React Native, TypeScript\n• 상태 관리: Jotai, TanStack Query\n• 스타일링: Emotion\n• 협업: Git, GitHub, Jira, Slack, Notion\n\n[주요 업무]\n• React 기반 웹 애플리케이션 개발 및 유지보수\n• React Native 기반 모바일 앱(iOS/Android) 개발 및 유지보수\n• 기술적 의사결정 및 아키텍처 설계 참여\n• 개발 프로세스 및 코드 품질 개선\n• 기존 시스템의 한계를 극복하기 위한 레거시 코드와 아키텍처 개선",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330292",
+        "job_id": "wanted_330292",
+        "job_type": "marketer",
+        "job_title": "전문 물류 관리 사원",
+        "company_name": "바이오컴",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 건강기능식품 및 커피 입·출고/출고 마감\n    - 출고 지시서 기준 피킹·패킹·검수, 운송장 출력 및 마감 서류 처리\n    - LOT/유통기한 및 라벨 관리, 반품·교환 처리\n• 재고관리/WMS\n    - 주·월 실사, 재고 차이 분석(INV mismatch) 및 조정보고\n    - WMS/플레이오토 연동 모니터링, 재고 리포트(일/주) 작성\n• 지게차/하역 & 창고 동선\n    - 지게차 운전/상·하차, 랙 적치(3단) 및 로케이션 관리\n    - 통로·랙 안전관리, 파렛트·자재 정리/정돈(5S)\n• 품질/위생 & 커피 핸드픽 보조\n    - 창고 청결·온습도 기준 준수(항온·제습 장비 운영 보조)\n    - 핸드픽/포장 피크 보조, 파손·오염 예방\n• 수출입 보조(우대)\n    - 생두 직수입 관련 선적/통관 서류 수합, 반입·반출 일정 조율(3PL/관세사 협업)",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330291",
+        "job_id": "wanted_330291",
+        "job_type": "marketer",
+        "job_title": "회계담당자(팀원급)",
+        "company_name": "아이지넷(보닥)",
+        "required_skills": [
+          "Excel"
+        ],
+        "preferred_skills": [],
+        "description": "• ERP 기반 월/분기/반기/연간 결산 \n• 거래처별 매출ᆞ매입 및 비용 정산\n• 외부감사 대응 보조\n• 세무대리인과 협업하여 세무신고 지원(원천세, 부가세, 법인세 등)\n• 자금 집행 및 경비 정산 업무",
+        "keywords": [
+          "데이터 기반"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330288",
+        "job_id": "wanted_330288",
+        "job_type": "marketer",
+        "job_title": "BI/BX 디자이너",
+        "company_name": "지로",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "드롭샷의 BI/BX 디자이너는 디자인 파트에 소속되어 \n드롭샷매치/드롭샷스톡/드롭샷 AI를 아우르는 \"드롭샷(Dropshot)\"의 \n브랜드 아이덴티티를 강화하고, 일관성을 유지하기 위한 다양한 디자인 작업을 담당합니다. \n\n・자사 서비스 랜딩 페이지 및 디자인 에셋 제작 \n・생성형 AI 서비스 드롭샷 AI 내부 콘텐츠 디자인 \n・이외 다양한 온오프라인 브랜드 캠페인 에셋 디자인\n\n[지로팀에 합류하면 이런 것들을 경험하실 수 있어요]\n\n・글로벌 서비스를 만들고 있어 해외 AI/SaaS 브랜드 레퍼런스를 중요하게 학습해요. \n・AI-native Startup을 지향하고 있어 성장을 위한 교육 및 AI 서비스 비용을 모두 지원해드려요.  \n・이미지/영상 AI 서비스를 담당하며 글로벌 업계 최전선의 트렌드를 배울 수 있어요. \n・마케팅부터 기업 커뮤니케이션까지 다양한 브랜딩 전략을 팀과 함께 고민하며 성장할 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330287",
+        "job_id": "wanted_330287",
+        "job_type": "marketer",
+        "job_title": "온라인 마케팅(팀장급)",
+        "company_name": "슈퍼너츠",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 브랜드 커뮤니케이션 및 정체성 정립\n• 슈퍼너츠의 철학인 'Clean Label' 가치를 마케팅 언어로 정의 및 실행\n• 원료, 공정, 가격 등 브랜드의 모든 여정을 투명하게 설명하는 콘텐츠 기획\n• \"완벽하지 않지만 솔직한 브랜드\"를 지향하는 진정성 있는 소통 전략 수립\n\n2) 고객 중심 마케팅 전략 수립 (CX 연계)\n• 고객의 불편, 불신, 의문을 숨기지 않고 정면으로 다루는 커뮤니케이션 설계\n• 단기 전환율보다 장기적 팬덤을 만드는 신뢰 기반의 고객 경험 구조 설계\n• 고객을 설득하기보다 브랜드의 가치를 이해시키는 논리적인 콘텐츠 기획\n\n3) 온라인 채널 운영 및 성과 관리\n• 네이버, 카카오, 쿠팡 등 주요 온라인 채널별 마케팅 믹스 최적화\n• 지속가능성, 윤리, 책임의 가치를 일상적인 언어로 풀어낸 채널 콘텐츠 총괄\n• 데이터 분석을 통한 마케팅 성과 측정 및 장기적 브랜드 지표(리텐션 등) 관리\n\n4) 지속가능성 및 브랜드 스토리텔링\n• 환경, 윤리적 책임을 선언이 아닌 실질적인 행동으로 제안하는 캠페인 기획\n• 브랜드 스토리 안에 지역사회와 고객, 구성원의 이야기를 자연스럽게 녹여내는 작업\n• 글로벌 시장(일본, 미국) 진출 시 각 국가에 맞는 투명한 브랜드 스토리 현지화\n\n5) 팀 협업 및 전사 리더십\n• 브랜드디자인팀, 제품개발팀과 협업하여 제품 탄생부터 고객 접점까지의 일관성 유지\n• VOC 분석 기반의 인사이트를 제품 개선 및 상세페이지 기획에 반영하는 협업 주도\n• 주니어 마케터들이 브랜드 철학에 기반하여 스스로 판단하고 실행할 수 있도록 멘토링",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330286",
+        "job_id": "wanted_330286",
+        "job_type": "marketer",
+        "job_title": "AI 프롬프트 엔지니어",
+        "company_name": "부스트리",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 피부과 특화 AI 프롬프트 설계 : 상담 데이터, 피부 진단 데이터 등을 활용한 피부과 도메인 맞춤형 고성능 프롬프트 엔지니어링\n• 의료 상담 에이전트 개발 : 환자의 문의에 정확하고 신뢰도 높은 답변을 제공하는 AI 챗봇 및 응대 워크플로우 설계\n• 프롬프트 성능 고도화 : 의료 도메인의 특성을 고려한 답변의 정확성(Hallucination 방지) 및 보안 가이드 수립\n• RAG 기반 지식베이스 구축 : 피부과 전문 지식 데이터를 프롬프트와 결합하여 정교한 검색 증강 생성(RAG) 시스템 최적화",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330283",
+        "job_id": "wanted_330283",
+        "job_type": "marketer",
+        "job_title": "PR manager",
+        "company_name": "자비스앤빌런즈(삼쩜삼)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[합류 하시면 ​하게 될 업무에요.]\n•  삼쩜삼의 언론홍보 및 커뮤니케이션 전략을 수립합니다.\n•  리스크를 관리하고 대응 메시지를 기획, 실행합니다.\n•  미디어 네트워크를 형성하고 관계를 강화합니다. \n•  기자간담회와 협약식 등 미디어로 노출되는 행사를 직접 기획하고 진행합니다. \n\n[​합류 시, ​이런 ​성장의 기회를 ​만나볼 수 ​있어요.​]\n•  미디어와의 정기 미팅을 통해 네트워크를 형성하고, 회사에 우호적인 환경을 조성하는 커뮤니케이션 능력을 기를 수 있어요. \n•  보도자료 및 기획 기사 작성을 통해 글쓰기와 리스크 관리 대응 능력을 키울 수 있어요.\n•  2천만 B2C 서비스를 만들고 있는 다양한 사내 조직과 함께 일하며 협업 능력을 기를 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330279",
+        "job_id": "wanted_330279",
+        "job_type": "marketer",
+        "job_title": "인프라 데이터센터 매니저",
+        "company_name": "엘리스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 물리 인프라 운영\n전력(UPS, 수배전반), 냉각(HVAC, 항온항습), 소방, 보안, 랙(Rack) 등 데이터센터 필수 설비의 가용성을 100%에 가깝게 유지 및 관리\n\n• 인프라 전략 및 용량 계획\nAI 트래픽 증가와 전력 소모 패턴을 분석하여 선제적인 전력·공간·냉각 용량 계획 수립 및 확장 로드맵 설계\n\n• PMDC/DC 구축 프로젝트 리딩\n신규 데이터센터 구축 및 증설 시 기획부터 시공 관리, 안정화까지 프로젝트 전 과정(End-to-End) 주도\n\n• 운영 프로세스(SOP) 고도화\n데이터센터 운영, 장애 대응, 정기 점검 등에 대한 표준 운영 절차(SOP)를 정립하고, 비효율적인 프로세스를 지속적으로 개선\n\n• 벤더 및 파트너십 매니지먼트\n전기, 기계, 통신, 보안 등 전문 협력사 및 시공사와의 긴밀한 협업을 통해 비용 효율성 최적화 및 시공 품질 확보\n\n• 리스크 분석 및 예방\n잠재적인 물리적 장애 요인을 사전에 발굴하여 제거하고, 비상 상황 발생 시 신속한 복구를 위한 업무 연속성 계획 수립 및 훈련",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330277",
+        "job_id": "wanted_330277",
+        "job_type": "marketer",
+        "job_title": "Software QA",
+        "company_name": "쿤텍",
+        "required_skills": [
+          "Python"
+        ],
+        "preferred_skills": [],
+        "description": "• 웹 어플리케이션 신규 기능 및 개선 기능 QA 수행\n• 테스트 전략 수립: 기능/회귀/통합/성능 테스트 계획·설계\n• 테스트 자동화 스크립트 작성 및 테스트 환경 구성\n• 요구사항 분석 및 테스트 케이스/시나리오 작성\n• 버그 분석, 원인 파악, 개발자와의 협업 통한 품질 개선\n• CI/CD 파이프라인 기반 테스트 자동화 협업\n• 대규모 데이터 처리 환경의 품질 안정성 검증",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330276",
+        "job_id": "wanted_330276",
+        "job_type": "marketer",
+        "job_title": "AI Agent 개발자",
+        "company_name": "쿤텍",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 생성형 AI 기반 AI 보안 어플리케이션 개발\n• AI 기반 에이전트 분석 및 설계 개발\n• 생성형 AI 성능 최적화 (프롬프트 엔지니어링, 캐싱, 등)\n• CI/CD 파이프라인 구축",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330274",
+        "job_id": "wanted_330274",
+        "job_type": "marketer",
+        "job_title": "Android Developer",
+        "company_name": "하이컨시",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• Kotlin을 이용한 안드로이드 앱 개발, 테스트 및 운영",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330272",
+        "job_id": "wanted_330272",
+        "job_type": "marketer",
+        "job_title": "MLOps 엔지니어 - AI 플랫폼",
+        "company_name": "카카오페이(kakaopay)",
+        "required_skills": [
+          "Python"
+        ],
+        "preferred_skills": [],
+        "description": "• MLOps/LLMOps 기반 AI 플랫폼의 아키텍처를 설계, 개발 및 운영해요.\n• AI 모델(ML/LLM)의 학습, 배포, 서빙, 모니터링을 위한 CI/CD 자동화 파이프라인을 구축해요.\n• Kubernetes(K8s) 기반의 확장 가능하고 안정적인 모델 학습 및 추론 인프라를 구축 및 관리해요.\n• 대규모 언어 모델(LLM)의 파인튜닝, 서빙, 평가 및 관리를 위한 LLMOps 플랫폼을 개발해요.\n• 데이터/모델 스토리지, 피처 스토어, 벡터 DB 등 MLOps/LLMOps 핵심 구성 요소를 구축 및 연동해요.\n• 자원 효율화, 학습 및 추론 최적화, 모니터링, 로깅, 얼럿 시스템을 구축하고 운영을 자동화해요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330270",
+        "job_id": "wanted_330270",
+        "job_type": "marketer",
+        "job_title": "클라우드 풀스택 엔지니어",
+        "company_name": "엘리스",
+        "required_skills": [
+          "SQL",
+          "Python"
+        ],
+        "preferred_skills": [],
+        "description": "• 엘리스 클라우드 서비스들의 핵심 기능(API, 리소스 관리, 과금, 인증 등)을 설계하고 개발합니다.\n• 가상머신/컨테이너 기반 인프라와 연동되는 백엔드 서비스를 구현하고 안정적으로 운영합니다.\n• 다양한 클라우드 서비스들의 UI 구현과 UX 개선도 함께 진행합니다.\n• 서비스의 안정성·성능·확장성을 높이기 위해 팀과 함께 구조적 개선을 고민합니다.\n• 인프라·DevOps 팀과 협업하여 기술적 과제를 해결합니다.\n• 실제 사용자 데이터를 기반으로 제품을 발전시키고 더 좋은 사용 경험을 만들어갑니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330269",
+        "job_id": "wanted_330269",
+        "job_type": "marketer",
+        "job_title": "Platform Frontend Engineer",
+        "company_name": "자비스앤빌런즈(삼쩜삼)",
+        "required_skills": [
+          "SEM"
+        ],
+        "preferred_skills": [],
+        "description": "[합류 하시면 ​하게 될 업무에요.]\n•  공통 UI 컴포넌트 라이브러리(디자인 시스템)를 설계·개발하고, Storybook 기반 문서화 및 시각적 리그레션 테스트 체계를 운영합니다.\n•  사내 FE 공통 패키지를 개발·유지보수하고, 버전 관리(Changesets) 및 배포 프로세스를 안정적으로 운영합니다.\n•  프론트엔드 모노레포 구조 및 패키지 전략을 설계하고, 빌드/테스트/배포 파이프라인을 지속적으로 개선합니다.\n•  CLI 도구, 코드 생성기, 보일러플레이트 등 서비스 팀의 DX를 개선하는 도구를 설계·구현합니다.\n•  서비스 팀 개발자와 협업하여 반복되는 문제를 발굴하고, 플랫폼 레벨에서 해결하는 구조적 개선을 수행합니다.\n•  플랫폼 기능에 대한 문서화, 사용 가이드, 예제 코드를 작성하여 개발자 경험 품질을 관리합니다.\n\n[​합류 시, ​이런 ​성장의 기회를 ​만나볼 수 ​있어요.​]\n•  서비스 간의 복잡하게 얽힌 의존성을 풀어내고 구조를 재정립하여, 동료 엔지니어와 AI가 일관된 기준 위에서 효율적으로 개발할 수 있는 환경을 설계하는 경험을 쌓을 수 있어요.\n•  기술적 의사결정이 전체 생태계에 미치는 파급력을 경험하며, 개별 서비스가 아닌 플랫폼 관점에서 문제를 정의하고 해결하는 넓은 시야를 가질 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330264",
+        "job_id": "wanted_330264",
+        "job_type": "marketer",
+        "job_title": "B2B Marketing Manager (5년 이상)",
+        "company_name": "에스아이에이",
+        "required_skills": [
+          "SEO"
+        ],
+        "preferred_skills": [],
+        "description": "1) 제품 USP 도출 및 마케팅 운영 전략 기획, 타겟 시장 발굴\n2) 제품 콘텐츠 제작 및 관리 (브로셔, 비디오, 웹 등)\n3) 온드미디어 (SNS, 유튜브, 블로그, 웹사이트 등) 콘텐츠 기획 및 릴리즈 운영 관리\n4) 콘텐츠 SEO\n5) 뉴스레터 기획 및 운영",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330262",
+        "job_id": "wanted_330262",
+        "job_type": "marketer",
+        "job_title": "[개발] 서비스 개발실장(Tech Leader) [8년 이상]",
+        "company_name": "아이알큐더스",
+        "required_skills": [
+          "SQL"
+        ],
+        "preferred_skills": [],
+        "description": "[함께하게 될 업무에요]\n\n1. 기술 리더십\n• 큐더스웍스 & 주주우대(MTS/ASP/PAGE) 아키텍처 설계 및 기술 전략 수립\n• 코딩 컨벤션, API/Response 규격 등 표준 정립 및 코드 품질 관리\n• 데이터 모델링(ERD) 및 DB 구조 설계·검토\n• 레거시 코드 리팩토링 방향 수립 및 기술 부채 관리\n\n2. 개발 프로세스 운영\n• 스프린트 운영, 공수 산정, WBS 기반 일정 관리\n• 신규 개발과 유지보수가 병행될 수 있는 개발 조직 운영 체계 구축\n• 서비스 고도화 및 신규 서비스의 기술 타당성 검토·범위 정의\n\n3. 협업 및 피플 매니지먼트\n• 기획–UX–개발 간 협업 기준 수립 및 산출물 품질 관리\n• 인프라/보안 담당자와의 협업을 통한 안정적인 서비스 운영 환경 구축\n• 외부 기관(증권사, PG사 등) 연계 개발 시 기술 협의 및 일정 조율\n• 주니어/미드급 개발자 성장 지원(멘토링, 코드 리뷰, 기술 가이드)",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330258",
+        "job_id": "wanted_330258",
+        "job_type": "marketer",
+        "job_title": "[Yellow Bus] 현장 운영 매니저 (Field Manager)",
+        "company_name": "더스윙",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 채용 및 온보딩\n• 우리 서비스와 가장 잘 맞는 셔틀 기사님, 동승 매니저님을 발굴·면접·채용\n• 신규 크루가 빠르게 적응하도록 업무 교육 및 체크리스트 제공\n• 서비스 품질을 높이는 현장 운영 매뉴얼 개선\n\n2) 인력 및 근태 관리\n• 현장 크루들의 스케줄·운행 시간표·근태를 정확히 관리\n• 크루들이 안전하고 즐겁게 일할 수 있는 환경 만들기\n• 운영팀과 협업해 결원·변경 요청을 빠르게 조정\n\n3) 현장 이슈 대응\n• 운행 중 발생하는 돌발 상황(지연, 결석, 노선 문제 등)을 즉시 파악·조치\n• 필요한 경우 셔틀 현장을 직접 방문하여 상황 점검\n• 운영/노선/앱 개발팀 등 유관부서와 함께 문제 원인을 분석하고 재발 방지 조치",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330257",
+        "job_id": "wanted_330257",
+        "job_type": "marketer",
+        "job_title": "QA Engineer",
+        "company_name": "웨이브릿지",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 디지털 자산 금융 플랫폼 국내 및 글로벌 서비스 QA\n• 기능 및 리그레션 테스트 수행\n• Playwright 자동화 테스트 환경 구축 및 운영\n• 생성형 AI 기반 테스트 시나리오 도출 및 테스트 자동화 기획",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330256",
+        "job_id": "wanted_330256",
+        "job_type": "marketer",
+        "job_title": "IP 상품 기획·제작 담당자",
+        "company_name": "리디(RIDI)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "IP 상품 기획·제작 담당자는 IP의 특성과 팬 경험을 기준으로한 프로젝트 목적에 맞춰 상품 콘셉트를 기획하고, 제작 전 과정을 관리하여 완성도 높은 결과물을 구현하는 역할을 수행합니다. \n팬 경험 관점에서 IP상품의 완성도를 책임지며 동시에 디자인,스펙,제작,품질 관점의 오너십을 가집니다.\n\n- 웹툰·웹소설·캐릭터 IP를 분석하고 팬덤 트렌드를 기반으로 상품 콘셉트를 기획합니다.\n- 프로젝트별 상품 카테고리, SKU 구성, 세트 및 패키지를 기획합니다. \n- 가격 설정을 고려한 개별 상품 및 세트 패키지 기획안을 수립합니다.\n- IP 및 프로젝트 특성에 맞는 상품 콘셉트, 아트워크, 패키징 디자인을 기획합니다. \n- 디자인 가이드를 수립하고, 디자인 에셋 관리 및 아트워크 품질을 검수합니다.  \n- 초기 콘셉트 스케치, 디자인 시안(Mock-up, 레이아웃 등)을 개발합니다.\n- 제품 스펙(소재, 규격, 구성)을 정의하고 샘플링 및 수정 사이클을 운영하여 상품화를 완결합니다.\n- 제조사 및 생산 파트너와 협업하여 제작 방식, 원부자재, 비용 구조를 검토합니다.\n- QC 기준을 수립하고 샘플 및 결과물의 품질을 검수합니다.\n- 프로젝트 단위로 유관 부서 및 파트너와 협업하며, 기획 의도와 결과물 간의 일관성을 관리합니다.\n- 팝업 스토어 VMD, 온라인 상세페이지 등 전시 및 표현 요소에 대해 유관 조직과 협업합니다.\n- 상품성, 팬 니즈, 제작 현실성을 종합해 개별 프로젝트 진행 여부에 대한 의견을 제시합니다.\n- 저작권 및 라이선스 가이드에 따라 디자인 작업을 수행합니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330241",
+        "job_id": "wanted_330241",
+        "job_type": "marketer",
+        "job_title": "유니브클래스 CX매니저",
+        "company_name": "유니브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 고객 VOC와 데이터를 기반하여 고객 여정과 퍼널을 설계합니다.\n    - 수강생의 VOC 및 민원을 수집하고 분석하여, 학습 경험을 개선할 인사이트를 도출합니다. (인터뷰, 서베이등 기획)\n    - 채널톡 / FAQ 등을 설계하고 효율화 합니다.\n    - CX 데이터를 수집 및 전달하여 완성도 높은 제품과 서비스 개선을 제시합니다.\n• 수강생(고객)을 응대하고, VOC 기반 교육 경험을 개선합니다.\n    - 학습 여정 및 전체 스케쥴 (강의, 피드백, 러닝 프로그램 등) 데이터를 관리하고 효율화 합니다.\n    - 반복되는 문제는 교육 운영기획 매니저와 협업하여 운영 체계 차원에서 구조적으로 개선합니다.\n    - 수강생 문의 응대 및 세그먼트 기반 맞춤 커뮤니케이션을 통해 상품 및 커리큘럼을 추천합니다.\n    - 수강 전 과정 중에 발생하는 이슈나 VOC에 실시간 대응하고, 상황에 맞는 해결책을 제시합니다.\n    - 수강생 유형별 분석 및 개선을 위한 정성적 인사이트를 도출합니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330238",
+        "job_id": "wanted_330238",
+        "job_type": "marketer",
+        "job_title": "야간 배차 담당자",
+        "company_name": "스마트푸드네트웍스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "ㆍ오산센터 배차\nㆍ차량관리(지입차, 임시용차)\nㆍ정산\nㆍCX 대응\nㆍ전산 - ERP, TMS, WMS",
+        "keywords": [
+          "데이터 기반"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330237",
+        "job_id": "wanted_330237",
+        "job_type": "marketer",
+        "job_title": "대기업 보험사 데이터 운영 인력",
+        "company_name": "이그레브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• BI 툴 운용 : 타블로 기반 BI 개발(주업무)\n• ETL 툴 운용 : AWS Glue 사용 데이터 추출/변환\n• DW 데이터베이스 : AWS RedShift",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330236",
+        "job_id": "wanted_330236",
+        "job_type": "marketer",
+        "job_title": "DevOps(K8s 기반) CI/CD 개발 엔지니어",
+        "company_name": "이그레브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• K8s 환경 내 DevOps 엔지니어링\n• CI/CD 파이프라인 설계 및 구축 (GitLab,  Jenkins, ArgoCD, Harber 등)\n• MSA 서비스 개발자 가이드",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52479228&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=y&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52479228",
+        "job_type": "marketer",
+        "job_title": "[eum creative] 바이럴마케팅(블로그/체험단) 팀원 모집",
+        "company_name": "(주)이움크리에이티브",
+        "required_skills": [],
+        "description": "서울  강남구경력무관학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52528815&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=y&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52528815",
+        "job_type": "marketer",
+        "job_title": "[파파레서피/잉가] 중화권 영업/중화권 마케팅",
+        "company_name": "(주)에이비티아시아",
+        "required_skills": [],
+        "description": "서울  강남구경력1년↑초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52589308&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=y&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52589308",
+        "job_type": "marketer",
+        "job_title": "애드리절트 본사 마케팅 1팀 병원전문 마케터 채용",
+        "company_name": "(주)애드리절트",
+        "required_skills": [],
+        "description": "서울  강남구경력무관초대졸↑정규직·아르바이트",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52551751&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52551751",
+        "job_type": "marketer",
+        "job_title": "경주월드 신입/경력사원 채용 [기계/전기/마케팅]",
+        "company_name": "경주월드 주식회사",
+        "required_skills": [],
+        "description": "경북  경주시신입·경력학력무관정규직·인턴직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52399394&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52399394",
+        "job_type": "marketer",
+        "job_title": "[토스플레이스 자회사 iShopCARE] 핵심 직군 공개 채용｜영업·마케팅·디자인·HR·운영·개발 外",
+        "company_name": "(주)아이샵케어",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52569332&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52569332",
+        "job_type": "marketer",
+        "job_title": "세일즈마케팅팀 광고∙영업 채용",
+        "company_name": "(주)한화이글스",
+        "required_skills": [],
+        "description": "대전  중구경력 3~5년학력무관계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52541666&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52541666",
+        "job_type": "marketer",
+        "job_title": "[IT정보보안] 부문별 채용(마케팅,네트워크,보안 엔지니어)",
+        "company_name": "엔큐리티(주)",
+        "required_skills": [],
+        "description": "경기  성남시 분당구신입·경력학력무관정규직·인턴직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52492906&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52492906",
+        "job_type": "marketer",
+        "job_title": "AI/마케팅/영상/컨텐츠/영업/인플루언서 담당자 모집",
+        "company_name": "(주)와우바이오텍",
+        "required_skills": [],
+        "description": "서울  영등포구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52494135&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52494135",
+        "job_type": "marketer",
+        "job_title": "상담/간호/코디/CS/행정총괄/마케팅(국내,해외)/코스메틱MD 채용",
+        "company_name": "유라인의원",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52490924&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52490924",
+        "job_type": "marketer",
+        "job_title": "[(주)제이스퓨처] 웹/모바일 앱 서비스 마케팅 기획자 모집",
+        "company_name": "(주)제이스퓨처",
+        "required_skills": [],
+        "description": "경기  과천시경력 1~10년대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52568445&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52568445",
+        "job_type": "marketer",
+        "job_title": "경영지원/K뷰티상품기획/구매개발/해외온라인(아마존,그외)/영상PD 및 작가/온라인MD 및 마케팅",
+        "company_name": "에빈코리아(유)",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52568131&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52568131",
+        "job_type": "marketer",
+        "job_title": "[신입/경력] 카카오/네이버 온라인 마케팅 AE 주니어 담당자 모집 (보훈대상자 우대)",
+        "company_name": "(주)케이앤웍스",
+        "required_skills": [],
+        "description": "서울  금천구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52286217&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52286217",
+        "job_type": "marketer",
+        "job_title": "평생교육원 각 부문별 직원채용(학사운영, 고객접점(CS/VOC), 영업 및 마케팅)",
+        "company_name": "(주)유비온",
+        "required_skills": [],
+        "description": "서울  구로구경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52589256&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52589256",
+        "job_type": "marketer",
+        "job_title": "제품기획마케팅 PM팀 신입/경력 수시 채용",
+        "company_name": "한국삼공",
+        "required_skills": [],
+        "description": "서울  서초구경력무관대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52594869&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52594869",
+        "job_type": "marketer",
+        "job_title": "[신입/경력][광교] 글로벌마케팅본부 해외(일본) 영업/마케팅",
+        "company_name": "큐알티(주)",
+        "required_skills": [],
+        "description": "경기  수원시 영통구신입·경력대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52578796&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52578796",
+        "job_type": "marketer",
+        "job_title": "마케팅기획파트 마케팅 담당 경력 채용",
+        "company_name": "메디포스트(주)",
+        "required_skills": [],
+        "description": "경기  성남시 분당구경력 3~10년대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52578832&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52578832",
+        "job_type": "marketer",
+        "job_title": "마케팅기획파트 교육 담당 경력 채용",
+        "company_name": "메디포스트(주)",
+        "required_skills": [],
+        "description": "경기  성남시 분당구경력 3~10년대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52603269&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52603269",
+        "job_type": "marketer",
+        "job_title": "[제이에스티나] 마케팅팀 팀원 모집",
+        "company_name": "(주)제이에스티나",
+        "required_skills": [],
+        "description": "서울  송파구경력1년↑대졸↑정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52540633&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52540633",
+        "job_type": "marketer",
+        "job_title": "전산/마케팅 부문별 정규직 채용(경력/신입)",
+        "company_name": "(주)영실업",
+        "required_skills": [],
+        "description": "서울  용산구신입·경력초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52383376&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52383376",
+        "job_type": "marketer",
+        "job_title": "YTN 사원 모집 (IT, 영상기자, 기획, 인테리어, 마케팅, 영업)",
+        "company_name": "(주)와이티엔",
+        "required_skills": [],
+        "description": "서울  마포구경력 2~5년초대졸↑정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52601605&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52601605",
+        "job_type": "marketer",
+        "job_title": "[NHN] B2B 마케팅",
+        "company_name": "엔에이치엔(주)",
+        "required_skills": [],
+        "description": "경기  성남시 분당구경력무관학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52241993&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52241993",
+        "job_type": "marketer",
+        "job_title": "마케팅센터 각 부문 채용공고",
+        "company_name": "메디앙스(주)",
+        "required_skills": [],
+        "description": "서울  강남구경력5년↑대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52588533&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52588533",
+        "job_type": "marketer",
+        "job_title": "[현대카드/본사] 카드상품2팀 마케팅기획/콘텐츠관리 채용",
+        "company_name": "(주)씨아이템프러리",
+        "required_skills": [],
+        "description": "서울  영등포구경력무관학력무관계약직3,468 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52338322&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52338322",
+        "job_type": "marketer",
+        "job_title": "구매/마케팅(국내/중국)/물류 부문별 신입&경력 채용",
+        "company_name": "오성첨단소재(주)",
+        "required_skills": [],
+        "description": "전북  익산시경력무관학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52563604&location=ts&searchword=%EB%A7%88%EC%BC%80%ED%8C%85&searchType=search&paid_fl=n&search_uuid=688645e4-034d-4ae6-a694-9629b4a7c978",
+        "job_id": "saramin_52563604",
+        "job_type": "marketer",
+        "job_title": "[JUVELOOK] 마케팅, CRA 경력 채용",
+        "company_name": "(주)바임",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      }
+    ],
+    "insights": {
+      "topSkills": [
+        {
+          "skill": "Python",
+          "count": 3,
+          "rate": "6.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "SQL",
+          "count": 2,
+          "rate": "4.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Excel",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "SEM",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "SEO",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        }
+      ],
+      "topKeywords": [
+        {
+          "keyword": "커뮤니케이션",
+          "count": 5,
+          "frequency": "10.0%"
+        },
+        {
+          "keyword": "데이터 기반",
+          "count": 2,
+          "frequency": "4.0%"
+        },
+        {
+          "keyword": "최적화",
+          "count": 1,
+          "frequency": "2.0%"
+        }
+      ],
+      "sampleSize": 50,
+      "lastUpdated": "2025-12-19T04:45:05.718Z"
+    }
+  },
+  "service": {
+    "jobs": [
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330304",
+        "job_id": "wanted_330304",
+        "job_type": "service",
+        "job_title": "Enterprise 영업 담당",
+        "company_name": "크라우드데이터",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• AI 프로젝트수주를 위한 Enterprise 영업 활동 및 고객사 관리\n• 대상 고객 및 Enterprise 시장에 대한 Sales Planning & Action\n• 신규 고객 및 사업기회 발굴/관리\n• 영업 이슈 및 리스크 관리\n• 고객사와 내부 유관부서와의 커뮤니케이션",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330303",
+        "job_id": "wanted_330303",
+        "job_type": "service",
+        "job_title": "Sales Development Representative",
+        "company_name": "패스트파이브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "● 잠재 고객 ​발굴\n• 다양한 채널(이메일, SNS, 전화, 박람회 참여 등)을 통해서 잠재 고객을 찾고, 패스트파이브를 소개합니다.\n• 잠재고객에 커스텀한 최적의 상품을 때마다 제안하면서 관계를 형성하고, 실질 영업 기회로 전환합니다.\n• 패스트파이브의 공간을 직접 보고, 경험할 수 있는 '투어'를 성사시키고, 최종 계약까지 이뤄지도록 지원합니다.",
+        "keywords": [
+          "최적화"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330294",
+        "job_id": "wanted_330294",
+        "job_type": "service",
+        "job_title": "프론트엔드 개발자 (5년 이상)",
+        "company_name": "씨드앤",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[기술 스택]\n• 코어: React, React Native, TypeScript\n• 상태 관리: Jotai, TanStack Query\n• 스타일링: Emotion\n• 협업: Git, GitHub, Jira, Slack, Notion\n\n[주요 업무]\n• React 기반 웹 애플리케이션 개발 및 유지보수\n• React Native 기반 모바일 앱(iOS/Android) 개발 및 유지보수\n• 기술적 의사결정 및 아키텍처 설계 참여\n• 개발 프로세스 및 코드 품질 개선\n• 기존 시스템의 한계를 극복하기 위한 레거시 코드와 아키텍처 개선",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330292",
+        "job_id": "wanted_330292",
+        "job_type": "service",
+        "job_title": "전문 물류 관리 사원",
+        "company_name": "바이오컴",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 건강기능식품 및 커피 입·출고/출고 마감\n    - 출고 지시서 기준 피킹·패킹·검수, 운송장 출력 및 마감 서류 처리\n    - LOT/유통기한 및 라벨 관리, 반품·교환 처리\n• 재고관리/WMS\n    - 주·월 실사, 재고 차이 분석(INV mismatch) 및 조정보고\n    - WMS/플레이오토 연동 모니터링, 재고 리포트(일/주) 작성\n• 지게차/하역 & 창고 동선\n    - 지게차 운전/상·하차, 랙 적치(3단) 및 로케이션 관리\n    - 통로·랙 안전관리, 파렛트·자재 정리/정돈(5S)\n• 품질/위생 & 커피 핸드픽 보조\n    - 창고 청결·온습도 기준 준수(항온·제습 장비 운영 보조)\n    - 핸드픽/포장 피크 보조, 파손·오염 예방\n• 수출입 보조(우대)\n    - 생두 직수입 관련 선적/통관 서류 수합, 반입·반출 일정 조율(3PL/관세사 협업)",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330291",
+        "job_id": "wanted_330291",
+        "job_type": "service",
+        "job_title": "회계담당자(팀원급)",
+        "company_name": "아이지넷(보닥)",
+        "required_skills": [
+          "Excel"
+        ],
+        "preferred_skills": [],
+        "description": "• ERP 기반 월/분기/반기/연간 결산 \n• 거래처별 매출ᆞ매입 및 비용 정산\n• 외부감사 대응 보조\n• 세무대리인과 협업하여 세무신고 지원(원천세, 부가세, 법인세 등)\n• 자금 집행 및 경비 정산 업무",
+        "keywords": [
+          "데이터 기반"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330288",
+        "job_id": "wanted_330288",
+        "job_type": "service",
+        "job_title": "BI/BX 디자이너",
+        "company_name": "지로",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "드롭샷의 BI/BX 디자이너는 디자인 파트에 소속되어 \n드롭샷매치/드롭샷스톡/드롭샷 AI를 아우르는 \"드롭샷(Dropshot)\"의 \n브랜드 아이덴티티를 강화하고, 일관성을 유지하기 위한 다양한 디자인 작업을 담당합니다. \n\n・자사 서비스 랜딩 페이지 및 디자인 에셋 제작 \n・생성형 AI 서비스 드롭샷 AI 내부 콘텐츠 디자인 \n・이외 다양한 온오프라인 브랜드 캠페인 에셋 디자인\n\n[지로팀에 합류하면 이런 것들을 경험하실 수 있어요]\n\n・글로벌 서비스를 만들고 있어 해외 AI/SaaS 브랜드 레퍼런스를 중요하게 학습해요. \n・AI-native Startup을 지향하고 있어 성장을 위한 교육 및 AI 서비스 비용을 모두 지원해드려요.  \n・이미지/영상 AI 서비스를 담당하며 글로벌 업계 최전선의 트렌드를 배울 수 있어요. \n・마케팅부터 기업 커뮤니케이션까지 다양한 브랜딩 전략을 팀과 함께 고민하며 성장할 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330287",
+        "job_id": "wanted_330287",
+        "job_type": "service",
+        "job_title": "온라인 마케팅(팀장급)",
+        "company_name": "슈퍼너츠",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 브랜드 커뮤니케이션 및 정체성 정립\n• 슈퍼너츠의 철학인 'Clean Label' 가치를 마케팅 언어로 정의 및 실행\n• 원료, 공정, 가격 등 브랜드의 모든 여정을 투명하게 설명하는 콘텐츠 기획\n• \"완벽하지 않지만 솔직한 브랜드\"를 지향하는 진정성 있는 소통 전략 수립\n\n2) 고객 중심 마케팅 전략 수립 (CX 연계)\n• 고객의 불편, 불신, 의문을 숨기지 않고 정면으로 다루는 커뮤니케이션 설계\n• 단기 전환율보다 장기적 팬덤을 만드는 신뢰 기반의 고객 경험 구조 설계\n• 고객을 설득하기보다 브랜드의 가치를 이해시키는 논리적인 콘텐츠 기획\n\n3) 온라인 채널 운영 및 성과 관리\n• 네이버, 카카오, 쿠팡 등 주요 온라인 채널별 마케팅 믹스 최적화\n• 지속가능성, 윤리, 책임의 가치를 일상적인 언어로 풀어낸 채널 콘텐츠 총괄\n• 데이터 분석을 통한 마케팅 성과 측정 및 장기적 브랜드 지표(리텐션 등) 관리\n\n4) 지속가능성 및 브랜드 스토리텔링\n• 환경, 윤리적 책임을 선언이 아닌 실질적인 행동으로 제안하는 캠페인 기획\n• 브랜드 스토리 안에 지역사회와 고객, 구성원의 이야기를 자연스럽게 녹여내는 작업\n• 글로벌 시장(일본, 미국) 진출 시 각 국가에 맞는 투명한 브랜드 스토리 현지화\n\n5) 팀 협업 및 전사 리더십\n• 브랜드디자인팀, 제품개발팀과 협업하여 제품 탄생부터 고객 접점까지의 일관성 유지\n• VOC 분석 기반의 인사이트를 제품 개선 및 상세페이지 기획에 반영하는 협업 주도\n• 주니어 마케터들이 브랜드 철학에 기반하여 스스로 판단하고 실행할 수 있도록 멘토링",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330286",
+        "job_id": "wanted_330286",
+        "job_type": "service",
+        "job_title": "AI 프롬프트 엔지니어",
+        "company_name": "부스트리",
+        "required_skills": [
+          "데이터 분석"
+        ],
+        "preferred_skills": [],
+        "description": "• 피부과 특화 AI 프롬프트 설계 : 상담 데이터, 피부 진단 데이터 등을 활용한 피부과 도메인 맞춤형 고성능 프롬프트 엔지니어링\n• 의료 상담 에이전트 개발 : 환자의 문의에 정확하고 신뢰도 높은 답변을 제공하는 AI 챗봇 및 응대 워크플로우 설계\n• 프롬프트 성능 고도화 : 의료 도메인의 특성을 고려한 답변의 정확성(Hallucination 방지) 및 보안 가이드 수립\n• RAG 기반 지식베이스 구축 : 피부과 전문 지식 데이터를 프롬프트와 결합하여 정교한 검색 증강 생성(RAG) 시스템 최적화",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330283",
+        "job_id": "wanted_330283",
+        "job_type": "service",
+        "job_title": "PR manager",
+        "company_name": "자비스앤빌런즈(삼쩜삼)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[합류 하시면 ​하게 될 업무에요.]\n•  삼쩜삼의 언론홍보 및 커뮤니케이션 전략을 수립합니다.\n•  리스크를 관리하고 대응 메시지를 기획, 실행합니다.\n•  미디어 네트워크를 형성하고 관계를 강화합니다. \n•  기자간담회와 협약식 등 미디어로 노출되는 행사를 직접 기획하고 진행합니다. \n\n[​합류 시, ​이런 ​성장의 기회를 ​만나볼 수 ​있어요.​]\n•  미디어와의 정기 미팅을 통해 네트워크를 형성하고, 회사에 우호적인 환경을 조성하는 커뮤니케이션 능력을 기를 수 있어요. \n•  보도자료 및 기획 기사 작성을 통해 글쓰기와 리스크 관리 대응 능력을 키울 수 있어요.\n•  2천만 B2C 서비스를 만들고 있는 다양한 사내 조직과 함께 일하며 협업 능력을 기를 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330279",
+        "job_id": "wanted_330279",
+        "job_type": "service",
+        "job_title": "인프라 데이터센터 매니저",
+        "company_name": "엘리스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 물리 인프라 운영\n전력(UPS, 수배전반), 냉각(HVAC, 항온항습), 소방, 보안, 랙(Rack) 등 데이터센터 필수 설비의 가용성을 100%에 가깝게 유지 및 관리\n\n• 인프라 전략 및 용량 계획\nAI 트래픽 증가와 전력 소모 패턴을 분석하여 선제적인 전력·공간·냉각 용량 계획 수립 및 확장 로드맵 설계\n\n• PMDC/DC 구축 프로젝트 리딩\n신규 데이터센터 구축 및 증설 시 기획부터 시공 관리, 안정화까지 프로젝트 전 과정(End-to-End) 주도\n\n• 운영 프로세스(SOP) 고도화\n데이터센터 운영, 장애 대응, 정기 점검 등에 대한 표준 운영 절차(SOP)를 정립하고, 비효율적인 프로세스를 지속적으로 개선\n\n• 벤더 및 파트너십 매니지먼트\n전기, 기계, 통신, 보안 등 전문 협력사 및 시공사와의 긴밀한 협업을 통해 비용 효율성 최적화 및 시공 품질 확보\n\n• 리스크 분석 및 예방\n잠재적인 물리적 장애 요인을 사전에 발굴하여 제거하고, 비상 상황 발생 시 신속한 복구를 위한 업무 연속성 계획 수립 및 훈련",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330277",
+        "job_id": "wanted_330277",
+        "job_type": "service",
+        "job_title": "Software QA",
+        "company_name": "쿤텍",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 웹 어플리케이션 신규 기능 및 개선 기능 QA 수행\n• 테스트 전략 수립: 기능/회귀/통합/성능 테스트 계획·설계\n• 테스트 자동화 스크립트 작성 및 테스트 환경 구성\n• 요구사항 분석 및 테스트 케이스/시나리오 작성\n• 버그 분석, 원인 파악, 개발자와의 협업 통한 품질 개선\n• CI/CD 파이프라인 기반 테스트 자동화 협업\n• 대규모 데이터 처리 환경의 품질 안정성 검증",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330276",
+        "job_id": "wanted_330276",
+        "job_type": "service",
+        "job_title": "AI Agent 개발자",
+        "company_name": "쿤텍",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 생성형 AI 기반 AI 보안 어플리케이션 개발\n• AI 기반 에이전트 분석 및 설계 개발\n• 생성형 AI 성능 최적화 (프롬프트 엔지니어링, 캐싱, 등)\n• CI/CD 파이프라인 구축",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330274",
+        "job_id": "wanted_330274",
+        "job_type": "service",
+        "job_title": "Android Developer",
+        "company_name": "하이컨시",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• Kotlin을 이용한 안드로이드 앱 개발, 테스트 및 운영",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330272",
+        "job_id": "wanted_330272",
+        "job_type": "service",
+        "job_title": "MLOps 엔지니어 - AI 플랫폼",
+        "company_name": "카카오페이(kakaopay)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• MLOps/LLMOps 기반 AI 플랫폼의 아키텍처를 설계, 개발 및 운영해요.\n• AI 모델(ML/LLM)의 학습, 배포, 서빙, 모니터링을 위한 CI/CD 자동화 파이프라인을 구축해요.\n• Kubernetes(K8s) 기반의 확장 가능하고 안정적인 모델 학습 및 추론 인프라를 구축 및 관리해요.\n• 대규모 언어 모델(LLM)의 파인튜닝, 서빙, 평가 및 관리를 위한 LLMOps 플랫폼을 개발해요.\n• 데이터/모델 스토리지, 피처 스토어, 벡터 DB 등 MLOps/LLMOps 핵심 구성 요소를 구축 및 연동해요.\n• 자원 효율화, 학습 및 추론 최적화, 모니터링, 로깅, 얼럿 시스템을 구축하고 운영을 자동화해요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330270",
+        "job_id": "wanted_330270",
+        "job_type": "service",
+        "job_title": "클라우드 풀스택 엔지니어",
+        "company_name": "엘리스",
+        "required_skills": [
+          "SQL"
+        ],
+        "preferred_skills": [],
+        "description": "• 엘리스 클라우드 서비스들의 핵심 기능(API, 리소스 관리, 과금, 인증 등)을 설계하고 개발합니다.\n• 가상머신/컨테이너 기반 인프라와 연동되는 백엔드 서비스를 구현하고 안정적으로 운영합니다.\n• 다양한 클라우드 서비스들의 UI 구현과 UX 개선도 함께 진행합니다.\n• 서비스의 안정성·성능·확장성을 높이기 위해 팀과 함께 구조적 개선을 고민합니다.\n• 인프라·DevOps 팀과 협업하여 기술적 과제를 해결합니다.\n• 실제 사용자 데이터를 기반으로 제품을 발전시키고 더 좋은 사용 경험을 만들어갑니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330269",
+        "job_id": "wanted_330269",
+        "job_type": "service",
+        "job_title": "Platform Frontend Engineer",
+        "company_name": "자비스앤빌런즈(삼쩜삼)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "[합류 하시면 ​하게 될 업무에요.]\n•  공통 UI 컴포넌트 라이브러리(디자인 시스템)를 설계·개발하고, Storybook 기반 문서화 및 시각적 리그레션 테스트 체계를 운영합니다.\n•  사내 FE 공통 패키지를 개발·유지보수하고, 버전 관리(Changesets) 및 배포 프로세스를 안정적으로 운영합니다.\n•  프론트엔드 모노레포 구조 및 패키지 전략을 설계하고, 빌드/테스트/배포 파이프라인을 지속적으로 개선합니다.\n•  CLI 도구, 코드 생성기, 보일러플레이트 등 서비스 팀의 DX를 개선하는 도구를 설계·구현합니다.\n•  서비스 팀 개발자와 협업하여 반복되는 문제를 발굴하고, 플랫폼 레벨에서 해결하는 구조적 개선을 수행합니다.\n•  플랫폼 기능에 대한 문서화, 사용 가이드, 예제 코드를 작성하여 개발자 경험 품질을 관리합니다.\n\n[​합류 시, ​이런 ​성장의 기회를 ​만나볼 수 ​있어요.​]\n•  서비스 간의 복잡하게 얽힌 의존성을 풀어내고 구조를 재정립하여, 동료 엔지니어와 AI가 일관된 기준 위에서 효율적으로 개발할 수 있는 환경을 설계하는 경험을 쌓을 수 있어요.\n•  기술적 의사결정이 전체 생태계에 미치는 파급력을 경험하며, 개별 서비스가 아닌 플랫폼 관점에서 문제를 정의하고 해결하는 넓은 시야를 가질 수 있어요.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330264",
+        "job_id": "wanted_330264",
+        "job_type": "service",
+        "job_title": "B2B Marketing Manager (5년 이상)",
+        "company_name": "에스아이에이",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 제품 USP 도출 및 마케팅 운영 전략 기획, 타겟 시장 발굴\n2) 제품 콘텐츠 제작 및 관리 (브로셔, 비디오, 웹 등)\n3) 온드미디어 (SNS, 유튜브, 블로그, 웹사이트 등) 콘텐츠 기획 및 릴리즈 운영 관리\n4) 콘텐츠 SEO\n5) 뉴스레터 기획 및 운영",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330262",
+        "job_id": "wanted_330262",
+        "job_type": "service",
+        "job_title": "[개발] 서비스 개발실장(Tech Leader) [8년 이상]",
+        "company_name": "아이알큐더스",
+        "required_skills": [
+          "SQL",
+          "프로젝트 관리"
+        ],
+        "preferred_skills": [],
+        "description": "[함께하게 될 업무에요]\n\n1. 기술 리더십\n• 큐더스웍스 & 주주우대(MTS/ASP/PAGE) 아키텍처 설계 및 기술 전략 수립\n• 코딩 컨벤션, API/Response 규격 등 표준 정립 및 코드 품질 관리\n• 데이터 모델링(ERD) 및 DB 구조 설계·검토\n• 레거시 코드 리팩토링 방향 수립 및 기술 부채 관리\n\n2. 개발 프로세스 운영\n• 스프린트 운영, 공수 산정, WBS 기반 일정 관리\n• 신규 개발과 유지보수가 병행될 수 있는 개발 조직 운영 체계 구축\n• 서비스 고도화 및 신규 서비스의 기술 타당성 검토·범위 정의\n\n3. 협업 및 피플 매니지먼트\n• 기획–UX–개발 간 협업 기준 수립 및 산출물 품질 관리\n• 인프라/보안 담당자와의 협업을 통한 안정적인 서비스 운영 환경 구축\n• 외부 기관(증권사, PG사 등) 연계 개발 시 기술 협의 및 일정 조율\n• 주니어/미드급 개발자 성장 지원(멘토링, 코드 리뷰, 기술 가이드)",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330258",
+        "job_id": "wanted_330258",
+        "job_type": "service",
+        "job_title": "[Yellow Bus] 현장 운영 매니저 (Field Manager)",
+        "company_name": "더스윙",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "1) 채용 및 온보딩\n• 우리 서비스와 가장 잘 맞는 셔틀 기사님, 동승 매니저님을 발굴·면접·채용\n• 신규 크루가 빠르게 적응하도록 업무 교육 및 체크리스트 제공\n• 서비스 품질을 높이는 현장 운영 매뉴얼 개선\n\n2) 인력 및 근태 관리\n• 현장 크루들의 스케줄·운행 시간표·근태를 정확히 관리\n• 크루들이 안전하고 즐겁게 일할 수 있는 환경 만들기\n• 운영팀과 협업해 결원·변경 요청을 빠르게 조정\n\n3) 현장 이슈 대응\n• 운행 중 발생하는 돌발 상황(지연, 결석, 노선 문제 등)을 즉시 파악·조치\n• 필요한 경우 셔틀 현장을 직접 방문하여 상황 점검\n• 운영/노선/앱 개발팀 등 유관부서와 함께 문제 원인을 분석하고 재발 방지 조치",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330257",
+        "job_id": "wanted_330257",
+        "job_type": "service",
+        "job_title": "QA Engineer",
+        "company_name": "웨이브릿지",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 디지털 자산 금융 플랫폼 국내 및 글로벌 서비스 QA\n• 기능 및 리그레션 테스트 수행\n• Playwright 자동화 테스트 환경 구축 및 운영\n• 생성형 AI 기반 테스트 시나리오 도출 및 테스트 자동화 기획",
+        "keywords": [
+          "커뮤니케이션"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330256",
+        "job_id": "wanted_330256",
+        "job_type": "service",
+        "job_title": "IP 상품 기획·제작 담당자",
+        "company_name": "리디(RIDI)",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "IP 상품 기획·제작 담당자는 IP의 특성과 팬 경험을 기준으로한 프로젝트 목적에 맞춰 상품 콘셉트를 기획하고, 제작 전 과정을 관리하여 완성도 높은 결과물을 구현하는 역할을 수행합니다. \n팬 경험 관점에서 IP상품의 완성도를 책임지며 동시에 디자인,스펙,제작,품질 관점의 오너십을 가집니다.\n\n- 웹툰·웹소설·캐릭터 IP를 분석하고 팬덤 트렌드를 기반으로 상품 콘셉트를 기획합니다.\n- 프로젝트별 상품 카테고리, SKU 구성, 세트 및 패키지를 기획합니다. \n- 가격 설정을 고려한 개별 상품 및 세트 패키지 기획안을 수립합니다.\n- IP 및 프로젝트 특성에 맞는 상품 콘셉트, 아트워크, 패키징 디자인을 기획합니다. \n- 디자인 가이드를 수립하고, 디자인 에셋 관리 및 아트워크 품질을 검수합니다.  \n- 초기 콘셉트 스케치, 디자인 시안(Mock-up, 레이아웃 등)을 개발합니다.\n- 제품 스펙(소재, 규격, 구성)을 정의하고 샘플링 및 수정 사이클을 운영하여 상품화를 완결합니다.\n- 제조사 및 생산 파트너와 협업하여 제작 방식, 원부자재, 비용 구조를 검토합니다.\n- QC 기준을 수립하고 샘플 및 결과물의 품질을 검수합니다.\n- 프로젝트 단위로 유관 부서 및 파트너와 협업하며, 기획 의도와 결과물 간의 일관성을 관리합니다.\n- 팝업 스토어 VMD, 온라인 상세페이지 등 전시 및 표현 요소에 대해 유관 조직과 협업합니다.\n- 상품성, 팬 니즈, 제작 현실성을 종합해 개별 프로젝트 진행 여부에 대한 의견을 제시합니다.\n- 저작권 및 라이선스 가이드에 따라 디자인 작업을 수행합니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330241",
+        "job_id": "wanted_330241",
+        "job_type": "service",
+        "job_title": "유니브클래스 CX매니저",
+        "company_name": "유니브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• 고객 VOC와 데이터를 기반하여 고객 여정과 퍼널을 설계합니다.\n    - 수강생의 VOC 및 민원을 수집하고 분석하여, 학습 경험을 개선할 인사이트를 도출합니다. (인터뷰, 서베이등 기획)\n    - 채널톡 / FAQ 등을 설계하고 효율화 합니다.\n    - CX 데이터를 수집 및 전달하여 완성도 높은 제품과 서비스 개선을 제시합니다.\n• 수강생(고객)을 응대하고, VOC 기반 교육 경험을 개선합니다.\n    - 학습 여정 및 전체 스케쥴 (강의, 피드백, 러닝 프로그램 등) 데이터를 관리하고 효율화 합니다.\n    - 반복되는 문제는 교육 운영기획 매니저와 협업하여 운영 체계 차원에서 구조적으로 개선합니다.\n    - 수강생 문의 응대 및 세그먼트 기반 맞춤 커뮤니케이션을 통해 상품 및 커리큘럼을 추천합니다.\n    - 수강 전 과정 중에 발생하는 이슈나 VOC에 실시간 대응하고, 상황에 맞는 해결책을 제시합니다.\n    - 수강생 유형별 분석 및 개선을 위한 정성적 인사이트를 도출합니다.",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330238",
+        "job_id": "wanted_330238",
+        "job_type": "service",
+        "job_title": "야간 배차 담당자",
+        "company_name": "스마트푸드네트웍스",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "ㆍ오산센터 배차\nㆍ차량관리(지입차, 임시용차)\nㆍ정산\nㆍCX 대응\nㆍ전산 - ERP, TMS, WMS",
+        "keywords": [
+          "데이터 기반"
+        ],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330237",
+        "job_id": "wanted_330237",
+        "job_type": "service",
+        "job_title": "대기업 보험사 데이터 운영 인력",
+        "company_name": "이그레브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• BI 툴 운용 : 타블로 기반 BI 개발(주업무)\n• ETL 툴 운용 : AWS Glue 사용 데이터 추출/변환\n• DW 데이터베이스 : AWS RedShift",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "wanted",
+        "source_url": "https://www.wanted.co.kr/wd/330236",
+        "job_id": "wanted_330236",
+        "job_type": "service",
+        "job_title": "DevOps(K8s 기반) CI/CD 개발 엔지니어",
+        "company_name": "이그레브",
+        "required_skills": [],
+        "preferred_skills": [],
+        "description": "• K8s 환경 내 DevOps 엔지니어링\n• CI/CD 파이프라인 설계 및 구축 (GitLab,  Jenkins, ArgoCD, Harber 등)\n• MSA 서비스 개발자 가이드",
+        "keywords": [],
+        "posted_at": null
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52529423&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52529423",
+        "job_type": "service",
+        "job_title": "25년 우영산업(주) 인사기획팀 공채 사원 모집",
+        "company_name": "우영산업(주)",
+        "required_skills": [],
+        "description": "충남  천안시 서북구경력무관학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52568445&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52568445",
+        "job_type": "service",
+        "job_title": "경영지원/K뷰티상품기획/구매개발/해외온라인(아마존,그외)/영상PD 및 작가/온라인MD 및 마케팅",
+        "company_name": "에빈코리아(유)",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52593040&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52593040",
+        "job_type": "service",
+        "job_title": "CS/회계경리/운영기획/영업 채용",
+        "company_name": "(주)하우투약",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52492874&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52492874",
+        "job_type": "service",
+        "job_title": "[K뷰티] 구매/SCM/BM/책임판매/인사/상품기획 담당자 모집",
+        "company_name": "(주)와우바이오텍",
+        "required_skills": [],
+        "description": "서울  영등포구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52553585&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52553585",
+        "job_type": "service",
+        "job_title": "클라우드 영업,엔지니어,분석가,세일즈포스PM,GA기획",
+        "company_name": "(주)골든플래닛",
+        "required_skills": [],
+        "description": "서울  강남구신입·경력학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52484881&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52484881",
+        "job_type": "service",
+        "job_title": "[하이트진로음료] 영업기획 신입채용",
+        "company_name": "하이트진로음료(주)",
+        "required_skills": [],
+        "description": "경기  용인시신입·경력대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52490924&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52490924",
+        "job_type": "service",
+        "job_title": "[(주)제이스퓨처] 웹/모바일 앱 서비스 마케팅 기획자 모집",
+        "company_name": "(주)제이스퓨처",
+        "required_skills": [],
+        "description": "경기  과천시경력 1~10년대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52589256&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52589256",
+        "job_type": "service",
+        "job_title": "제품기획마케팅 PM팀 신입/경력 수시 채용",
+        "company_name": "한국삼공",
+        "required_skills": [],
+        "description": "서울  서초구경력무관대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52605703&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52605703",
+        "job_type": "service",
+        "job_title": "만앤휴멜코리아 기획팀(Controlling) 신입사원 채용",
+        "company_name": "(주)만앤휴멜코리아",
+        "required_skills": [],
+        "description": "강원  원주시신입대졸↑인턴직3,570 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52570241&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52570241",
+        "job_type": "service",
+        "job_title": "[영훈의료재단] 선병원 경영기획팀 채용",
+        "company_name": "(의)영훈의료재단",
+        "required_skills": [],
+        "description": "대전  중구경력7년↑대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52594394&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52594394",
+        "job_type": "service",
+        "job_title": "자동차 부품 제조업 인사기획 경력 인재 채용",
+        "company_name": "이씨아이(주)",
+        "required_skills": [],
+        "description": "충남  천안시 서북구경력7년↑학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52510814&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52510814",
+        "job_type": "service",
+        "job_title": "사업기획, 상품기획, Payroll 경력직 채용",
+        "company_name": "웹케시(주)",
+        "required_skills": [],
+        "description": "서울  영등포구경력1년↑대졸↑정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52564804&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52564804",
+        "job_type": "service",
+        "job_title": "현장관리/CS/설비/재무/기획/법무/영업/설계/공무 채용 (송도)",
+        "company_name": "(주)플랜엠",
+        "required_skills": [],
+        "description": "인천  연수구신입·경력고졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52601305&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52601305",
+        "job_type": "service",
+        "job_title": "(주)푸드엔 본사 경영기획팀 채용",
+        "company_name": "(주)푸드엔",
+        "required_skills": [],
+        "description": "부산  남구경력무관학력무관정규직·계약직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52497104&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52497104",
+        "job_type": "service",
+        "job_title": "(주)용진기업 2025년 하반기 공채(기획 · 인사총무)",
+        "company_name": "(주)용진기업",
+        "required_skills": [],
+        "description": "경기  김포시경력무관초대졸↑정규직3,000 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52576890&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52576890",
+        "job_type": "service",
+        "job_title": "[NICE디앤비] ESG 사업 기획/관리 (경력)",
+        "company_name": "(주)나이스디앤비",
+        "required_skills": [],
+        "description": "서울  중구경력3년↑대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52588533&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52588533",
+        "job_type": "service",
+        "job_title": "[현대카드/본사] 카드상품2팀 마케팅기획/콘텐츠관리 채용",
+        "company_name": "(주)씨아이템프러리",
+        "required_skills": [],
+        "description": "서울  영등포구경력무관학력무관계약직3,468 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52583707&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52583707",
+        "job_type": "service",
+        "job_title": "[업계상위/기숙사제공] 호텔/리조트 본사 경영기획팀 정규직",
+        "company_name": "(주)사람인에이치에스",
+        "required_skills": [],
+        "description": "강원  고성군경력 3~7년대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52579730&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52579730",
+        "job_type": "service",
+        "job_title": "[사조그룹] 사조동아원 기획팀 정규직 채용(신입/경력)",
+        "company_name": "사조동아원(주)",
+        "required_skills": [],
+        "description": "서울  서초구경력무관대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52517693&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52517693",
+        "job_type": "service",
+        "job_title": "[구포성심병원] 총무기획팀(기획,홍보) 사원 모집(정규직)",
+        "company_name": "구포성심병원",
+        "required_skills": [],
+        "description": "부산  북구경력무관초대졸↑정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52580321&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52580321",
+        "job_type": "service",
+        "job_title": "[AI 로봇 기업] 전략기획실 사업기획/IR/PR/프로젝트관리",
+        "company_name": "(주)로보아이",
+        "required_skills": [],
+        "description": "대구  수성구신입·경력대졸↑정규직3,200 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52552683&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52552683",
+        "job_type": "service",
+        "job_title": "[대구] 390만원 정규직 사무기획팀 채용공고",
+        "company_name": "사단법인 한국나눔연맹",
+        "required_skills": [],
+        "description": "대구  서구경력초대졸↑정규직4,680 만원",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52508051&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52508051",
+        "job_type": "service",
+        "job_title": "[제이에스테크] 영업기획/관리 경력직 채용",
+        "company_name": "제이에스테크(주)",
+        "required_skills": [],
+        "description": "서울  강남구경력7년↑학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52582620&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52582620",
+        "job_type": "service",
+        "job_title": "경영지원, 운영기획(정부지원사업/프로젝트관리) 담당자 모집",
+        "company_name": "청베니프",
+        "required_skills": [],
+        "description": "대구  수성구경력무관학력무관정규직",
+        "keywords": [],
+        "preferred_skills": []
+      },
+      {
+        "source": "saramin",
+        "source_url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=52541386&location=ts&searchword=%EA%B8%B0%ED%9A%8D&searchType=search&paid_fl=n&search_uuid=3f94f989-0b3c-4b3d-b446-ff5de4b118bc",
+        "job_id": "saramin_52541386",
+        "job_type": "service",
+        "job_title": "MLB 용품기획팀 용품기획MD 전환형 인턴 채용",
+        "company_name": "(주)에프앤에프",
+        "required_skills": [],
+        "description": "서울  강남구경력무관학력무관정규직·인턴직",
+        "keywords": [],
+        "preferred_skills": []
+      }
+    ],
+    "insights": {
+      "topSkills": [
+        {
+          "skill": "SQL",
+          "count": 2,
+          "rate": "4.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "Excel",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "데이터 분석",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        },
+        {
+          "skill": "프로젝트 관리",
+          "count": 1,
+          "rate": "2.0%",
+          "importance": "medium"
+        }
+      ],
+      "topKeywords": [
+        {
+          "keyword": "커뮤니케이션",
+          "count": 5,
+          "frequency": "10.0%"
+        },
+        {
+          "keyword": "데이터 기반",
+          "count": 2,
+          "frequency": "4.0%"
+        },
+        {
+          "keyword": "최적화",
+          "count": 1,
+          "frequency": "2.0%"
+        }
+      ],
+      "sampleSize": 50,
+      "lastUpdated": "2025-12-19T04:45:25.808Z"
+    }
+  }
+}

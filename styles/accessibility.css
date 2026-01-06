@@ -1,0 +1,76 @@
+/* Screen Reader Only Class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Focus Visible Styles */
+*:focus-visible {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Skip to Main Content Link */
+.skip-to-main {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1rem 1.5rem;
+    background-color: #10b981;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.skip-to-main:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    * {
+        border-color: currentColor !important;
+    }
+
+    button,
+    a {
+        text-decoration: underline;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Focus Within for Form Groups */
+.form-group:focus-within {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
+    border-radius: 0.5rem;
+}
+
+/* Keyboard Navigation Indicators */
+[data-keyboard-nav="true"] *:focus {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
+}
