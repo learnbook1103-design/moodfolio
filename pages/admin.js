@@ -641,33 +641,61 @@ export default function AdminPage() {
                     {activeTab === 'templates' && (
                         <div className="space-y-6">
                             <h2 className="text-2xl font-bold text-white mb-6">템플릿 활성/비활성 관리</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {['developer', 'designer', 'marketer', 'service'].map(job => (
-                                    <div key={job} className="bg-slate-900/90 border border-white/20 rounded-2xl p-6">
-                                        <h3 className="text-xl font-bold text-white mb-4 capitalize flex items-center gap-2">
-                                            {/* 이미지 경로는 public 폴더 기준 */}
-                                            {job}
-                                        </h3>
-                                        <div className="space-y-4">
-                                            {['typeA', 'typeB', 'typeC'].map(type => {
-                                                const key = `${job}_${type}`;
-                                                const isActive = templateConfig[key] !== false; // 기본값 True
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {[
+                                    // Developer
+                                    { key: 'developer_typeA', job: '개발자', name: '기술 탐구 (Deep Dive)', desc: '복잡한 아키텍처와 기술적 챌린지를 깊이 있게 설명', color: 'blue' },
+                                    { key: 'developer_typeB', job: '개발자', name: '서비스 구현 (Implementation)', desc: '완성된 결과물과 사용 기술 스택을 직관적으로 표시', color: 'blue' },
+                                    { key: 'developer_typeC', job: '개발자', name: '문제 해결 (Troubleshooting)', desc: '버그 발생부터 해결까지의 과정을 논리적으로 서술', color: 'blue' },
 
-                                                return (
-                                                    <div key={key} className="flex items-center justify-between bg-slate-800 p-3 rounded-lg">
-                                                        <span className="text-gray-300">{type} 템플릿</span>
-                                                        <button
-                                                            onClick={() => toggleTemplate(key, isActive)}
-                                                            className={`w-12 h-6 rounded-full relative transition-colors ${isActive ? 'bg-emerald-500' : 'bg-slate-600'}`}
-                                                        >
-                                                            <div className={`absolute top-1 w-4 h-4 rounded-full bg-white transition-all ${isActive ? 'left-7' : 'left-1'}`}></div>
-                                                        </button>
+                                    // Designer
+                                    { key: 'designer_typeA', job: '디자이너', name: '비주얼 임팩트 (Visual Impact)', desc: '압도적인 메인 이미지와 타이포그래피', color: 'pink' },
+                                    { key: 'designer_typeB', job: '디자이너', name: '브랜드 스토리 (Brand Story)', desc: '디자인 컨셉 도출 과정과 철학을 에세이처럼 표현', color: 'pink' },
+                                    { key: 'designer_typeC', job: '디자이너', name: 'UX 논리 (Logic & Flow)', desc: '사용자 경험 설계의 흐름과 와이어프레임', color: 'pink' },
+
+                                    // Marketer
+                                    { key: 'marketer_typeA', job: '마케터', name: '데이터 성과 (Performance)', desc: 'ROAS, 도달률 등 핵심 KPI 수치를 그래프와 함께 강조', color: 'orange' },
+                                    { key: 'marketer_typeB', job: '마케터', name: '크리에이티브 (Creative)', desc: '카드뉴스, 영상 등 콘텐츠 소재 자체를 돋보이게', color: 'orange' },
+                                    { key: 'marketer_typeC', job: '마케터', name: '전략 인사이트 (Strategy)', desc: '시장 분석부터 전략 수립까지의 사고 과정', color: 'orange' },
+
+                                    // Service (Planner)
+                                    { key: 'service_typeA', job: '기획자', name: '매출 견인 (Business Impact)', desc: '서비스 기획이 실제 비즈니스 성과로 이어진 사례', color: 'purple' },
+                                    { key: 'service_typeB', job: '기획자', name: '운영 효율화 (Efficiency)', desc: '운영 프로세스 개선 및 효율화 성과', color: 'purple' },
+                                    { key: 'service_typeC', job: '기획자', name: '소통 협업 (Collaboration)', desc: '개발자, 디자이너와의 협업 과정과 커뮤니케이션 스킬', color: 'purple' },
+                                ].map(template => {
+                                    const isActive = templateConfig[template.key] !== false;
+                                    const colorClasses = {
+                                        blue: 'border-blue-500/30 bg-blue-900/20',
+                                        pink: 'border-pink-500/30 bg-pink-900/20',
+                                        orange: 'border-orange-500/30 bg-orange-900/20',
+                                        purple: 'border-purple-500/30 bg-purple-900/20'
+                                    };
+
+                                    return (
+                                        <div key={template.key} className={`bg-slate-900/90 border ${colorClasses[template.color]} rounded-xl p-4 transition-all hover:shadow-lg`}>
+                                            <div className="flex items-start justify-between mb-3">
+                                                <div className="flex-1">
+                                                    <div className="flex items-center gap-2 mb-1">
+                                                        <span className="text-xs font-medium text-gray-400">{template.job}</span>
                                                     </div>
-                                                );
-                                            })}
+                                                    <h4 className="text-white font-bold text-sm mb-1">{template.name}</h4>
+                                                    <p className="text-gray-400 text-xs leading-relaxed">{template.desc}</p>
+                                                </div>
+                                                <button
+                                                    onClick={() => toggleTemplate(template.key, isActive)}
+                                                    className={`ml-3 w-11 h-6 rounded-full relative transition-colors flex-shrink-0 ${isActive ? 'bg-emerald-500' : 'bg-slate-600'}`}
+                                                >
+                                                    <div className={`absolute top-1 w-4 h-4 rounded-full bg-white transition-all ${isActive ? 'left-6' : 'left-1'}`}></div>
+                                                </button>
+                                            </div>
+                                            <div className="flex items-center gap-2 mt-2">
+                                                <span className={`text-xs px-2 py-0.5 rounded-full ${isActive ? 'bg-emerald-500/20 text-emerald-400' : 'bg-slate-700 text-gray-500'}`}>
+                                                    {isActive ? '활성화' : '비활성화'}
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    );
+                                })}
                             </div>
                         </div>
                     )}

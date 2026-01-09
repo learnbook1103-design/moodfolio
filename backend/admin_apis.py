@@ -79,28 +79,46 @@ def get_all_users(skip: int = 0, limit: int = 50, search: str = None, admin_emai
 
 
 def delete_user(user_id: str, admin_email: str = Depends(verify_admin)):
-    """사용자 삭제"""
+    """사용자 삭제 (프로필 + Auth 계정)"""
     try:
         print(f"🗑️ Deleting user {user_id} using {'Service Role' if service_role_key else 'Anon Key'}")
         
-        # 사용자의 포트폴리오 먼저 삭제 (Admin Client 사용)
+        # 1. 사용자의 포트폴리오 먼저 삭제 (Admin Client 사용)
         admin_client.table('portfolios').delete().eq('user_id', user_id).execute()
+        print(f"✅ Deleted portfolios for user {user_id}")
         
-        # 사용자 프로필 삭제 (Admin Client 사용)
+        # 2. 사용자 프로필 삭제 (Admin Client 사용)
         response = admin_client.table('user_profiles').delete().eq('id', user_id).execute()
+        print(f"✅ Deleted user profile for user {user_id}")
         
-        if not response.data:
-            # 데이터가 없어도 에러는 아닐 수 있음 (이미 삭제되었거나 등)
-            pass
+        # 3. Supabase Auth에서 사용자 삭제 (Service Role Key 필요)
+        if service_role_key:
+            try:
+                # Supabase Admin API를 사용하여 auth.users에서 삭제
+                admin_client.auth.admin.delete_user(user_id)
+                print(f"✅ Deleted auth user {user_id}")
+            except Exception as auth_error:
+                print(f"⚠️ Auth user deletion failed (may not exist): {auth_error}")
+                # Auth 삭제 실패해도 프로필은 이미 삭제되었으므로 계속 진행
+        else:
+            print(f"⚠️ Service Role Key not available - cannot delete auth user")
+            return {
+                "message": "사용자 프로필은 삭제되었으나 Auth 계정 삭제 실패 (Service Role Key 필요)",
+                "user_id": user_id,
+                "warning": "Auth user still exists"
+            }
             
-        return {"message": "사용자가 삭제되었습니다", "user_id": user_id}
+        return {
+            "message": "사용자가 완전히 삭제되었습니다 (프로필 + Auth 계정)",
+            "user_id": user_id
+        }
     except Exception as e:
         print(f"❌ Delete user error: {e}")
         raise HTTPException(status_code=500, detail=f"사용자 삭제 실패: {str(e)}")
 
 
 def batch_delete_users(user_ids: list[str], admin_email: str = Depends(verify_admin)):
-    """사용자 일괄 삭제"""
+    """사용자 일괄 삭제 (프로필 + Auth 계정)"""
     print(f"🗑️ REQUEST: Batch delete users: {user_ids}")
     try:
         if not user_ids:
@@ -108,13 +126,44 @@ def batch_delete_users(user_ids: list[str], admin_email: str = Depends(verify_ad
 
         print(f"🔑 Using {'Service Role Key' if service_role_key else 'Anon Key'} for deletion")
 
-        # 사용자의 포트폴리오 일괄 삭제 (Admin Client 사용)
+        # 1. 사용자의 포트폴리오 일괄 삭제 (Admin Client 사용)
         pf_response = admin_client.table('portfolios').delete().in_('user_id', user_ids).execute()
         print(f"🗑️ Portfolios deleted: {len(pf_response.data) if pf_response.data else 0}")
         
-        # 사용자 프로필 일괄 삭제 (Admin Client 사용)
+        # 2. 사용자 프로필 일괄 삭제 (Admin Client 사용)
         response = admin_client.table('user_profiles').delete().in_('id', user_ids).execute()
-        return {"message": "일괄 삭제 성공", "deleted_portfolios": len(pf_response.data) if pf_response.data else 0, "deleted_users": len(user_ids)}
+        print(f"🗑️ User profiles deleted: {len(user_ids)}")
+        
+        # 3. Supabase Auth에서 사용자 일괄 삭제 (Service Role Key 필요)
+        auth_deleted_count = 0
+        auth_failed_count = 0
+        
+        if service_role_key:
+            for user_id in user_ids:
+                try:
+                    admin_client.auth.admin.delete_user(user_id)
+                    auth_deleted_count += 1
+                    print(f"✅ Deleted auth user {user_id}")
+                except Exception as auth_error:
+                    auth_failed_count += 1
+                    print(f"⚠️ Auth user deletion failed for {user_id}: {auth_error}")
+        else:
+            print(f"⚠️ Service Role Key not available - cannot delete auth users")
+            return {
+                "message": "사용자 프로필은 삭제되었으나 Auth 계정 삭제 실패 (Service Role Key 필요)",
+                "deleted_portfolios": len(pf_response.data) if pf_response.data else 0,
+                "deleted_profiles": len(user_ids),
+                "deleted_auth_users": 0,
+                "warning": "Auth users still exist"
+            }
+        
+        return {
+            "message": f"일괄 삭제 완료 (프로필: {len(user_ids)}, Auth: {auth_deleted_count})",
+            "deleted_portfolios": len(pf_response.data) if pf_response.data else 0,
+            "deleted_profiles": len(user_ids),
+            "deleted_auth_users": auth_deleted_count,
+            "auth_deletion_failed": auth_failed_count
+        }
     except Exception as e:
         print(f"❌ Batch delete failed: {e}")
         raise HTTPException(status_code=500, detail=f"일괄 삭제 실패: {str(e)}")
