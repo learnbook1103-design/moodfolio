@@ -51,11 +51,38 @@ const BGM_OPTIONS = [
   { id: "Mute", label: "음악 없음" }
 ];
 
+const TEMPLATE_KEY_MAP = {
+  // Developer
+  tech: 'developer_typeA',
+  impl: 'developer_typeB',
+  problem: 'developer_typeC',
+  // Designer
+  visual: 'designer_typeA',
+  brand: 'designer_typeB',
+  ux: 'designer_typeC',
+  // Marketer
+  data: 'marketer_typeA',
+  creative: 'marketer_typeB',
+  strategy: 'marketer_typeC',
+  // Service
+  revenue: 'service_typeA',
+  ops: 'service_typeB',
+  comm: 'service_typeC',
+};
+
 export default function PortfolioEditor({ isOpen, onClose, answers, setAnswers, aiRecommendation, widget = false }) {
   if (!isOpen) return null;
 
   // Track selected job internally for tabs, sync with answers
   const currentJob = answers.job?.toLowerCase() || 'developer';
+  const [templateConfig, setTemplateConfig] = useState(null);
+
+  useEffect(() => {
+    fetch('http://127.0.0.1:8000/api/templates/config')
+      .then(res => res.json())
+      .then(data => setTemplateConfig(data))
+      .catch(err => console.error("Failed to load template config", err));
+  }, []);
 
   const handleChange = (key, value) => {
     setAnswers(prev => ({ ...prev, [key]: value }));
@@ -76,6 +103,34 @@ export default function PortfolioEditor({ isOpen, onClose, answers, setAnswers, 
     // Only update strength/template, DO NOT update job
     handleChange('strength', templateId);
     handleChange('template', templateId); // [Fix] Ensure template field is also updated
+  };
+
+  const handleTemplateClick = (templateId) => {
+    const currentTemplateId = answers.strength;
+    const configKey = TEMPLATE_KEY_MAP[currentTemplateId] || currentTemplateId;
+    const isCurrentDisabled = templateConfig && templateConfig[configKey] === false;
+
+    // If current template is disabled AND we are trying to change to a different one
+    if (isCurrentDisabled && templateId !== currentTemplateId) {
+      if (confirm("현재 사용 중인 템플릿은 비활성화되어, 변경 후에는 다시 선택할 수 없습니다. 변경하시겠습니까?")) {
+        handleTemplateChange(templateId);
+      }
+    } else {
+      handleTemplateChange(templateId);
+    }
+  };
+
+  const handleMoodToggle = (mood) => {
+    const currentMoods = answers.moods || [];
+    if (currentMoods.includes(mood)) {
+      handleChange('moods', currentMoods.filter(m => m !== mood));
+    } else {
+      if (currentMoods.length < 3) {
+        handleChange('moods', [...currentMoods, mood]);
+      } else {
+        alert("최대 3개까지 선택 가능합니다.");
+      }
+    }
   };
 
   const containerClass = widget
@@ -139,14 +194,24 @@ export default function PortfolioEditor({ isOpen, onClose, answers, setAnswers, 
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {ALL_TEMPLATES.map((t) => {
+                // Config Check
+                const configKey = TEMPLATE_KEY_MAP[t.id] || t.id;
+                const isDisabled = templateConfig && templateConfig[configKey] === false;
+                const isSelected = answers.strength === t.id;
+
+                // [Requirements]
+                // 1. If Active (not disabled) -> Show
+                // 2. If Disabled BUT Selected -> Show (Keep existing)
+                // 3. If Disabled AND Not Selected -> Hide
+                if (isDisabled && !isSelected) return null;
+
                 // AI Recommendation Check
                 const isAiPick = aiRecommendation && aiRecommendation.strength === t.id;
-                const isSelected = answers.strength === t.id;
 
                 return (
                   <div
                     key={t.id}
-                    onClick={() => handleTemplateChange(t.id)}
+                    onClick={() => handleTemplateClick(t.id)}
                     className={`p-3 rounded-lg border cursor-pointer transition-all flex items-center justify-between group relative overflow-hidden
                          ${isSelected
                         ? 'bg-emerald-500/20 border-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.2)]'
@@ -158,11 +223,16 @@ export default function PortfolioEditor({ isOpen, onClose, answers, setAnswers, 
                     {isAiPick && <div className="absolute inset-0 bg-yellow-400/5 pointer-events-none"></div>}
 
                     <div>
-                      <span className={`font-bold text-sm flex items-center gap-2 ${isSelected ? 'text-emerald-400' : 'text-gray-200'}`}>
+                      <span className={`font-bold text-sm flex items-center gap-2 ${isSelected ? 'text-emerald-400' : 'text-gray-200'} ${isDisabled ? 'line-through decoration-red-500/50' : ''}`}>
                         {t.name}
                         {isAiPick && (
                           <span className="text-[10px] bg-yellow-400 text-black px-1.5 py-0.5 rounded font-bold animate-pulse">
                             AI Pick
+                          </span>
+                        )}
+                        {isDisabled && (
+                          <span className="text-[10px] bg-red-500 text-white px-1.5 py-0.5 rounded font-bold">
+                            Disabled
                           </span>
                         )}
                       </span>
@@ -181,9 +251,18 @@ export default function PortfolioEditor({ isOpen, onClose, answers, setAnswers, 
           <section className="space-y-4">
             <h3 className="text-sm font-bold text-pink-400 uppercase tracking-wider flex items-center gap-2">Mood & Vibe</h3>
             <div className="flex flex-wrap gap-2">
-              {MOOD_OPTIONS.map((mood) => (
-                <button key={mood} onClick={() => handleChange('moods', [mood])} className={`px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${(answers.moods?.[0] === mood) ? 'bg-pink-500/20 border-pink-500 text-pink-300' : 'bg-white/5 border-white/10 text-gray-400'}`}>{mood}</button>
-              ))}
+              {MOOD_OPTIONS.map((mood) => {
+                const isSelected = answers.moods?.includes(mood);
+                return (
+                  <button
+                    key={mood}
+                    onClick={() => handleMoodToggle(mood)}
+                    className={`px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${isSelected ? 'bg-pink-500/20 border-pink-500 text-pink-300' : 'bg-white/5 border-white/10 text-gray-400'}`}
+                  >
+                    {mood}
+                  </button>
+                );
+              })}
             </div>
           </section>
 

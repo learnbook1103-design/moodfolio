@@ -384,8 +384,15 @@ export default function AdminPage() {
                     </nav>
 
                     <button
+                        onClick={() => router.push('/')}
+                        className="w-full mt-8 mb-2 px-4 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-lg transition-all flex items-center justify-center gap-2"
+                    >
+                        <span>홈으로</span>
+                    </button>
+
+                    <button
                         onClick={() => router.push('/mypage')}
-                        className="w-full mt-8 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-lg transition-all"
+                        className="w-full mt-2 px-4 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-lg transition-all"
                     >
                         마이페이지로
                     </button>

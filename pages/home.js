@@ -62,8 +62,12 @@ export default function Home() { // Renamed to Home as it is now index.js
     useEffect(() => {
         const fetchNotices = async () => {
             try {
-                const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-                const res = await fetch(`${apiUrl}/api/notices/active`); // Using active route for public view
+                const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://192.168.0.65:8000';
+                const res = await fetch(`${apiUrl}/api/notices/active`, {
+                    headers: {
+                        "ngrok-skip-browser-warning": "true"
+                    }
+                }); // Using active route for public view
                 if (res.ok) {
                     const data = await res.json();
                     setNotices(data || []);

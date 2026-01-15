@@ -128,6 +128,25 @@ export default function ChatWidget({ customMessage, isSharedView = false, portfo
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef(null);
 
+  // Helper function to safely convert any value to string
+  const safeStringify = (value) => {
+    if (typeof value === 'string') return value;
+    if (value === null || value === undefined) return '';
+    if (typeof value === 'object') {
+      // If it's an event object, try to extract the value
+      if (value.target && value.target.value) return String(value.target.value);
+      // If it has a text property, use that
+      if (value.text) return String(value.text);
+      // Otherwise try to stringify it
+      try {
+        return JSON.stringify(value);
+      } catch {
+        return String(value);
+      }
+    }
+    return String(value);
+  };
+
   // Drag functionality
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -225,7 +244,7 @@ export default function ChatWidget({ customMessage, isSharedView = false, portfo
       return;
     }
 
-    setMessages((prev) => [...prev, { role: "user", text: msgText }]);
+    setMessages((prev) => [...prev, { role: "user", text: safeStringify(msgText) }]);
     // textOverride가 명시적으로 null일 때만 입력창 비우기 (사용자가 직접 입력한 경우)
     if (textOverride === null) setInput("");
     setIsLoading(true);
@@ -237,7 +256,10 @@ export default function ChatWidget({ customMessage, isSharedView = false, portfo
 
       const res = await fetch(`${apiUrl}/chat`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "ngrok-skip-browser-warning": "true"
+        },
         body: JSON.stringify({
           message: msgText,
           portfolio_context: contextStr,
@@ -248,7 +270,7 @@ export default function ChatWidget({ customMessage, isSharedView = false, portfo
       if (!res.ok) throw new Error(`Server Error: ${res.status}`);
       const data = await res.json();
       setMessages((prev) => {
-        const updated = [...prev, { role: "ai", text: data.reply }];
+        const updated = [...prev, { role: "ai", text: safeStringify(data.reply) }];
         if (isSharedView) {
           updated.push({
             role: "ai",
@@ -269,7 +291,7 @@ export default function ChatWidget({ customMessage, isSharedView = false, portfo
   // [NEW] Direct Retrieval Logic
   const handleSelection = async (question) => {
     // 1. Show user message
-    setMessages(prev => [...prev, { role: "user", text: question.text }]);
+    setMessages(prev => [...prev, { role: "user", text: safeStringify(question.text) }]);
 
     // 2. Check for Verified Answer
     const verifiedAnswer = userData?.chat_answers?.[question.key];
@@ -278,7 +300,7 @@ export default function ChatWidget({ customMessage, isSharedView = false, portfo
       setIsLoading(true);
       setTimeout(() => {
         setMessages(prev => {
-          const updated = [...prev, { role: "ai", text: `지원자가 직접 작성한 답변입니다:\n\n${verifiedAnswer}` }];
+          const updated = [...prev, { role: "ai", text: safeStringify(`지원자가 직접 작성한 답변입니다:\n\n${verifiedAnswer}`) }];
           if (isSharedView) {
             updated.push({
               role: "ai",
