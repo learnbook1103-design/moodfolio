@@ -218,9 +218,9 @@ export default function App({ Component, pageProps }) {
     setTimeout(() => setChatbotMsg(""), 5000);
   };
 
-  // 🔑 키 설정
-  const GOOGLE_CLIENT_ID = "53061006744-9mlb2lh79kurhcs635c5io0972ag430t.apps.googleusercontent.com";
-  const KAKAO_JS_KEY = "3aa4f7b9b1ad2576fc71d8b5ef610825";
+  // 🔑 키 설정 (환경 변수 사용)
+  const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+  const KAKAO_JS_KEY = process.env.NEXT_PUBLIC_KAKAO_APP_KEY;
 
   const kakaoInit = () => {
     if (window.Kakao && !window.Kakao.isInitialized()) {

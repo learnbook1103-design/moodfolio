@@ -65,7 +65,8 @@ if not GOOGLE_API_KEY:
          print(f"✅ GOOGLE_API_KEY loaded from environment variable: {GOOGLE_API_KEY[:10]}...")
 
 if not GOOGLE_API_KEY:
-    raise ValueError(f"GOOGLE_API_KEY not found in {env_path} or environment variables")
+    print(f"⚠️ WARNING: GOOGLE_API_KEY not found - AI features will not work")
+    print(f"⚠️ Please set GOOGLE_API_KEY environment variable in Vercel")
 
 app = FastAPI()
 
@@ -78,9 +79,58 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 2. 데이터베이스 설정 (SQLite)
-SQLALCHEMY_DATABASE_URL = "sqlite:///./users.db"
-engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
+@app.get("/api/health")
+@app.get("/api/health")
+def health_check():
+    db_type = "postgresql" if SQLALCHEMY_DATABASE_URL.startswith("postgresql") else "sqlite"
+    return {
+        "status": "ok", 
+        "message": "Backend is running!",
+        "database_type": db_type,
+        "supabase_connected": bool(SUPABASE_URL and SUPABASE_DB_PASSWORD)
+    }
+
+# Test endpoint to verify backend is working
+@app.get("/backend/test")
+def test_backend():
+    return {"status": "success", "message": "Backend is working!", "timestamp": "2026-01-16"}
+
+# 2. 데이터베이스 설정 (Supabase PostgreSQL)
+SUPABASE_URL = os.getenv("NEXT_PUBLIC_SUPABASE_URL", "")
+SUPABASE_DB_PASSWORD = os.getenv("SUPABASE_DB_PASSWORD", "")
+
+import urllib.parse
+
+# Supabase PostgreSQL 연결 문자열 구성
+# URL 형식: postgresql://postgres.{project-ref}:{password}@aws-0-ap-northeast-2.pooler.supabase.com:6543/postgres
+if SUPABASE_URL and SUPABASE_DB_PASSWORD:
+    # Extract project ref safely (remove trailing slashes and whitespace/newlines)
+    # Error log showed \r\n in hostname, so we must strip() whitespace first
+    project_ref = SUPABASE_URL.replace("https://", "").replace(".supabase.co", "").strip().strip("/")
+    
+    # URL encode password to handle special characters safely
+    encoded_password = urllib.parse.quote_plus(SUPABASE_DB_PASSWORD.strip())
+    
+    # Use Supavisor Pooler (Transaction Mode) which supports IPv4
+    # The direct db. domain resolves to IPv6 which Vercel/Lambda may not support
+    # "Tenant not found" error previously was likely due to the trailing \r\n in project_ref
+    SQLALCHEMY_DATABASE_URL = f"postgresql://postgres.{project_ref}:{encoded_password}@aws-0-ap-northeast-2.pooler.supabase.com:6543/postgres"
+    print(f"📂 Using Supabase PostgreSQL (Pooler): {project_ref}")
+else:
+    # Fallback to SQLite for local development
+    print("⚠️ Supabase credentials not found, falling back to SQLite")
+    if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+        SQLALCHEMY_DATABASE_URL = "sqlite:////tmp/users.db"
+        print("📂 Using /tmp/users.db for serverless storage")
+    else:
+        SQLALCHEMY_DATABASE_URL = "sqlite:///./users.db"
+
+# PostgreSQL은 check_same_thread 옵션이 필요 없음
+if SQLALCHEMY_DATABASE_URL.startswith("postgresql"):
+    engine = create_engine(SQLALCHEMY_DATABASE_URL, pool_pre_ping=True)
+else:
+    engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
@@ -93,7 +143,13 @@ class User(Base):
     name = Column(String)
     portfolio_data = Column(String, nullable=True)
 
-Base.metadata.create_all(bind=engine)
+try:
+    Base.metadata.create_all(bind=engine)
+    print("✅ Database tables created/verified")
+except Exception as e:
+    print(f"⚠️ Database initialization failed (Non-critical for Admin APIs): {e}")
+    # We continue running because Admin APIs use Supabase HTTP Client, not this SQLAlchemy connection
+
 
 # 비밀번호 암호화
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -133,11 +189,19 @@ class ChatAnswerGenerationRequest(BaseModel):
     portfolio_context: str
 
 # --- LLM 초기화 (모든 엔드포인트에서 사용) ---
-llm = ChatGoogleGenerativeAI(
-    model="gemini-flash-latest",
-    temperature=0.7,
-    google_api_key=GOOGLE_API_KEY
-)
+llm = None
+if GOOGLE_API_KEY:
+    try:
+        llm = ChatGoogleGenerativeAI(
+            model="gemini-flash-latest",
+            temperature=0.7,
+            google_api_key=GOOGLE_API_KEY
+        )
+        print("✅ LLM initialized successfully")
+    except Exception as e:
+        print(f"❌ Failed to initialize LLM: {e}")
+else:
+    print("⚠️ LLM not initialized - GOOGLE_API_KEY missing")
 
 # --- [API] AI 채팅 답변 생성 ---
 @app.post("/generate-chat-answers")
@@ -543,19 +607,19 @@ from admin_apis import (
 )
 from admin_auth import verify_admin
 
-@app.get('/admin/stats')
+@app.get('/api/admin/stats')
 def admin_stats_route(admin_email: str = Depends(verify_admin)):
     return admin_stats_handler(admin_email)
 
-@app.get('/admin/users')
+@app.get('/api/admin/users')
 def admin_users_route(skip: int = 0, limit: int = 50, search: str = None, admin_email: str = Depends(verify_admin)):
     return admin_users_handler(skip, limit, search, admin_email)
 
-@app.delete('/admin/users/{user_id}')
+@app.delete('/api/admin/users/{user_id}')
 def admin_delete_user_route(user_id: str, admin_email: str = Depends(verify_admin)):
     return admin_delete_user_handler(user_id, admin_email)
 
-@app.get('/admin/portfolios')
+@app.get('/api/admin/portfolios')
 def admin_portfolios_route(skip: int = 0, limit: int = 50, search: str = None, admin_email: str = Depends(verify_admin)):
     return admin_portfolios_handler(skip, limit, search, admin_email)
 
@@ -565,7 +629,7 @@ from pydantic import BaseModel
 class BatchDeleteRequest(BaseModel):
     user_ids: list[str]
 
-@app.post('/admin/users/batch-delete')
+@app.post('/api/admin/users/batch-delete')
 def admin_batch_delete_users_route(request: BatchDeleteRequest, admin_email: str = Depends(verify_admin)):
     return admin_batch_delete_users_handler(request.user_ids, admin_email)
 
@@ -584,24 +648,24 @@ from admin_apis import (
 def get_active_notices_route():
     return get_active_notices()
 
-@app.get('/admin/notices')
+@app.get('/api/admin/notices')
 def admin_get_notices(skip: int = 0, limit: int = 20, admin_email: str = Depends(verify_admin)):
     return get_notices(skip, limit, admin_email)
 
-@app.post('/admin/notices')
+@app.post('/api/admin/notices')
 def admin_create_notice(notice: NoticeCreate, admin_email: str = Depends(verify_admin)):
     return create_notice(notice, admin_email)
 
-@app.put('/admin/notices/{notice_id}')
+@app.put('/api/admin/notices/{notice_id}')
 def admin_update_notice(notice_id: str, notice: NoticeUpdate, admin_email: str = Depends(verify_admin)):
     return update_notice(notice_id, notice, admin_email)
 
-@app.delete('/admin/notices/{notice_id}')
+@app.delete('/api/admin/notices/{notice_id}')
 def admin_delete_notice(notice_id: str, admin_email: str = Depends(verify_admin)):
     return delete_notice(notice_id, admin_email)
 
 # 2. AI 통계 라우트
-@app.get('/admin/stats/ai')
+@app.get('/api/admin/stats/ai')
 def admin_get_ai_stats(period: str = 'daily', admin_email: str = Depends(verify_admin)):
     return get_ai_stats(period, admin_email)
 
@@ -613,10 +677,10 @@ def public_get_template_configs():
     return get_template_configs(admin_email=None)
 
 # Admin endpoint for reading template config (auth required)
-@app.get('/admin/templates/config')
+@app.get('/api/admin/templates/config')
 def admin_get_template_configs(admin_email: str = Depends(verify_admin)):
     return get_template_configs(admin_email=admin_email)
 
-@app.put('/admin/templates/config/{key}')
+@app.put('/api/admin/templates/config/{key}')
 def admin_update_template_config(key: str, config: TemplateConfigUpdate, admin_email: str = Depends(verify_admin)):
     return update_template_config(key, config, admin_email)

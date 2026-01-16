@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+passlib[bcrypt]
+python-dotenv
+langchain-google-genai
+langchain-core
+google-auth
+requests
+pydantic
+openai
+regex
+supabase
+psycopg2-binary
+

@@ -10,31 +10,47 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Supabase 클라이언트 초기화
+# Supabase 클라이언트 초기화 (Safe Init)
 supabase_url = os.getenv("NEXT_PUBLIC_SUPABASE_URL")
 supabase_key = os.getenv("NEXT_PUBLIC_SUPABASE_ANON_KEY")
 service_role_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 
-if not supabase_url or not supabase_key:
-    raise ValueError("Supabase credentials not found in environment variables")
+supabase: Client = None
+admin_client: Client = None
 
-# 기본 클라이언트 (읽기 전용 등)
-supabase: Client = create_client(supabase_url, supabase_key)
+try:
+    if supabase_url and supabase_key:
+        supabase = create_client(supabase_url, supabase_key)
+        # 관리자 클라이언트 (삭제 등 권한 필요 작업용)
+        # service_role_key가 있으면 그것을 사용, 없으면 anon_key 사용 (권한 부족할 수 있음)
+        admin_client = create_client(supabase_url, service_role_key) if service_role_key else supabase
+    else:
+        print("⚠️ Supabase credentials missing during init in admin_apis.py")
+except Exception as e:
+    print(f"❌ Failed to initialize Supabase client: {e}")
 
-# 관리자 클라이언트 (삭제 등 권한 필요 작업용)
-# service_role_key가 있으면 그것을 사용, 없으면 anon_key 사용 (권한 부족할 수 있음)
-admin_client: Client = create_client(supabase_url, service_role_key) if service_role_key else supabase
+def get_supabase():
+    if not supabase:
+        raise HTTPException(status_code=500, detail="Supabase client not initialized (check env vars)")
+    return supabase
+
+def get_admin_client():
+    if not admin_client:
+        raise HTTPException(status_code=500, detail="Supabase admin client not initialized")
+    return admin_client
 
 
 def get_admin_stats(admin_email: str = Depends(verify_admin)):
     """관리자 대시보드 통계 데이터"""
     try:
         # 전체 사용자 수
-        user_response = admin_client.table('user_profiles').select('id', count='exact').execute()
+        client = get_admin_client()
+        user_response = client.table('user_profiles').select('id', count='exact').execute()
         total_users = user_response.count or 0
         
         # 전체 포트폴리오 수
-        pf_response = admin_client.table('portfolios').select('id', count='exact').execute()
+        client = get_admin_client()
+        pf_response = client.table('portfolios').select('id', count='exact').execute()
         total_portfolios = pf_response.count or 0
         
         # 오늘 생성된 포트폴리오
@@ -54,7 +70,8 @@ def get_admin_stats(admin_email: str = Depends(verify_admin)):
 def get_all_users(skip: int = 0, limit: int = 50, search: str = None, admin_email: str = Depends(verify_admin)):
     """사용자 목록 조회"""
     try:
-        query = admin_client.table('user_profiles').select('*')
+        client = get_admin_client()
+        query = client.table('user_profiles').select('*')
         
         if search:
             query = query.or_(f"email.ilike.%{search}%,name.ilike.%{search}%")
@@ -66,7 +83,8 @@ def get_all_users(skip: int = 0, limit: int = 50, search: str = None, admin_emai
         # 각 사용자의 포트폴리오 수 조회
         users_with_count = []
         for user in users:
-            pf_count = admin_client.table('portfolios').select('id', count='exact').eq('user_id', user['id']).execute()
+            client = get_admin_client()
+            pf_count = client.table('portfolios').select('id', count='exact').eq('user_id', user['id']).execute()
             users_with_count.append({
                 **user,
                 "portfolio_count": pf_count.count or 0
@@ -84,18 +102,21 @@ def delete_user(user_id: str, admin_email: str = Depends(verify_admin)):
         print(f"🗑️ Deleting user {user_id} using {'Service Role' if service_role_key else 'Anon Key'}")
         
         # 1. 사용자의 포트폴리오 먼저 삭제 (Admin Client 사용)
-        admin_client.table('portfolios').delete().eq('user_id', user_id).execute()
+        client = get_admin_client()
+        client.table('portfolios').delete().eq('user_id', user_id).execute()
         print(f"✅ Deleted portfolios for user {user_id}")
         
         # 2. 사용자 프로필 삭제 (Admin Client 사용)
-        response = admin_client.table('user_profiles').delete().eq('id', user_id).execute()
+        client = get_admin_client()
+        response = client.table('user_profiles').delete().eq('id', user_id).execute()
         print(f"✅ Deleted user profile for user {user_id}")
         
         # 3. Supabase Auth에서 사용자 삭제 (Service Role Key 필요)
         if service_role_key:
             try:
                 # Supabase Admin API를 사용하여 auth.users에서 삭제
-                admin_client.auth.admin.delete_user(user_id)
+                client = get_admin_client()
+                client.auth.admin.delete_user(user_id)
                 print(f"✅ Deleted auth user {user_id}")
             except Exception as auth_error:
                 print(f"⚠️ Auth user deletion failed (may not exist): {auth_error}")
@@ -127,11 +148,13 @@ def batch_delete_users(user_ids: list[str], admin_email: str = Depends(verify_ad
         print(f"🔑 Using {'Service Role Key' if service_role_key else 'Anon Key'} for deletion")
 
         # 1. 사용자의 포트폴리오 일괄 삭제 (Admin Client 사용)
-        pf_response = admin_client.table('portfolios').delete().in_('user_id', user_ids).execute()
+        client = get_admin_client()
+        pf_response = client.table('portfolios').delete().in_('user_id', user_ids).execute()
         print(f"🗑️ Portfolios deleted: {len(pf_response.data) if pf_response.data else 0}")
         
         # 2. 사용자 프로필 일괄 삭제 (Admin Client 사용)
-        response = admin_client.table('user_profiles').delete().in_('id', user_ids).execute()
+        client = get_admin_client()
+        response = client.table('user_profiles').delete().in_('id', user_ids).execute()
         print(f"🗑️ User profiles deleted: {len(user_ids)}")
         
         # 3. Supabase Auth에서 사용자 일괄 삭제 (Service Role Key 필요)
@@ -141,7 +164,8 @@ def batch_delete_users(user_ids: list[str], admin_email: str = Depends(verify_ad
         if service_role_key:
             for user_id in user_ids:
                 try:
-                    admin_client.auth.admin.delete_user(user_id)
+                    client = get_admin_client()
+                    client.auth.admin.delete_user(user_id)
                     auth_deleted_count += 1
                     print(f"✅ Deleted auth user {user_id}")
                 except Exception as auth_error:
@@ -183,7 +207,8 @@ class NoticeUpdate(BaseModel):
 def get_notices(skip: int = 0, limit: int = 20, admin_email: str = Depends(verify_admin)):
     """공지사항 목록 조회 (관리자용)"""
     try:
-        response = admin_client.table('notices').select('*').order('created_at', desc=True).range(skip, skip + limit - 1).execute()
+        client = get_admin_client()
+        response = client.table('notices').select('*').order('created_at', desc=True).range(skip, skip + limit - 1).execute()
         return response.data
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"공지사항 조회 실패: {str(e)}")
@@ -191,7 +216,8 @@ def get_notices(skip: int = 0, limit: int = 20, admin_email: str = Depends(verif
 def get_active_notices():
     """활성 공지사항 조회 (공개)"""
     try:
-        response = supabase.table('notices').select('*').eq('is_active', True).order('created_at', desc=True).execute()
+        client = get_supabase()
+        response = client.table('notices').select('*').eq('is_active', True).order('created_at', desc=True).execute()
         return response.data
     except Exception as e:
         print(f"❌ Active notices error: {e}")
@@ -200,7 +226,8 @@ def get_active_notices():
 def create_notice(notice: NoticeCreate, admin_email: str = Depends(verify_admin)):
     """공지사항 생성"""
     try:
-        response = admin_client.table('notices').insert({
+        client = get_admin_client()
+        response = client.table('notices').insert({
             "title": notice.title,
             "content": notice.content,
             "is_active": notice.is_active
@@ -218,7 +245,8 @@ def update_notice(notice_id: str, notice: NoticeUpdate, admin_email: str = Depen
             
         update_data['updated_at'] = 'now()'
         
-        response = admin_client.table('notices').update(update_data).eq('id', notice_id).execute()
+        client = get_admin_client()
+        response = client.table('notices').update(update_data).eq('id', notice_id).execute()
         return response.data
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"공지사항 수정 실패: {str(e)}")
@@ -226,7 +254,8 @@ def update_notice(notice_id: str, notice: NoticeUpdate, admin_email: str = Depen
 def delete_notice(notice_id: str, admin_email: str = Depends(verify_admin)):
     """공지사항 삭제"""
     try:
-        admin_client.table('notices').delete().eq('id', notice_id).execute()
+        client = get_admin_client()
+        client.table('notices').delete().eq('id', notice_id).execute()
         return {"message": "공지사항이 삭제되었습니다"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"공지사항 삭제 실패: {str(e)}")
@@ -242,7 +271,8 @@ def get_ai_stats(period: str = 'daily', admin_email: str = Depends(verify_admin)
         # Or we can just count total rows for today.
         
         # 최근 30일 로그 조회
-        response = admin_client.table('ai_logs').select('*').order('created_at', desc=True).limit(1000).execute()
+        client = get_admin_client()
+        response = client.table('ai_logs').select('*').order('created_at', desc=True).limit(1000).execute()
         logs = response.data
         
         stats = {
@@ -272,7 +302,8 @@ class TemplateConfigUpdate(BaseModel):
 def get_template_configs(admin_email: str = None):
     """템플릿 설정 조회 (공개 접근 가능)"""
     try:
-        response = admin_client.table('template_config').select('*').execute()
+        client = get_admin_client()
+        response = client.table('template_config').select('*').execute()
         # 딕셔너리 형태로 변환하여 반환 { 'key': boolean }
         config_map = {item['key']: item['is_active'] for item in response.data}
         return config_map
@@ -284,7 +315,8 @@ def update_template_config(key: str, config: TemplateConfigUpdate, admin_email: 
     """템플릿 설정 업데이트 (Upsert)"""
     try:
         # upsert: 있으면 업데이트, 없으면 생성
-        response = admin_client.table('template_config').upsert({
+        client = get_admin_client()
+        response = client.table('template_config').upsert({
             "key": key,
             "is_active": config.is_active,
             "updated_at": 'now()'
@@ -305,14 +337,16 @@ def log_ai_usage(prompt_type: str, model_name: str = "gemini-flash", status: str
         if user_id:
             data['user_id'] = user_id
             
-        supabase.table('ai_logs').insert(data).execute()
+        client = get_supabase()
+        client.table('ai_logs').insert(data).execute()
     except Exception as e:
         print(f"⚠️ AI Logging failed: {e}")
 
 def get_all_portfolios(skip: int = 0, limit: int = 50, search: str = None, admin_email: str = Depends(verify_admin)):
     """포트폴리오 목록 조회"""
     try:
-        query = admin_client.table('portfolios').select('*, user_profiles(email, name)')
+        client = get_admin_client()
+        query = client.table('portfolios').select('*, user_profiles(email, name)')
         
         if search:
             query = query.ilike('title', f'%{search}%')
@@ -335,7 +369,8 @@ def get_all_portfolios(skip: int = 0, limit: int = 50, search: str = None, admin
             })
         
         # 전체 개수
-        total_response = admin_client.table('portfolios').select('id', count='exact').execute()
+        client = get_admin_client()
+        total_response = client.table('portfolios').select('id', count='exact').execute()
         total = total_response.count or 0
         
         return {"portfolios": portfolios_data, "total": total, "skip": skip, "limit": limit}

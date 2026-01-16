@@ -26,7 +26,7 @@ export default function AdminPage() {
     const [newNoticeTitle, setNewNoticeTitle] = useState('');
     const [newNoticeContent, setNewNoticeContent] = useState('');
 
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || '';
 
     // 관리자 권한 체크
     useEffect(() => {
@@ -53,7 +53,7 @@ export default function AdminPage() {
         console.log('📊 loadStats 시작, userEmail:', email);
         setLoading(true);
         try {
-            const res = await fetch(`${apiUrl}/admin/stats`, {
+            const res = await fetch(`${apiUrl}/api/admin/stats`, {
                 headers: { 'Authorization': `Bearer ${email}` }
             });
             console.log('📊 응답 상태:', res.status);
@@ -88,7 +88,7 @@ export default function AdminPage() {
         console.log('📊 loadStats 시작, userEmail:', userEmail);
         setLoading(true);
         try {
-            const res = await fetch(`${apiUrl}/admin/stats`, {
+            const res = await fetch(`${apiUrl}/api/admin/stats`, {
                 headers: { 'Authorization': `Bearer ${userEmail}` }
             });
             console.log('📊 응답 상태:', res.status);
@@ -106,7 +106,7 @@ export default function AdminPage() {
     const loadUsers = async () => {
         setLoading(true);
         try {
-            const res = await fetch(`${apiUrl}/admin/users?search=${searchQuery}`, {
+            const res = await fetch(`${apiUrl}/api/admin/users?search=${searchQuery}`, {
                 headers: { 'Authorization': `Bearer ${userEmail}` }
             });
             const data = await res.json();
@@ -121,7 +121,7 @@ export default function AdminPage() {
     const loadPortfolios = async () => {
         setLoading(true);
         try {
-            const res = await fetch(`${apiUrl}/admin/portfolios?search=${searchQuery}`, {
+            const res = await fetch(`${apiUrl}/api/admin/portfolios?search=${searchQuery}`, {
                 headers: { 'Authorization': `Bearer ${userEmail}` }
             });
             const data = await res.json();
@@ -137,7 +137,7 @@ export default function AdminPage() {
     const loadNotices = async () => {
         setLoading(true);
         try {
-            const res = await fetch(`${apiUrl}/admin/notices`, {
+            const res = await fetch(`${apiUrl}/api/admin/notices`, {
                 headers: { 'Authorization': `Bearer ${userEmail}` }
             });
             const data = await res.json();
@@ -151,7 +151,7 @@ export default function AdminPage() {
     const createNotice = async () => {
         if (!newNoticeTitle || !newNoticeContent) return alert('제목과 내용을 입력해주세요');
         try {
-            await fetch(`${apiUrl}/admin/notices`, {
+            await fetch(`${apiUrl}/api/admin/notices`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${userEmail}`,
@@ -171,7 +171,7 @@ export default function AdminPage() {
     const deleteNotice = async (id) => {
         if (!confirm('삭제하시겠습니까?')) return;
         try {
-            await fetch(`${apiUrl}/admin/notices/${id}`, {
+            await fetch(`${apiUrl}/api/admin/notices/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${userEmail}` }
             });
@@ -183,7 +183,7 @@ export default function AdminPage() {
 
     const toggleNoticeActive = async (id, currentStatus) => {
         try {
-            await fetch(`${apiUrl}/admin/notices/${id}`, {
+            await fetch(`${apiUrl}/api/admin/notices/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${userEmail}`,
@@ -200,7 +200,7 @@ export default function AdminPage() {
     const loadAiStats = async () => {
         setLoading(true);
         try {
-            const res = await fetch(`${apiUrl}/admin/stats/ai`, {
+            const res = await fetch(`${apiUrl}/api/admin/stats/ai`, {
                 headers: { 'Authorization': `Bearer ${userEmail}` }
             });
             const data = await res.json();
@@ -214,7 +214,7 @@ export default function AdminPage() {
     const loadTemplateConfig = async () => {
         setLoading(true);
         try {
-            const res = await fetch(`${apiUrl}/admin/templates/config`, {
+            const res = await fetch(`${apiUrl}/api/admin/templates/config`, {
                 headers: { 'Authorization': `Bearer ${userEmail}` }
             });
             const data = await res.json();
@@ -229,10 +229,10 @@ export default function AdminPage() {
         console.log('🔄 Toggle template:', key, 'Current:', currentStatus);
         try {
             const newStatus = !currentStatus;
-            console.log('📤 Sending request to:', `${apiUrl}/admin/templates/config/${key}`);
+            console.log('📤 Sending request to:', `${apiUrl}/api/admin/templates/config/${key}`);
             console.log('📤 New status:', newStatus);
 
-            const response = await fetch(`${apiUrl}/admin/templates/config/${key}`, {
+            const response = await fetch(`${apiUrl}/api/admin/templates/config/${key}`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${userEmail}`,

@@ -275,59 +275,95 @@ export default function ResultPage({ setGlobalUserData }) {
 
         const currentId = portfolioIdFromQuery || localStorage.getItem('current_portfolio_id');
 
-        // [PUBLIC PREVIEW SUPPORT] - Load as public if preview=true OR not logged in
-        if (currentId && (isPreviewMode || !user)) {
-          let shouldLoadAsPublic = true;
+        // [PUBLIC PREVIEW & SHARED VIEW SUPPORT]
+        // 1. If we have a specific portfolio ID (from query or storage)
+        // 2. AND (we are in preview mode OR not logged in OR viewing a shared link)
+        if (currentId && (isPreviewMode || !user || isSharedView)) {
+          let portfolioData = null;
+          let ownerProfile = null;
 
+          console.log(`Attempting to fetch portfolio ${currentId} (Preview: ${isPreviewMode}, User: ${!!user})`);
 
+          try {
+            // A. If logged in, try to fetch as owner first (bypasses public check if RLS allows owner)
+            if (user) {
+              const { data: userPortfolio, error: userError } = await supabase
+                .from('portfolios')
+                .select('*')
+                .eq('id', currentId)
+                .single();
 
-          if (shouldLoadAsPublic) {
-            console.log('Attempting to fetch public portfolio:', currentId);
-            try {
-              const publicPortfolio = await getPublicPortfolio(currentId);
-              console.log('Public portfolio fetch result:', publicPortfolio);
-
-              if (publicPortfolio) {
-                const ownerProfile = await getUserProfile(publicPortfolio.user_id);
-                if (ownerProfile) {
-                  const mergedData = {
-                    ...ownerProfile,
-                    job: publicPortfolio.job,
-                    strength: publicPortfolio.strength,
-                    moods: publicPortfolio.moods
-                  };
-
-                  // Load featured projects
-                  const featuredIds = publicPortfolio.featured_project_ids || [];
-                  if (featuredIds.length > 0 && ownerProfile.projects && Array.isArray(ownerProfile.projects)) {
-                    mergedData.projects = featuredIds.map(id => ownerProfile.projects[id]).filter(p => p);
-                  } else if (ownerProfile.projects && Array.isArray(ownerProfile.projects)) {
-                    mergedData.projects = ownerProfile.projects.slice(0, 6);
-                  } else {
-                    mergedData.projects = [];
-                  }
-
-                  setUserData(mergedData);
-                  setCurrentPortfolioName(ownerProfile.name);
-                  setInitialJob(publicPortfolio.job);
-                  setTheme(publicPortfolio.theme || 'light'); // Load theme from DB
-                  setIsDark(publicPortfolio.theme === 'dark');
-                  setIsGuest(false);
-                  return;
-                }
+              if (userPortfolio) {
+                console.log('Loaded portfolio as authenticated user (Owner/Viewer)');
+                portfolioData = userPortfolio;
               }
-            } catch (error) {
-              console.error('Public portfolio fetch error:', error);
             }
-            // If public fetch fails and user is not logged in, redirect to login
-            if (!user) {
-              console.log('Public portfolio fetch failed or not found');
-              router.push('/login');
-              return;
+
+            // B. If not found as owner (or not logged in), try public fetch
+            if (!portfolioData) {
+              portfolioData = await getPublicPortfolio(currentId);
             }
-            // If user is logged in but portfolio not found, continue to show error below
+
+            if (portfolioData) {
+              // Fetch Owner Profile (for name, intro, etc.)
+              console.log('Portfolio found, fetching owner profile:', portfolioData.user_id);
+              ownerProfile = await getUserProfile(portfolioData.user_id);
+
+              if (ownerProfile) {
+                const mergedData = {
+                  ...ownerProfile,
+                  job: portfolioData.job,
+                  strength: portfolioData.strength,
+                  moods: portfolioData.moods,
+                  bgm: portfolioData.bgm || 'Mute'
+                };
+
+                // Load featured projects
+                // Logic: If featured_project_ids exists, use those. 
+                // Otherwise, if it's the OWNER viewing, show all (or first 6).
+                // If explicit preview/shared, we might want to respect some "public" flag, 
+                // but for now, we assume if you have the link or are owner, you can view.
+
+                const featuredIds = portfolioData.featured_project_ids || [];
+                const allProjects = ownerProfile.projects || [];
+
+                if (featuredIds.length > 0) {
+                  mergedData.projects = featuredIds
+                    .map(id => allProjects[id])
+                    .filter(p => p);
+                } else {
+                  // Fallback: Show first 6 projects
+                  mergedData.projects = allProjects.slice(0, 6);
+                }
+
+                console.log('Merged Data for Preview:', mergedData);
+
+                setUserData(mergedData);
+                setCurrentPortfolioName(portfolioData.name);
+                setInitialJob(portfolioData.job);
+                setTheme(portfolioData.theme || 'light');
+                setIsDark(portfolioData.theme === 'dark');
+
+                // If we are the owner, we can allow editing even in "preview" UI if desired,
+                // but "preview=true" usually implies read-only.
+                // We'll keep isEditing false.
+
+                return; // Successfully loaded
+              }
+            } else {
+              console.warn('Portfolio not found or access denied');
+              // If specifically in preview mode and failed, we might want to show an error or redirect
+              if (isPreviewMode) {
+                // Stay on page but maybe show error? 
+                // Or if this is an iframe, the parent might handle it.
+                // But strictly, if we redirect to onboarding, the iframe shows onboarding.
+              }
+            }
+          } catch (e) {
+            console.error('Error loading portfolio in preview mode:', e);
           }
         }
+
         if (!user && !isPreviewMode) {
           router.push('/login');
           return;

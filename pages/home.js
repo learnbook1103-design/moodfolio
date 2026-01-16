@@ -20,43 +20,80 @@ export default function Home() { // Renamed to Home as it is now index.js
     const [profile, setProfile] = useState(null);
     const [showTemplateModal, setShowTemplateModal] = useState(false);
 
-    // Check Auth State
-    useEffect(() => {
-        const checkUser = async () => {
-            const { data: { user } } = await supabase.auth.getUser();
-            setUser(user);
-            if (user) {
-                const adminEmails = (process.env.NEXT_PUBLIC_ADMIN_EMAILS || '').split(',').map(e => e.trim());
-                setIsAdmin(adminEmails.includes(user.email));
+    // Data Fetching Function
+    const fetchUserData = async (currentUser) => {
+        if (currentUser) {
+            const adminEmails = (process.env.NEXT_PUBLIC_ADMIN_EMAILS || '').split(',').map(e => e.trim());
+            setIsAdmin(adminEmails.includes(currentUser.email));
 
-                // Fetch Portfolios & Profile
-                setLoadingPortfolios(true);
+            setLoadingPortfolios(true);
+            try {
                 const [pfs, prof] = await Promise.all([
-                    getPortfolios(user.id),
-                    getUserProfile(user.id)
+                    getPortfolios(currentUser.id),
+                    getUserProfile(currentUser.id)
                 ]);
 
                 // Sort portfolios by most recently updated first
                 const sortedPortfolios = (pfs || []).sort((a, b) => {
                     const dateA = new Date(a.updated_at || a.created_at);
                     const dateB = new Date(b.updated_at || b.created_at);
-                    return dateB - dateA; // Descending order (newest first)
+                    return dateB - dateA;
                 });
 
                 setPortfolios(sortedPortfolios);
                 setProfile(prof);
+            } catch (error) {
+                console.error("Error fetching user data:", error);
+            } finally {
                 setLoadingPortfolios(false);
             }
+        } else {
+            setPortfolios([]);
+            setProfile(null);
+            setIsAdmin(false);
+        }
+    };
+
+    // Check Auth State
+    useEffect(() => {
+        const checkUser = async () => {
+            console.log('🔍 [Home] Auth Check Started');
+            console.log('📍 Current URL:', window.location.href);
+            console.log('🔑 Hash Params:', window.location.hash);
+
+            // 1. Get session from URL or storage
+            const { data: { session }, error } = await supabase.auth.getSession();
+            console.log('🧾 getSession Result:', session ? 'Session Found' : 'No Session', error);
+
+            if (session) {
+                console.log('👤 User:', session.user.email);
+            }
+
+            setUser(session?.user ?? null);
+
+            if (session?.user) {
+                fetchUserData(session.user);
+            } else {
+                console.log('⚠️ No user found in session');
+            }
         };
+
         checkUser();
 
-        // Listen for auth changes
-        const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+        // 2. Listen for auth changes
+        const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+            console.log('🔔 [Auth State Changed]', event);
+            if (session) console.log('👤 Session User:', session.user.email);
+
             setUser(session?.user ?? null);
+            // Fetch data only if user changed or logged in
+            if (session?.user && session.user.id !== user?.id) {
+                fetchUserData(session.user);
+            }
         });
 
         return () => subscription.unsubscribe();
-    }, []);
+    }, [user?.id]);
 
     // Load Notices
     useEffect(() => {

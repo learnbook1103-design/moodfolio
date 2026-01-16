@@ -9,3 +9,5 @@ moodfolio_backup_*
 .env*
 !.env.example
 public/ground-front.png
+.vercel
+.env*.local

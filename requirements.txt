@@ -7,3 +7,9 @@ langchain-google-genai
 langchain-core
 google-auth
 requests
+pydantic
+openai
+regex
+supabase
+psycopg2-binary
+
