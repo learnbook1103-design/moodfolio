@@ -352,15 +352,16 @@ export default function ResultPage({ setGlobalUserData }) {
               }
             } else {
               console.warn('Portfolio not found or access denied');
-              // If specifically in preview mode and failed, we might want to show an error or redirect
+              // If specifically in preview mode and failed, show a visible error (or handle gracefully)
               if (isPreviewMode) {
-                // Stay on page but maybe show error? 
-                // Or if this is an iframe, the parent might handle it.
-                // But strictly, if we redirect to onboarding, the iframe shows onboarding.
+                // We don't have userData, so we must stop loading to show "Data not found" or similar
+                setIsLoading(false);
+                return;
               }
             }
           } catch (e) {
             console.error('Error loading portfolio in preview mode:', e);
+            setIsLoading(false);
           }
         }
 
@@ -1198,17 +1199,25 @@ export default function ResultPage({ setGlobalUserData }) {
             <p className="text-gray-400 mt-4 ml-3">포트폴리오 불러오는 중...</p>
           </div>
         ) : (
-          <div className="min-h-screen flex flex-col items-center justify-center text-white bg-gray-900">
-            <div className="text-6xl mb-6"></div>
-            <h2 className="text-2xl font-bold mb-4">포트폴리오가 선택되지 않았습니다</h2>
-            <p className="text-gray-400 mb-8">My Page에서 포트폴리오를 선택하거나 생성하세요</p>
-            <button
-              onClick={() => router.push('/mypage')}
-              className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-lg hover:shadow-emerald-500/50 hover:scale-105 transition-all"
-            >
-              My Page로 이동
-            </button>
-          </div>
+          isPreviewMode ? (
+            <div className="min-h-screen flex flex-col items-center justify-center text-white bg-gray-900">
+              <div className="text-4xl mb-4">🔒</div>
+              <h2 className="text-xl font-bold mb-2">포트폴리오를 볼 수 없습니다</h2>
+              <p className="text-gray-400 text-sm mb-4">비공개 상태이거나 존재하지 않는 포트폴리오입니다.</p>
+            </div>
+          ) : (
+            <div className="min-h-screen flex flex-col items-center justify-center text-white bg-gray-900">
+              <div className="text-6xl mb-6"></div>
+              <h2 className="text-2xl font-bold mb-4">포트폴리오가 선택되지 않았습니다</h2>
+              <p className="text-gray-400 mb-8">My Page에서 포트폴리오를 선택하거나 생성하세요</p>
+              <button
+                onClick={() => router.push('/mypage')}
+                className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold rounded-xl shadow-lg hover:shadow-emerald-500/50 hover:scale-105 transition-all"
+              >
+                My Page로 이동
+              </button>
+            </div>
+          )
         )
       )}
 
