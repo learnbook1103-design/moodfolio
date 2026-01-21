@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 # AI 도구
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.messages import HumanMessage
 
 # DB & 보안 도구
 from sqlalchemy import create_engine, Column, Integer, String
@@ -472,17 +473,11 @@ def submit_data(data: UserAnswers):
     answers = data.answers
     projects_str = ""
     
-    # 직무 확인 (디자이너 vs 일반)
-    is_designer = "디자인" in answers.get("job", "") or "Designer" in answers.get("job", "")
-    
-    if is_designer:
-        for i in range(1, 7):
-            title = answers.get(f"design_project{i}_title")
-            if title: projects_str += f"- 작품 {i}: {title}\n"
-    else:
-        for i in range(1, 4):
-            title = answers.get(f"project{i}_title")
-            if title: projects_str += f"- 프로젝트 {i}: {title}\n"
+    # 직무와 상관없이 최대 6개 프로젝트까지 포함
+    for i in range(1, 7):
+        # 디자이너용 필드와 일반용 필드 모두 확인
+        title = answers.get(f"project{i}_title") or answers.get(f"design_project{i}_title")
+        if title: projects_str += f"- 프로젝트 {i}: {title}\n"
 
     try:
         result = portfolio_chain.invoke({
@@ -502,6 +497,7 @@ def submit_data(data: UserAnswers):
 # --- [API 6.5] 이력서 파싱/분석 (새로 추가됨) ---
 class ResumeAnalyzeRequest(BaseModel):
     resumeText: str
+    images: list[str] = []
 
 def extract_text_from_pdf(file_bytes):
     import pypdf
@@ -536,6 +532,42 @@ def extract_text_from_pdf(file_bytes):
         import traceback
         traceback.print_exc()
         raise
+
+
+def extract_images_from_pdf(file_bytes):
+    import fitz  # PyMuPDF
+    import base64
+    
+    images = []
+    try:
+        # PDF 문서 열기
+        doc = fitz.open(stream=file_bytes, filetype="pdf")
+        
+        # 최대 5페이지만 처리 (토큰 및 시간 절약)
+        max_pages = min(len(doc), 5)
+        print(f"🖼️ PDF 렌더링 시작 (총 {len(doc)}페이지 중 {max_pages}페이지만 처리)")
+        
+        for i in range(max_pages):
+            page = doc.load_page(i)
+            # 페이지를 이미지(Pixmap)로 렌더링 (해상도 조절 가능, 기본 72dpi -> matrix로 확대 가능)
+            # matrix=fitz.Matrix(2, 2) -> 2배 확대 (약 144dpi) - 글자 가독성 위해 권장
+            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+            
+            # 이미지 바이트 추출 (PNG)
+            img_bytes = pix.tobytes("png")
+            encoded = base64.b64encode(img_bytes).decode('utf-8')
+            
+            # data URL 형식으로 변환
+            data_url = f"data:image/png;base64,{encoded}"
+            images.append(data_url)
+            print(f"  ✅ P{i+1} 렌더링 완료 ({len(img_bytes)} bytes)")
+            
+        return images
+    except Exception as e:
+        print(f"❌ PDF 렌더링/이미지 추출 오류: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
 
 
 def extract_images_from_docx(file_bytes):
@@ -599,8 +631,8 @@ async def parse_resume(file: UploadFile = File(...)):
         if filename.endswith(".pdf"):
             print("🔍 PDF 파싱 시작...")
             extracted_text = extract_text_from_pdf(contents)
-            # PDF 이미지 추출은 복잡하므로 추후 구현
-            extracted_images = []
+            print("🔍 PDF 이미지 추출 시작...")
+            extracted_images = extract_images_from_pdf(contents)
         elif filename.endswith(".docx"):
             print("🔍 DOCX 파싱 시작...")
             extracted_text = extract_text_from_docx(contents)
@@ -632,14 +664,19 @@ def analyze_resume(request: ResumeAnalyzeRequest):
     try:
         log_ai_usage(prompt_type="resume_analysis")
         
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", """당신은 채용 전문가 AI입니다. 이력서 텍스트를 분석하여 구조화된 JSON 데이터로 변환해주세요.
+        if request.images:
+            print(f"🖼️ 이미지 분석 모드: {len(request.images)}개의 이미지 포함")
+            
+            message_content = []
+            
+            # 시스템 프롬프트 내용을 텍스트로 추가
+            system_prompt = """당신은 채용 전문가 AI입니다. 제공된 이력서 이미지와 텍스트를 종합적으로 분석하여 구조화된 JSON 데이터로 변환해주세요.
             
             [분석 요구사항]
             1. 이름, 연락처, 이메일 등 기본 정보를 추출하세요.
             2. 핵심 기술(Skills)을 리스트로 추출하세요.
             3. 경력 사항을 요약하여 'career_summary'에 작성하세요 (예: "총 5년차, 주요 경력: ABC사, XYZ사").
-            4. 주요 프로젝트 경험을 최대 3개까지 요약하여 'projects' 배열에 담으세요.
+            4. 이력서에 명시된 '모든' 주요 프로젝트 경험을 요약하여 'projects' 배열에 담으세요 (개수 제한 없음).
             5. 자기소개나 포트폴리오에 쓸만한 문구를 'intro'에 작성하세요.
             
             [출력 포맷 (JSON Only)]
@@ -655,12 +692,63 @@ def analyze_resume(request: ResumeAnalyzeRequest):
                     {{ "title": "프로젝트명", "desc": "프로젝트 설명 및 역할", "duration": "기간" }}
                 ]
             }}
-            """),
-            ("human", "다음 이력서 내용을 분석해주세요:\n\n{input}")
-        ])
-        
-        chain = prompt | llm
-        response = chain.invoke({"input": request.resumeText})
+            """
+            
+            # 텍스트가 있으면 추가
+            user_input = "다음 이력서(이미지 포함)를 분석해주세요."
+            if request.resumeText:
+                user_input += f"\n\n[추출된 텍스트]\n{request.resumeText}"
+                
+            message_content.append({"type": "text", "text": system_prompt + "\n\n" + user_input})
+            
+            # 이미지들 추가
+            for img_data in request.images:
+                # data:image/jpeg;base64,... 형식 파싱
+                if "," in img_data:
+                    header, base64_str = img_data.split(",", 1)
+                    # image_url 방식을 사용 (langchain_google_genai 지원 방식)
+                    message_content.append({
+                        "type": "image_url", 
+                        "image_url": {"url": img_data}
+                    })
+                else:
+                    # 헤더가 없는 경우 처리하지 않거나 기본값 가정
+                    pass
+            
+            msg = HumanMessage(content=message_content)
+            response = llm.invoke([msg])
+            
+        else:
+            # 텍스트 전용 모드 (기존 로직)
+            prompt = ChatPromptTemplate.from_messages([
+                ("system", """당신은 채용 전문가 AI입니다. 이력서 텍스트를 분석하여 구조화된 JSON 데이터로 변환해주세요.
+                
+                [분석 요구사항]
+                1. 이름, 연락처, 이메일 등 기본 정보를 추출하세요.
+                2. 핵심 기술(Skills)을 리스트로 추출하세요.
+                3. 경력 사항을 요약하여 'career_summary'에 작성하세요 (예: "총 5년차, 주요 경력: ABC사, XYZ사").
+                4. 이력서에 명시된 '모든' 주요 프로젝트 경험을 요약하여 'projects' 배열에 담으세요 (개수 제한 없음).
+                5. 자기소개나 포트폴리오에 쓸만한 문구를 'intro'에 작성하세요.
+                
+                [출력 포맷 (JSON Only)]
+                {{
+                    "name": "지원자 이름",
+                    "phone": "010-XXXX-XXXX",
+                    "email": "email@example.com",
+                    "link": "github/blog url",
+                    "intro": "한줄 소개",
+                    "career_summary": "경력 요약 텍스트",
+                    "skills": ["Skill1", "Skill2", "Skill3"],
+                    "projects": [
+                        {{ "title": "프로젝트명", "desc": "프로젝트 설명 및 역할", "duration": "기간" }}
+                    ]
+                }}
+                """),
+                ("human", "다음 이력서 내용을 분석해주세요:\n\n{input}")
+            ])
+            
+            chain = prompt | llm
+            response = chain.invoke({"input": request.resumeText})
         
         # JSON 추출 - response.content가 리스트일 수 있으므로 먼저 텍스트로 변환
         content = extract_text_from_response(response)

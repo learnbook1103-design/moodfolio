@@ -14,5 +14,7 @@ supabase
 psycopg2-binary
 python-multipart
 pypdf
+pymupdf
 python-docx
+lxml
 
