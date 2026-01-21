@@ -761,12 +761,7 @@ from admin_apis import (
     NoticeCreate, NoticeUpdate,
     get_ai_stats,
     get_template_configs, update_template_config, TemplateConfigUpdate,
-    get_ai_stats,
-    get_template_configs, update_template_config, TemplateConfigUpdate,
-    log_ai_usage,
-    extract_text_from_pdf, extract_text_from_docx # Import helpers if they were in admin_apis, but currently used locally inside main.py functions to avoid circular deps or keep simple using local imports inside function.
-    # Actually, removing explicit import of unavailable symbols.
-
+    log_ai_usage
 )
 
 # 1. 공지사항 라우트
