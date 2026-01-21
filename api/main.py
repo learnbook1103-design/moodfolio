@@ -618,14 +618,16 @@ def analyze_resume(request: ResumeAnalyzeRequest):
                 ]
             }}
             """),
-            ("human", f"다음 이력서 내용을 분석해주세요:\n\n{{input}}")
+            ("human", "다음 이력서 내용을 분석해주세요:\n\n{input}")
         ])
         
         chain = prompt | llm
         response = chain.invoke({"input": request.resumeText})
         
-        # JSON 추출
-        content = response.content
+        # JSON 추출 - response.content가 리스트일 수 있으므로 먼저 텍스트로 변환
+        content = extract_text_from_response(response)
+        print(f"🤖 AI 응답 길이: {len(content)} 글자")
+        
         json_match = re.search(r'```json\s*(\{.*?\})\s*```', content, re.DOTALL)
         if json_match:
             json_content = json_match.group(1)
@@ -633,10 +635,14 @@ def analyze_resume(request: ResumeAnalyzeRequest):
             json_match = re.search(r'(\{.*\})', content, re.DOTALL)
             json_content = json_match.group(0) if json_match else "{}"
 
-        return json.loads(json_content)
+        parsed_data = json.loads(json_content)
+        print(f"✅ 이력서 분석 완료: {parsed_data.get('name', 'Unknown')}")
+        return parsed_data
 
     except Exception as e:
         print(f"❌ 이력서 분석 실패: {e}")
+        import traceback
+        traceback.print_exc()
         return {"error": str(e)}
 
 # --- [API 7] 챗봇 ---
