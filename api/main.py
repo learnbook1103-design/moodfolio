@@ -538,6 +538,39 @@ def extract_text_from_pdf(file_bytes):
         raise
 
 
+def extract_images_from_docx(file_bytes):
+    """DOCX 파일에서 이미지를 추출하여 base64 인코딩된 데이터 URL 리스트로 반환"""
+    import docx
+    import io
+    import base64
+    
+    images = []
+    try:
+        doc_file = io.BytesIO(file_bytes)
+        doc = docx.Document(doc_file)
+        
+        # 문서 내 모든 관계(relationships)에서 이미지 찾기
+        for rel in doc.part.rels.values():
+            if "image" in rel.target_ref:
+                try:
+                    image_data = rel.target_part.blob
+                    # 이미지 타입 감지
+                    content_type = rel.target_part.content_type
+                    # base64 인코딩
+                    encoded = base64.b64encode(image_data).decode('utf-8')
+                    data_url = f"data:{content_type};base64,{encoded}"
+                    images.append(data_url)
+                    print(f"  📷 이미지 추출: {content_type}, {len(image_data)} bytes")
+                except Exception as e:
+                    print(f"  ⚠️ 이미지 추출 실패: {e}")
+                    continue
+        
+        print(f"✅ DOCX 이미지 추출 완료: {len(images)}개")
+        return images
+    except Exception as e:
+        print(f"❌ DOCX 이미지 추출 오류: {e}")
+        return []
+
 def extract_text_from_docx(file_bytes):
     import docx
     import io
@@ -561,16 +594,22 @@ async def parse_resume(file: UploadFile = File(...)):
         
         filename = file.filename.lower()
         extracted_text = ""
+        extracted_images = []
 
         if filename.endswith(".pdf"):
             print("🔍 PDF 파싱 시작...")
             extracted_text = extract_text_from_pdf(contents)
+            # PDF 이미지 추출은 복잡하므로 추후 구현
+            extracted_images = []
         elif filename.endswith(".docx"):
             print("🔍 DOCX 파싱 시작...")
             extracted_text = extract_text_from_docx(contents)
+            print("🔍 DOCX 이미지 추출 시작...")
+            extracted_images = extract_images_from_docx(contents)
         elif filename.endswith(".txt"):
             print("🔍 TXT 파싱 시작...")
             extracted_text = contents.decode("utf-8")
+            extracted_images = []
         else:
             print(f"❌ 지원하지 않는 파일 형식: {filename}")
             return {"error": "지원하지 않는 파일 형식입니다. (PDF, DOCX, TXT 지원)"}
@@ -579,9 +618,8 @@ async def parse_resume(file: UploadFile = File(...)):
             print("⚠️ 경고: 추출된 텍스트가 비어있습니다!")
             return {"error": "파일에서 텍스트를 추출할 수 없습니다. 파일이 비어있거나 이미지만 포함되어 있을 수 있습니다."}
         
-        print(f"✅ 파싱 완료: {len(extracted_text)} 글자")
-        # TODO: 이미지 추출 기능은 추후 구현 (현재는 빈 배열 반환)
-        return {"text": extracted_text, "filename": file.filename, "images": []}
+        print(f"✅ 파싱 완료: {len(extracted_text)} 글자, {len(extracted_images)} 이미지")
+        return {"text": extracted_text, "filename": file.filename, "images": extracted_images}
 
     except Exception as e:
         print(f"❌ 파일 파싱 실패: {e}")
