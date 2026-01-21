@@ -510,15 +510,33 @@ def extract_text_from_pdf(file_bytes):
         pdf_file = io.BytesIO(file_bytes)
         reader = pypdf.PdfReader(pdf_file)
         text = ""
-        for page in reader.pages:
-            page_text = page.extract_text()
-            if page_text:
-                text += page_text + "\n"
-        print(f"✅ PDF 파싱 성공: {len(text)} 글자 추출")
+        total_pages = len(reader.pages)
+        print(f"📖 PDF 총 페이지 수: {total_pages}")
+        
+        for page_num, page in enumerate(reader.pages):
+            try:
+                page_text = page.extract_text()
+                if page_text and page_text.strip():
+                    text += page_text + "\n"
+                    print(f"  ✅ 페이지 {page_num + 1}: {len(page_text)} 글자 추출")
+                else:
+                    print(f"  ⚠️ 페이지 {page_num + 1}: 텍스트 없음 (이미지 전용 페이지일 수 있음)")
+            except Exception as e:
+                print(f"  ❌ 페이지 {page_num + 1} 추출 실패: {e}")
+                continue
+        
+        if not text.strip():
+            print("⚠️ PDF에서 텍스트를 추출할 수 없습니다. 스캔된 이미지 PDF이거나 보호된 문서일 수 있습니다.")
+            return ""
+        
+        print(f"✅ PDF 파싱 성공: 총 {len(text)} 글자 추출")
         return text.strip()
     except Exception as e:
         print(f"❌ PDF 파싱 오류: {e}")
+        import traceback
+        traceback.print_exc()
         raise
+
 
 def extract_text_from_docx(file_bytes):
     import docx
@@ -562,7 +580,8 @@ async def parse_resume(file: UploadFile = File(...)):
             return {"error": "파일에서 텍스트를 추출할 수 없습니다. 파일이 비어있거나 이미지만 포함되어 있을 수 있습니다."}
         
         print(f"✅ 파싱 완료: {len(extracted_text)} 글자")
-        return {"text": extracted_text, "filename": file.filename}
+        # TODO: 이미지 추출 기능은 추후 구현 (현재는 빈 배열 반환)
+        return {"text": extracted_text, "filename": file.filename, "images": []}
 
     except Exception as e:
         print(f"❌ 파일 파싱 실패: {e}")
