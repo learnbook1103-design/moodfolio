@@ -70,6 +70,14 @@
         {
             "source": "/generate-chat-answers",
             "destination": "/api/index.py"
+        },
+        {
+            "source": "/api/parse-resume",
+            "destination": "/api/index.py"
+        },
+        {
+            "source": "/api/analyze-resume",
+            "destination": "/api/index.py"
         }
     ],
     "headers": [
