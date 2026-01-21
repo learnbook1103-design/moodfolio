@@ -2,7 +2,7 @@
 import os
 import re
 import requests
-from fastapi import FastAPI, HTTPException, Depends, status
+from fastapi import FastAPI, HTTPException, Depends, status, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -499,6 +499,100 @@ def submit_data(data: UserAnswers):
         print(f"❌ 생성 실패: {e}")
         return {"status": "error", "message": str(e)}
 
+# --- [API 6.5] 이력서 파싱/분석 (새로 추가됨) ---
+class ResumeAnalyzeRequest(BaseModel):
+    resumeText: str
+
+def extract_text_from_pdf(file_bytes):
+    import pypdf
+    import io
+    pdf_file = io.BytesIO(file_bytes)
+    reader = pypdf.PdfReader(pdf_file)
+    text = ""
+    for page in reader.pages:
+        text += page.extract_text() + "\\n"
+    return text
+
+def extract_text_from_docx(file_bytes):
+    import docx
+    import io
+    doc_file = io.BytesIO(file_bytes)
+    doc = docx.Document(doc_file)
+    text = "\\n".join([para.text for para in doc.paragraphs])
+    return text
+
+@app.post("/api/parse-resume")
+async def parse_resume(file: UploadFile = File(...)):
+    try:
+        contents = await file.read()
+        filename = file.filename.lower()
+        extracted_text = ""
+
+        if filename.endswith(".pdf"):
+            extracted_text = extract_text_from_pdf(contents)
+        elif filename.endswith(".docx"):
+            extracted_text = extract_text_from_docx(contents)
+        elif filename.endswith(".txt"):
+            extracted_text = contents.decode("utf-8")
+        else:
+            return {"error": "지원하지 않는 파일 형식입니다. (PDF, DOCX, TXT 지원)"}
+
+        return {"text": extracted_text, "filename": file.filename}
+
+    except Exception as e:
+        print(f"❌ 파일 파싱 실패: {e}")
+        return {"error": f"파일 파싱 중 오류가 발생했습니다: {str(e)}"}
+
+@app.post("/api/analyze-resume")
+def analyze_resume(request: ResumeAnalyzeRequest):
+    try:
+        log_ai_usage(prompt_type="resume_analysis")
+        
+        prompt = ChatPromptTemplate.from_messages([
+            ("system", """당신은 채용 전문가 AI입니다. 이력서 텍스트를 분석하여 구조화된 JSON 데이터로 변환해주세요.
+            
+            [분석 요구사항]
+            1. 이름, 연락처, 이메일 등 기본 정보를 추출하세요.
+            2. 핵심 기술(Skills)을 리스트로 추출하세요.
+            3. 경력 사항을 요약하여 'career_summary'에 작성하세요 (예: "총 5년차, 주요 경력: ABC사, XYZ사").
+            4. 주요 프로젝트 경험을 최대 3개까지 요약하여 'projects' 배열에 담으세요.
+            5. 자기소개나 포트폴리오에 쓸만한 문구를 'intro'에 작성하세요.
+            
+            [출력 포맷 (JSON Only)]
+            {{
+                "name": "지원자 이름",
+                "phone": "010-XXXX-XXXX",
+                "email": "email@example.com",
+                "link": "github/blog url",
+                "intro": "한줄 소개",
+                "career_summary": "경력 요약 텍스트",
+                "skills": ["Skill1", "Skill2", "Skill3"],
+                "projects": [
+                    {{ "title": "프로젝트명", "desc": "프로젝트 설명 및 역할", "duration": "기간" }}
+                ]
+            }}
+            """),
+            ("human", f"다음 이력서 내용을 분석해주세요:\n\n{{input}}")
+        ])
+        
+        chain = prompt | llm
+        response = chain.invoke({"input": request.resumeText})
+        
+        # JSON 추출
+        content = response.content
+        json_match = re.search(r'```json\s*(\{.*?\})\s*```', content, re.DOTALL)
+        if json_match:
+            json_content = json_match.group(1)
+        else:
+            json_match = re.search(r'(\{.*\})', content, re.DOTALL)
+            json_content = json_match.group(0) if json_match else "{}"
+
+        return json.loads(json_content)
+
+    except Exception as e:
+        print(f"❌ 이력서 분석 실패: {e}")
+        return {"error": str(e)}
+
 # --- [API 7] 챗봇 ---
 def extract_text_from_response(response):
     """
@@ -640,7 +734,12 @@ from admin_apis import (
     NoticeCreate, NoticeUpdate,
     get_ai_stats,
     get_template_configs, update_template_config, TemplateConfigUpdate,
-    log_ai_usage
+    get_ai_stats,
+    get_template_configs, update_template_config, TemplateConfigUpdate,
+    log_ai_usage,
+    extract_text_from_pdf, extract_text_from_docx # Import helpers if they were in admin_apis, but currently used locally inside main.py functions to avoid circular deps or keep simple using local imports inside function.
+    # Actually, removing explicit import of unavailable symbols.
+
 )
 
 # 1. 공지사항 라우트
@@ -684,3 +783,4 @@ def admin_get_template_configs(admin_email: str = Depends(verify_admin)):
 @app.put('/api/admin/templates/config/{key}')
 def admin_update_template_config(key: str, config: TemplateConfigUpdate, admin_email: str = Depends(verify_admin)):
     return update_template_config(key, config, admin_email)
+

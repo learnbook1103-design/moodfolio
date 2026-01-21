@@ -12,4 +12,7 @@ openai
 regex
 supabase
 psycopg2-binary
+python-multipart
+pypdf
+python-docx
 
