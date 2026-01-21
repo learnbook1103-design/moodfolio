@@ -506,41 +506,68 @@ class ResumeAnalyzeRequest(BaseModel):
 def extract_text_from_pdf(file_bytes):
     import pypdf
     import io
-    pdf_file = io.BytesIO(file_bytes)
-    reader = pypdf.PdfReader(pdf_file)
-    text = ""
-    for page in reader.pages:
-        text += page.extract_text() + "\\n"
-    return text
+    try:
+        pdf_file = io.BytesIO(file_bytes)
+        reader = pypdf.PdfReader(pdf_file)
+        text = ""
+        for page in reader.pages:
+            page_text = page.extract_text()
+            if page_text:
+                text += page_text + "\n"
+        print(f"✅ PDF 파싱 성공: {len(text)} 글자 추출")
+        return text.strip()
+    except Exception as e:
+        print(f"❌ PDF 파싱 오류: {e}")
+        raise
 
 def extract_text_from_docx(file_bytes):
     import docx
     import io
-    doc_file = io.BytesIO(file_bytes)
-    doc = docx.Document(doc_file)
-    text = "\\n".join([para.text for para in doc.paragraphs])
-    return text
+    try:
+        doc_file = io.BytesIO(file_bytes)
+        doc = docx.Document(doc_file)
+        paragraphs = [para.text for para in doc.paragraphs if para.text.strip()]
+        text = "\n".join(paragraphs)
+        print(f"✅ DOCX 파싱 성공: {len(paragraphs)} 문단, {len(text)} 글자 추출")
+        return text.strip()
+    except Exception as e:
+        print(f"❌ DOCX 파싱 오류: {e}")
+        raise
 
 @app.post("/api/parse-resume")
 async def parse_resume(file: UploadFile = File(...)):
     try:
+        print(f"📄 파일 업로드 시작: {file.filename} ({file.content_type})")
         contents = await file.read()
+        print(f"📦 파일 크기: {len(contents)} bytes")
+        
         filename = file.filename.lower()
         extracted_text = ""
 
         if filename.endswith(".pdf"):
+            print("🔍 PDF 파싱 시작...")
             extracted_text = extract_text_from_pdf(contents)
         elif filename.endswith(".docx"):
+            print("🔍 DOCX 파싱 시작...")
             extracted_text = extract_text_from_docx(contents)
         elif filename.endswith(".txt"):
+            print("🔍 TXT 파싱 시작...")
             extracted_text = contents.decode("utf-8")
         else:
+            print(f"❌ 지원하지 않는 파일 형식: {filename}")
             return {"error": "지원하지 않는 파일 형식입니다. (PDF, DOCX, TXT 지원)"}
 
+        if not extracted_text or len(extracted_text.strip()) == 0:
+            print("⚠️ 경고: 추출된 텍스트가 비어있습니다!")
+            return {"error": "파일에서 텍스트를 추출할 수 없습니다. 파일이 비어있거나 이미지만 포함되어 있을 수 있습니다."}
+        
+        print(f"✅ 파싱 완료: {len(extracted_text)} 글자")
         return {"text": extracted_text, "filename": file.filename}
 
     except Exception as e:
         print(f"❌ 파일 파싱 실패: {e}")
+        import traceback
+        traceback.print_exc()
         return {"error": f"파일 파싱 중 오류가 발생했습니다: {str(e)}"}
 
 @app.post("/api/analyze-resume")
